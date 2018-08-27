@@ -48,7 +48,7 @@ pipeline:
 
 - **data/stories.md** file contains some training stories representing different conversations between a user and a chatbot.  
 - **domain.yml** file describes the universe of the assistant which includes intents, entities, slots, templates and actions an assistant should be aware of.  
-- **actions.py** file contains a code of a custom action which retrieves a Chuck Noris joke by making an external api call.  
+- **actions.py** file contains a code of a custom action which retrieves a Chuck Norris joke by making an external api call.  
 
 ## How to use it?
 1. You can train the Rasa NLU model by running:  
