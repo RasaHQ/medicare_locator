@@ -71,6 +71,3 @@ This starter-pack lets you build a simple assistant which can tell Chuck Norris 
 - If you need more inspiration we have a really cool Rasa NLU [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you can find on Rasa Community Forum. This dataset contains quite a few interesting intents. To use it, append the training examples to `data/nlu_data.md` file, retrain the NLU model and see how your bot learns new skills.
 
 Let us know who you are getting on with Rasa Stack and what have you built! Join the [Rasa Community Forum](https://forum.rasa.com) and share you experience with us!
-
-
-Make sure to let us know how you are getting on and what have you build. Visit Rasa Community Forum and share your experience.
