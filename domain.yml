@@ -6,12 +6,14 @@ intents:
 - joke
 - name
 
-slots:
-  name:
-    type: text
 
 entities:
 - name
+
+
+slots:
+  name:
+    type: text
 
 
 actions:
