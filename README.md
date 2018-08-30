@@ -1,12 +1,15 @@
-# Rasa NLU starter-pack
+# Rasa Stack starter-pack
 
-Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of you first custom bot, clone it to get started:
+Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot. Just by using the files of this repo you can build a simple assistant capable of cheering you up with Chuck Norris jokes.
+
+
+Clone this repo to get started:
 
 ```
 git clone https://github.com/RasaHQ/starter-pack-rasa-stack.git
 ```
 
-After you clone the repository, you will have a directory called starter-pack-rasa-stack on your local machine containing all the files of this repo. Let's call this directory our project directory.
+After you clone the repository, a directory called starter-pack-rasa-stack will be downloaded to your local machine. It contains all the files of this repo and you should refer to this directory as your 'project directory'.
 
 
 ## Setup and installation
@@ -20,7 +23,7 @@ This will install Rasa NLU and Rasa Core as well as all the dependencies you nee
 
 ## What’s in this starter-pack?
 
-This starter-pack contains some training data and the main files which you can use as the basis of your first custom bot. It also resembles the usual structure of the project built with Rasa Stack. This starter-pack consists of the following files:
+This starter-pack contains some training data and the main files which you can use as the basis of your first custom bot. It also has the usual file structure of the assistant built with Rasa Stack. This starter-pack consists of the following files:
 
 ### Files for Rasa NLU model
 
@@ -30,30 +33,25 @@ This starter-pack contains some training data and the main files which you can u
 	- thanks
 	- deny
 	- joke
-	- name (examples of this intent contain an entity called name)
+	- name (examples of this intent contain an entity called 'name')
 	
 - **nlu_cofing.yml** file contains configuration of the Rasa NLU pipeline:  
 ```text
 language: "en"
 
-pipeline:
-- name: "nlp_spacy"                   # loads the spacy language model
-- name: "tokenizer_spacy"             # splits the sentence into tokens
-- name: "ner_crf"                   # uses the pretrained spacy NER model
-- name: "intent_featurizer_spacy"     # transforms the sentence into a vector representation
-- name: "intent_classifier_sklearn"   # uses the vector representation to classify using SVM
+pipeline: spacy_sklearn
 ```	
 
 ### Files for Rasa Core model
 
-- **data/stories.md** file contains some training stories representing different conversations between a user and a chatbot.  
-- **domain.yml** file describes the universe of the assistant which includes intents, entities, slots, templates and actions an assistant should be aware of.  
-- **actions.py** file contains a code of a custom action which retrieves a Chuck Norris joke by making an external api call.  
+- **data/stories.md** file contains some training stories whic respresent the conversations between a user and the assistant. 
+- **domain.yml** file describes the domain of the assistant which includes intents, entities, slots, templates and actions the assistant should be aware of.  
+- **actions.py** file contains a code of a custom action which retrieves a Chuck Norris joke by making an external API call.  
 
-## How to use it?
+## How to use this starter-pack?
 1. You can train the Rasa NLU model by running:  
 ```make train-nlu```  
-This will train the NLU model and store it inside the `/models/current/nlu` folder of your project directory.
+This will train the Rasa NLU model and store it inside the `/models/current/nlu` folder of your project directory.
 
 2. Train the Rasa Core model by running:  
 ```make train-core```  
@@ -61,7 +59,7 @@ This will train the Rasa Core model and store it inside the `/models/current/dia
 
 3. Test the assistant by running:  
 ```make cmdline```  
-This will load the assitant in your terminal and you can chat to it.
+This will load the assitant in your terminal for you to chat.
 
 ## What's next?
 This starter-pack lets you build a simple assistant which can tell Chuck Norris jokes. It's pretty fun, but there is so much more you can do to make a really engaging and cool assistant. Here are some ideas of what you can do to take this assistant to the next level:  
