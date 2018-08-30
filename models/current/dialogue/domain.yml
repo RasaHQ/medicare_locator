@@ -1,0 +1,45 @@
+%YAML 1.1
+---
+action_factory: null
+action_names:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_joke
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- actions.ActionJoke
+config:
+  store_entities_as_slots: true
+entities:
+- name
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thanks:
+    use_entities: true
+- deny:
+    use_entities: true
+- joke:
+    use_entities: true
+- name:
+    use_entities: true
+slots:
+  name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_goodbye:
+  - text: Talk to you later!
+  utter_greet:
+  - text: Nice to you meet you {name}. How can I help?
+  utter_name:
+  - text: Hey there! Tell me your name.
+  utter_thanks:
+  - text: My pleasure.

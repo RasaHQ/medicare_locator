@@ -2,6 +2,10 @@
 
 Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot. Just by using the files of this repo you can build a simple assistant capable of cheering you up with Chuck Norris jokes.
 
+<p align="center">
+  <img src="./rasa-stack-mockup.gif">
+</p>
+
 
 Clone this repo to get started:
 
