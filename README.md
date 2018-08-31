@@ -1,6 +1,7 @@
 # Rasa Stack starter-pack
 
-Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot.  You can improve this assistant by using a really cool training data file which you can find on Rasa Community Forum. Go get it before getting started [training data file](https://forum.rasa.com/t/rasa-starter-pack/704)!  
+Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot.  You can improve this assistant by using a really cool [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you can find on the Rasa Community Forum. Go get it before getting started!  
+
 The initial version of this starter-pack lets you build a simple assistant capable of cheering you up with Chuck Norris jokes.
 
 
