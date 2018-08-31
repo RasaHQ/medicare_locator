@@ -1,6 +1,6 @@
 # Rasa Stack starter-pack
 
-Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot.  You can improve this assistant by using a really cool training data file which you can find on the [Rasa Community Forum](https://forum.rasa.com/t/rasa-starter-pack/704). Go get it before getting started!  
+Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first intelligent assistant? We have some resources to help you get started! This repository contains the foundations of your first custom assistant.  You can improve this assistant by using a really cool training data file which you can find on the [Rasa Community Forum](https://forum.rasa.com/t/rasa-starter-pack/704). Go get it before getting started!  
 
 The initial version of this starter-pack lets you build a simple assistant capable of cheering you up with Chuck Norris jokes.
 
@@ -25,12 +25,12 @@ If you haven’t installed Rasa NLU and Rasa Core yet, you can do it by navigati
 ```
 pip install -r requirements.txt
 ```
-This will install Rasa NLU and Rasa Core as well as all the dependencies you need to successfully build your first bot.  
+This will install Rasa NLU and Rasa Core as well as all the dependencies you need to successfully build your first Rasa assistant.  
 
 
 ## What’s in this starter-pack?
 
-This starter-pack contains some training data and the main files which you can use as the basis of your first custom bot. It also has the usual file structure of the assistant built with Rasa Stack. This starter-pack consists of the following files:
+This starter-pack contains some training data and the main files which you can use as the basis of your first custom assistant. It also has the usual file structure of the assistant built with Rasa Stack. This starter-pack consists of the following files:
 
 ### Files for Rasa NLU model
 
@@ -71,7 +71,7 @@ This will load the assistant in your terminal for you to chat.
 ## What's next?
 This starter-pack lets you build a simple assistant which can tell Chuck Norris jokes. It's pretty fun, but there is so much more you can do to make a really engaging and cool assistant. Here are some ideas of what you can do to take this assistant to the next level:  
 - Use the Rasa NLU [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you downloaded previously from Rasa Community Forum. This dataset contains quite a few interesting intents which will enable your assistant to handle small talk. To use it, append the training examples to `data/nlu_data.md` file, retrain the NLU model and see how your assistant learns new skills.
-- Enrich `data/nlu_data.md` file with the intents you would like your bot to understand. Retrain the NLU model using the command above and see you assistant improving with every run!  
+- Enrich `data/nlu_data.md` file with the custom intents you would like your assistant to understand. Retrain the NLU model using the command above and see you assistant improving with every run!  
 - Enrich `data/stories.md` file with more training stories with different dialogue turns, intents and actions.  
 - Implement more custom action inside the `actions.py` file and add them to stories data as well as the domain file.   
 
