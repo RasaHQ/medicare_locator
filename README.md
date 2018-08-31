@@ -39,7 +39,7 @@ This starter-pack contains some training data and the main files which you can u
 	- joke
 	- name (examples of this intent contain an entity called 'name')
 	
-- **nlu_cofing.yml** file contains configuration of the Rasa NLU pipeline:  
+- **nlu_cofing.yml** file contains the configuration of the Rasa NLU pipeline:  
 ```text
 language: "en"
 
@@ -48,9 +48,9 @@ pipeline: spacy_sklearn
 
 ### Files for Rasa Core model
 
-- **data/stories.md** file contains some training stories whic respresent the conversations between a user and the assistant. 
+- **data/stories.md** file contains some training stories which represent the conversations between a user and the assistant. 
 - **domain.yml** file describes the domain of the assistant which includes intents, entities, slots, templates and actions the assistant should be aware of.  
-- **actions.py** file contains a code of a custom action which retrieves a Chuck Norris joke by making an external API call.  
+- **actions.py** file contains the code of a custom action which retrieves a Chuck Norris joke by making an external API call.  
 
 ## How to use this starter-pack?
 1. You can train the Rasa NLU model by running:  
@@ -63,13 +63,13 @@ This will train the Rasa Core model and store it inside the `/models/current/dia
 
 3. Test the assistant by running:  
 ```make cmdline```  
-This will load the assitant in your terminal for you to chat.
+This will load the assistant in your terminal for you to chat.
 
 ## What's next?
 This starter-pack lets you build a simple assistant which can tell Chuck Norris jokes. It's pretty fun, but there is so much more you can do to make a really engaging and cool assistant. Here are some ideas of what you can do to take this assistant to the next level:  
 - Enrich `data/nlu_data.md` file with the intents you would like your bot to understand. Retrain the NLU model using the command above and see you assistant improving with every run!  
 - Enrich `data/stories.md` file with more training stories with different dialogue turns, intents and actions.  
 - Implement more custom action inside the `actions.py` file and add them to stories data as well as the domain file.   
-- If you need more inspiration we have a really cool Rasa NLU [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you can find on Rasa Community Forum. This dataset contains quite a few interesting intents. To use it, append the training examples to `data/nlu_data.md` file, retrain the NLU model and see how your bot learns new skills.
+- If you need more inspiration we have a really cool Rasa NLU [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you can find on the Rasa Community Forum. This dataset contains quite a few interesting intents. To use it, append the training examples to `data/nlu_data.md` file, retrain the NLU model and see how your assistant learns new skills.
 
-Let us know who you are getting on with Rasa Stack and what have you built! Join the [Rasa Community Forum](https://forum.rasa.com) and share you experience with us!
+Let us know how you are getting on with Rasa Stack and what have you built! Join the [Rasa Community Forum](https://forum.rasa.com) and share your experience with us!
