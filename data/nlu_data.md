@@ -1,3 +1,5 @@
+<!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/rasa-starter-pack/704 --> 
+
 ## intent:bye <!--- The label of the intent --> 
 - Bye 			<!--- Training examples for intent 'bye'--> 
 - Goodbye
