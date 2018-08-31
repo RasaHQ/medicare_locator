@@ -1,6 +1,8 @@
 # Rasa Stack starter-pack
 
-Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot. Just by using the files of this repo you can build a simple assistant capable of cheering you up with Chuck Norris jokes.
+Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first chatbot? We have some resources to help you get started! This repository contains the foundations of your first custom bot.  You can improve this assistant by using a really cool training data file which you can find on Rasa Community Forum. Go get it before getting started [training data file](https://forum.rasa.com/t/rasa-starter-pack/704)!  
+The initial version of this starter-pack lets you build a simple assistant capable of cheering you up with Chuck Norris jokes.
+
 
 <p align="center">
   <img src="./rasa-stack-mockup.gif">
@@ -67,9 +69,10 @@ This will load the assistant in your terminal for you to chat.
 
 ## What's next?
 This starter-pack lets you build a simple assistant which can tell Chuck Norris jokes. It's pretty fun, but there is so much more you can do to make a really engaging and cool assistant. Here are some ideas of what you can do to take this assistant to the next level:  
+- Use the Rasa NLU [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you downloaded previously from Rasa Community Forum. This dataset contains quite a few interesting intents which will enable your assistant to handle small talk. To use it, append the training examples to `data/nlu_data.md` file, retrain the NLU model and see how your assistant learns new skills.
 - Enrich `data/nlu_data.md` file with the intents you would like your bot to understand. Retrain the NLU model using the command above and see you assistant improving with every run!  
 - Enrich `data/stories.md` file with more training stories with different dialogue turns, intents and actions.  
 - Implement more custom action inside the `actions.py` file and add them to stories data as well as the domain file.   
-- If you need more inspiration we have a really cool Rasa NLU [training data file](https://forum.rasa.com/t/rasa-starter-pack/704) which you can find on the Rasa Community Forum. This dataset contains quite a few interesting intents. To use it, append the training examples to `data/nlu_data.md` file, retrain the NLU model and see how your assistant learns new skills.
+
 
 Let us know how you are getting on with Rasa Stack and what have you built! Join the [Rasa Community Forum](https://forum.rasa.com) and share your experience with us!
