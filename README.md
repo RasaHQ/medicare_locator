@@ -25,7 +25,12 @@ If you haven’t installed Rasa NLU and Rasa Core yet, you can do it by navigati
 ```
 pip install -r requirements.txt
 ```
-This will install Rasa NLU and Rasa Core as well as all the dependencies you need to successfully build your first Rasa assistant.  
+
+You also need to install a spaCy English language model. You can install it by running:
+
+```
+python -m spacy download en
+```
 
 
 ## What’s in this starter-pack?
