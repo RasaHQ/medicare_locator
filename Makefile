@@ -26,4 +26,4 @@ train-core:
 	python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue --epochs 200
 
 cmdline:
-	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu
+	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml

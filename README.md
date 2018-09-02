@@ -1,4 +1,4 @@
-# Rasa Stack starter-pack
+﻿# Rasa Stack starter-pack
 
 Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first intelligent assistant? We have some resources to help you get started! This repository contains the foundations of your first custom assistant.  You can improve this assistant by using a really cool training data file which you can find on the [Rasa Community Forum](https://forum.rasa.com/t/rasa-starter-pack/704). Go get it before getting started!  
 
@@ -58,7 +58,8 @@ pipeline: spacy_sklearn
 
 - **data/stories.md** file contains some training stories which represent the conversations between a user and the assistant. 
 - **domain.yml** file describes the domain of the assistant which includes intents, entities, slots, templates and actions the assistant should be aware of.  
-- **actions.py** file contains the code of a custom action which retrieves a Chuck Norris joke by making an external API call.  
+- **actions.py** file contains the code of a custom action which retrieves a Chuck Norris joke by making an external API call.
+- *endpoints.yml* file contains the webhook configuration for custom action.
 
 ## How to use this starter-pack?
 1. You can train the Rasa NLU model by running:  

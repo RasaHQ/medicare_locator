@@ -21,7 +21,7 @@ actions:
 - utter_thanks
 - utter_greet
 - utter_goodbye
-- actions.ActionJoke
+- action_joke
 
 
 templates:
