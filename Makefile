@@ -9,6 +9,8 @@ help:
 	@echo "        Trains a new nlu model using the projects Rasa NLU config"
 	@echo "    train-core"
 	@echo "        Trains a new dialogue model using the story training data"
+	@echo "    action-server"
+	@echo "        Starts the server for custom action."
 
 clean:
 	find . -name '*.pyc' -exec rm -f {} +
@@ -27,3 +29,6 @@ train-core:
 
 cmdline:
 	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
+	
+action-server:
+        python -m rasa_core_sdk.endpoint --actions actions
