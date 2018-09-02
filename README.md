@@ -37,7 +37,7 @@ python -m spacy download en
 
 This starter-pack contains some training data and the main files which you can use as the basis of your first custom assistant. It also has the usual file structure of the assistant built with Rasa Stack. This starter-pack consists of the following files:
 
-### Files for Rasa NLU model
+### Files for training the Rasa NLU model
 
 - **data/nlu_data.json** file contains training examples of six intents: 
 	- greet
@@ -54,7 +54,7 @@ language: "en"
 pipeline: spacy_sklearn
 ```	
 
-### Files for Rasa Core model
+### Files for training the Rasa Core model
 
 - **data/stories.md** file contains some training stories which represent the conversations between a user and the assistant. 
 - **domain.yml** file describes the domain of the assistant which includes intents, entities, slots, templates and actions the assistant should be aware of.  
@@ -70,7 +70,11 @@ This will train the Rasa NLU model and store it inside the `/models/current/nlu`
 ```make train-core```  
 This will train the Rasa Core model and store it inside the `/models/current/dialogue` folder of your project directory.
 
-3. Test the assistant by running:  
+3. Start the server for the custom action by running:  
+```make action-server```  
+This will start the server for emulating the custom action.
+
+4. Test the assistant by running:  
 ```make cmdline```  
 This will load the assistant in your terminal for you to chat.
 
