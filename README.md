@@ -1,6 +1,10 @@
 ﻿# Rasa Stack starter-pack
 
-Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first intelligent assistant? We have some resources to help you get started! This repository contains the foundations of your first custom assistant.  You can improve this assistant by using a really cool training data file which you can find on the [Rasa Community Forum](https://forum.rasa.com/t/rasa-starter-pack/704). Go get it before getting started!  
+Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first intelligent assistant? We have some resources to help you get started! This repository contains the foundations of your first custom assistant.  
+
+**The training data is here in the [forum](https://forum.rasa.com/t/rasa-starter-pack/704)** 
+
+We would recommend downloading this before getting started, although the tutorial will also work with just the data in this repo. 
 
 The initial version of this starter-pack lets you build a simple assistant capable of cheering you up with Chuck Norris jokes.
 
