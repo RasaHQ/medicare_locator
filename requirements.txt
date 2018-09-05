@@ -33,4 +33,4 @@ rasa_core==0.11.1
 pymongo==3.5.1
 python-dateutil==2.7.3
 spacy==2.0.12
-sklearn_crfuite==0.3.6
+sklearn_crfsuite==0.3.6
