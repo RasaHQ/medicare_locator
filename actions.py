@@ -19,7 +19,7 @@ class ActionJoke(Action):
 
     def run(self, dispatcher, tracker, domain):
         # what your action should do
-        request = json.loads(requests.get('https://api.chucknorris.io/jokes/random').text) #make an apie call
-        joke = request['value'] #extract a joke from returned json response
+        request = requests.get('http://api.icndb.com/jokes/random').json() #make an apie call
+        joke = request['value']['joke'] #extract a joke from returned json response
         dispatcher.utter_message(joke) #send the message back to the user
         return []
