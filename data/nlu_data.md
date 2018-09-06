@@ -1,4 +1,4 @@
-<!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/rasa-starter-pack/704 --> 
+<!--- Make sure to update this training data file with more training examples from https://forum.rasa.com/t/grab-the-nlu-training-dataset-and-starter-packs/903 --> 
 
 ## intent:bye <!--- The label of the intent --> 
 - Bye 			<!--- Training examples for intent 'bye'--> 
