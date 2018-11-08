@@ -2,7 +2,7 @@
 
 Looked through the [Rasa NLU](http://rasa.com/docs/nlu/) and [Rasa Core](http://rasa.com/docs/core/) documentation and ready to build your first intelligent assistant? We have some resources to help you get started! This repository contains the foundations of your first custom assistant.  
 
-**The training data is here in the [forum](https://forum.rasa.com/t/grab-the-nlu-training-dataset-and-starter-packs/903)** 
+This starter-pack comes with a small amount of training data which lets you build a simple assistant. **You can find more training data here in the [forum](https://forum.rasa.com/t/grab-the-nlu-training-dataset-and-starter-packs/903) and use it to teach your assistant new skills and make it more engaging.**
 
 We would recommend downloading this before getting started, although the tutorial will also work with just the data in this repo. 
 
