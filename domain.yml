@@ -17,7 +17,7 @@ forms:
   - hospital_form
 
 actions:
-- utter_thanks
+- utter_noworries
 - utter_greet
 - utter_goodbye
 - utter_ask_zip
@@ -30,7 +30,7 @@ templates:
   utter_goodbye:
   - text: "Talk to you later!"
   
-  utter_thanks:
+  utter_noworries:
   - text: "My pleasure."
 
   utter_ask_zip:

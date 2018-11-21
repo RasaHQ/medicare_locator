@@ -25,7 +25,10 @@ train-nlu:
 	python -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
 
 train-core:
-	python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue --epochs 200
+	python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c core_config.yml
+
+interactive:
+	python -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml
 
 cmdline:
 	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml

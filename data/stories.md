@@ -4,7 +4,7 @@
 
 ## story_thanks
 * thanks
- - utter_thanks
+ - utter_noworries
 
 ## hi
 * greet

@@ -1,0 +1,31 @@
+{
+  "trained_at": "20181121-155224",
+  "rasa_core": "0.13.0a1",
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "action_fingerprints": {
+    "utter_greet": {
+      "slots": []
+    },
+    "action_listen": {
+      "slots": []
+    },
+    "utter_noworries": {
+      "slots": []
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "hospital_form": {
+      "slots": []
+    }
+  },
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "max_histories": [
+    5,
+    2
+  ],
+  "python": "3.5.4"
+}

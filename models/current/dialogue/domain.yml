@@ -1,0 +1,47 @@
+%YAML 1.1
+---
+actions:
+- utter_noworries
+- utter_greet
+- utter_goodbye
+- utter_ask_zip
+- utter_ask_specialty
+config:
+  store_entities_as_slots: true
+entities:
+- specialty
+forms:
+- hospital_form
+intents:
+- deny:
+    use_entities: true
+- greet:
+    use_entities: true
+- thanks:
+    use_entities: true
+- goodbye:
+    use_entities: true
+slots:
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  specialty:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  zip:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_ask_specialty:
+  - text: Are you looking for a particular specialist?
+  utter_ask_zip:
+  - text: What's your zip code?
+  utter_goodbye:
+  - text: Talk to you later!
+  utter_greet:
+  - text: Hi. How can I help?
+  utter_noworries:
+  - text: My pleasure.
