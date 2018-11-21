@@ -28,7 +28,7 @@ train-core:
 	python -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c core_config.yml
 
 interactive:
-	python -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml
+	python -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml
 
 cmdline:
 	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml

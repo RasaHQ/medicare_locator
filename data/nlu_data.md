@@ -1,5 +1,13 @@
-## intent:bye <!--- The label of the intent --> 
-- Bye 			<!--- Training examples for intent 'bye'--> 
+## intent:affirm
+- yes
+- yes sure
+- absolutely
+- for sure
+- yes yes yes
+- definitely
+
+## intent:bye
+- Bye
 - Goodbye
 - See you later
 - Bye bot
@@ -31,6 +39,16 @@
 - hello everybody
 - hello is anybody there
 - hello robot
+- hi
+
+## intent:inform
+- [10119](number)
+
+## intent:search_hospital
+- find me a nearby hospital
+- show me hospitals
+- i am looking for a clinic
+- hospital
 
 ## intent:thank
 - Thanks
@@ -48,16 +66,3 @@
 - amazing, thanks
 - cool, thanks
 - cool thank you
-
-## intent:affirm
-- yes
-- yes sure
-- absolutely
-- for sure
-- yes yes yes
-- definitely
-
-## intent:search_hospital
-- find me a nearby hospital
-- show me hospitals
-- i am looking for a clinic

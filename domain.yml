@@ -1,11 +1,14 @@
 intents:
 - greet
 - goodbye
-- thanks
+- thankyou
 - deny
+- search_hospital
+- inform
 
 entities:
 - specialty
+- number
 
 slots:
   zip:

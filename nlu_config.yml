@@ -1,4 +1,4 @@
 language: "en"
 
-pipeline: spacy_sklearn
+pipeline: tensorflow_embedding
 

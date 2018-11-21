@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/alan/Developer/dialog/HCA/hospital_search/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/Users/alan/Developer/dialog/HCA/hospital_search/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"

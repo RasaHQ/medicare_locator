@@ -13,11 +13,13 @@ entities:
 forms:
 - hospital_form
 intents:
-- deny:
-    use_entities: true
 - greet:
     use_entities: true
-- thanks:
+- search_hospital:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- deny:
     use_entities: true
 - goodbye:
     use_entities: true

@@ -1,225 +1,225 @@
 {
   "rasa_nlu_data": {
+    "entity_synonyms": [],
     "common_examples": [
       {
-        "text": "Bye",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "Bye"
       },
       {
-        "text": "Goodbye",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "Goodbye"
       },
       {
-        "text": "See you later",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "See you later"
       },
       {
-        "text": "Bye bot",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "Bye bot"
       },
       {
-        "text": "Goodbye friend",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "Goodbye friend"
       },
       {
-        "text": "bye",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "bye"
       },
       {
-        "text": "bye for now",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "bye for now"
       },
       {
-        "text": "catch you later",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "catch you later"
       },
       {
-        "text": "gotta go",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "gotta go"
       },
       {
-        "text": "See you",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "See you"
       },
       {
-        "text": "goodnight",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "goodnight"
       },
       {
-        "text": "have a nice day",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "have a nice day"
       },
       {
-        "text": "i'm off",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "i'm off"
       },
       {
-        "text": "see you later alligator",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "see you later alligator"
       },
       {
-        "text": "we'll speak soon",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "we'll speak soon"
       },
       {
-        "text": "Hi",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "Hi"
       },
       {
-        "text": "Hey",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "Hey"
       },
       {
-        "text": "Hi bot",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "Hi bot"
       },
       {
-        "text": "Hey bot",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "Hey bot"
       },
       {
-        "text": "Hello",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "Hello"
       },
       {
-        "text": "Good morning",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "Good morning"
       },
       {
-        "text": "hi again",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi again"
       },
       {
-        "text": "hi folks",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi folks"
       },
       {
-        "text": "hi Mister",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi Mister"
       },
       {
-        "text": "hi pal!",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi pal!"
       },
       {
-        "text": "hi there",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi there"
       },
       {
-        "text": "greetings",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "greetings"
       },
       {
-        "text": "hello everybody",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hello everybody"
       },
       {
-        "text": "hello is anybody there",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hello is anybody there"
       },
       {
-        "text": "hello robot",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hello robot"
       },
       {
-        "text": "Thanks",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "Thanks"
       },
       {
-        "text": "Thank you",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "Thank you"
       },
       {
-        "text": "Thank you so much",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "Thank you so much"
       },
       {
-        "text": "Thanks bot",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "Thanks bot"
       },
       {
-        "text": "Thanks for that",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "Thanks for that"
       },
       {
-        "text": "cheers",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "cheers"
       },
       {
-        "text": "cheers bro",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "cheers bro"
       },
       {
-        "text": "ok thanks!",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "ok thanks!"
       },
       {
-        "text": "perfect thank you",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "perfect thank you"
       },
       {
-        "text": "thanks a bunch for everything",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks a bunch for everything"
       },
       {
-        "text": "thanks for the help",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks for the help"
       },
       {
-        "text": "thanks a lot",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks a lot"
       },
       {
-        "text": "amazing, thanks",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "amazing, thanks"
       },
       {
-        "text": "cool, thanks",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "cool, thanks"
       },
       {
-        "text": "cool thank you",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "cool thank you"
       },
       {
-        "text": "yes",
-        "intent": "affirm"
+        "intent": "affirm",
+        "text": "yes"
       },
       {
-        "text": "yes sure",
-        "intent": "affirm"
+        "intent": "affirm",
+        "text": "yes sure"
       },
       {
-        "text": "absolutely",
-        "intent": "affirm"
+        "intent": "affirm",
+        "text": "absolutely"
       },
       {
-        "text": "for sure",
-        "intent": "affirm"
+        "intent": "affirm",
+        "text": "for sure"
       },
       {
-        "text": "yes yes yes",
-        "intent": "affirm"
+        "intent": "affirm",
+        "text": "yes yes yes"
       },
       {
-        "text": "definitely",
-        "intent": "affirm"
+        "intent": "affirm",
+        "text": "definitely"
       },
       {
-        "text": "find me a nearby hospital",
-        "intent": "search_hospital"
+        "intent": "search_hospital",
+        "text": "find me a nearby hospital"
       },
       {
-        "text": "show me hospitals",
-        "intent": "search_hospital"
+        "intent": "search_hospital",
+        "text": "show me hospitals"
       },
       {
-        "text": "i am looking for a clinic",
-        "intent": "search_hospital"
+        "intent": "search_hospital",
+        "text": "i am looking for a clinic"
       }
     ],
-    "entity_synonyms": [],
-    "lookup_tables": [],
-    "regex_features": []
+    "regex_features": [],
+    "lookup_tables": []
   }
 }

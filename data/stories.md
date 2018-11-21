@@ -11,7 +11,7 @@
  - utter_greet
 
 ## happy path
-* request_hospital
+* search_hospital
     - hospital_form
     - form{"name": "hospital_form"}
     - form{"name": null}
@@ -21,9 +21,21 @@
 ## happy path 2
 * greet
     - utter_greet
-* request_hospital
+* search_hospital
     - hospital_form
     - form{"name": "hospital_form"}
     - form{"name": null}
 * thankyou
     - utter_noworries
+## Generated Story -6770035372518111269
+* greet
+    - utter_greet
+* search_hospital
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "zip"}
+* form: inform{"number": "10119"}
+    - form: hospital_form
+    - slot{"zip": "10119"}
+    - slot{"requested_slot": "specialty"}
+
