@@ -1,4 +1,4 @@
-﻿# Healthcare Rasa Stack starter-pack
+﻿# Healthcare Locator built with the Rasa Stack
 
 
 Use the Makefile commands:
@@ -9,5 +9,3 @@ Use the Makefile commands:
 
 ### to run in interactive learning mode
 - `make interactive`
-
-
