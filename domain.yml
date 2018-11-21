@@ -3,37 +3,38 @@ intents:
 - goodbye
 - thanks
 - deny
-- joke
-- name
-
 
 entities:
-- name
-
+- specialty
 
 slots:
-  name:
-    type: text
+  zip:
+    type: unfeaturized
+  specialty:
+    type: unfeaturized
 
+forms:
+  - hospital_form
 
 actions:
-- utter_name
 - utter_thanks
 - utter_greet
 - utter_goodbye
-- action_joke
-
+- utter_ask_zip
+- utter_ask_specialty
 
 templates:
-  utter_name:
-  - text: "Hey there! Tell me your name."
-
   utter_greet:
-  - text: "Nice to you meet you {name}. How can I help?"
+  - text: "Hi. How can I help?"
 
   utter_goodbye:
   - text: "Talk to you later!"
   
   utter_thanks:
   - text: "My pleasure."
-  
+
+  utter_ask_zip:
+  - text: "What's your zip code?"
+
+  utter_ask_specialty:
+  - text: "Are you looking for a particular specialist?"
