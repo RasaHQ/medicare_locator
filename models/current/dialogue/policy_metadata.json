@@ -1,31 +1,39 @@
 {
-  "python": "3.5.4",
-  "policy_names": [
-    "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.form_policy.FormPolicy"
-  ],
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "action_fingerprints": {
-    "hospital_form": {
-      "slots": []
-    },
-    "utter_greet": {
-      "slots": []
+    "action_listen": {
+      "slots": [
+        "zip"
+      ]
     },
     "utter_noworries": {
       "slots": []
     },
-    "action_listen": {
+    "hospital_form": {
+      "slots": [
+        "requested_slot",
+        "zip"
+      ]
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "center_form": {
       "slots": []
     },
     "utter_goodbye": {
       "slots": []
     }
   },
-  "rasa_core": "0.13.0a1",
-  "trained_at": "20181121-161139",
+  "rasa_core": "0.12.2",
+  "python": "3.6.5",
   "max_histories": [
     5,
     2
-  ]
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20181127-112149"
 }

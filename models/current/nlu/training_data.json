@@ -1,7 +1,30 @@
 {
   "rasa_nlu_data": {
-    "entity_synonyms": [],
     "common_examples": [
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
       {
         "intent": "bye",
         "text": "Bye"
@@ -123,6 +146,94 @@
         "text": "hello robot"
       },
       {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "10119",
+            "entity": "number"
+          }
+        ],
+        "text": "10119"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "nursery home",
+            "entity": "type"
+          }
+        ],
+        "text": "nursery home"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "hospital",
+            "entity": "type"
+          }
+        ],
+        "text": "hospital"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "find me a nearby hospital"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "show me hospitals"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "i am looking for a clinic"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "hospital"
+      },
+      {
+        "intent": "search_hospital",
+        "entities": [
+          {
+            "start": 41,
+            "end": 46,
+            "value": "10119",
+            "entity": "number"
+          }
+        ],
+        "text": "find me a nearby hospital my zip code is 10119"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "I want to find a treatment center nearby"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "I need to find a treatment center"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "treatment center"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "show me treatment centers nearby"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "i am looking for a treatment center"
+      },
+      {
         "intent": "thank",
         "text": "Thanks"
       },
@@ -181,45 +292,10 @@
       {
         "intent": "thank",
         "text": "cool thank you"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes sure"
-      },
-      {
-        "intent": "affirm",
-        "text": "absolutely"
-      },
-      {
-        "intent": "affirm",
-        "text": "for sure"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes yes yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "definitely"
-      },
-      {
-        "intent": "search_hospital",
-        "text": "find me a nearby hospital"
-      },
-      {
-        "intent": "search_hospital",
-        "text": "show me hospitals"
-      },
-      {
-        "intent": "search_hospital",
-        "text": "i am looking for a clinic"
       }
     ],
     "regex_features": [],
-    "lookup_tables": []
+    "lookup_tables": [],
+    "entity_synonyms": []
   }
 }

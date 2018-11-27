@@ -6,22 +6,30 @@ actions:
 - utter_goodbye
 - utter_ask_zip
 - utter_ask_specialty
+- utter_ask_type
 config:
   store_entities_as_slots: true
 entities:
 - specialty
+- number
+- type
 forms:
 - hospital_form
+- center_form
 intents:
 - greet:
     use_entities: true
-- search_hospital:
+- goodbye:
     use_entities: true
 - thankyou:
     use_entities: true
 - deny:
     use_entities: true
-- goodbye:
+- search_hospital:
+    use_entities: true
+- search_treatment_center:
+    use_entities: true
+- inform:
     use_entities: true
 slots:
   requested_slot:
@@ -32,6 +40,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
+  type:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   zip:
     auto_fill: true
     initial_value: null
@@ -39,6 +51,9 @@ slots:
 templates:
   utter_ask_specialty:
   - text: Are you looking for a particular specialist?
+  utter_ask_type:
+  - text: What type of treatment center are you lokking for? Hospital, Nursery Home,
+      ...
   utter_ask_zip:
   - text: What's your zip code?
   utter_goodbye:

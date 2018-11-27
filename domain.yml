@@ -4,20 +4,25 @@ intents:
 - thankyou
 - deny
 - search_hospital
+- search_treatment_center
 - inform
 
 entities:
 - specialty
 - number
+- type
 
 slots:
   zip:
     type: unfeaturized
   specialty:
     type: unfeaturized
+  type:
+    type: unfeaturized
 
 forms:
   - hospital_form
+  - center_form
 
 actions:
 - utter_noworries
@@ -25,6 +30,7 @@ actions:
 - utter_goodbye
 - utter_ask_zip
 - utter_ask_specialty
+- utter_ask_type
 
 templates:
   utter_greet:
@@ -41,3 +47,7 @@ templates:
 
   utter_ask_specialty:
   - text: "Are you looking for a particular specialist?"
+
+  utter_ask_type:
+  - text: "What type of treatment center are you lokking for? Hospital, Nursery Home, ..."
+
