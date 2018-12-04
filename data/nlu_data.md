@@ -43,12 +43,25 @@
 
 ## intent:inform
 - [10119](number)
+- [34234] 
+- [10119](number)
+- [hospital](type)
+- [nursery home](type)
 
 ## intent:search_hospital
 - find me a nearby hospital
 - show me hospitals
 - i am looking for a clinic
 - hospital
+- find me a nearby hospital my zip code is [10119](number)
+
+## intent:search_treatment_center
+- I want to find a treatment center nearby
+- I need to find a treatment center
+- treatment center
+- show me treatment centers nearby
+- i am looking for a treatment center
+- i want treatment center
 
 ## intent:thank
 - Thanks
