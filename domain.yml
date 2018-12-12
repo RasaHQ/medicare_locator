@@ -8,16 +8,13 @@ intents:
 - inform
 
 entities:
-- specialty
-- number
-- type
+  - number
+  - type
 
 slots:
   zip:
     type: unfeaturized
-  specialty:
-    type: unfeaturized
-  type:
+  hospitals:
     type: unfeaturized
 
 forms:
@@ -31,6 +28,9 @@ actions:
 - utter_ask_zip
 - utter_ask_specialty
 - utter_ask_type
+- utter_found_hospitals
+- utter_found_specialties
+- find_hospital
 
 templates:
   utter_greet:
@@ -50,4 +50,10 @@ templates:
 
   utter_ask_type:
   - text: "What type of treatment center are you lokking for? Hospital, Nursery Home, ..."
+
+  utter_found_hospitals:
+  - text: "I found these nearby hospitals {hospitals}"
+
+  utter_found_specialties:
+  - text: "Did you want a specific specialy? If so select one : specialty 1, specialty 2, specialty 3"
 

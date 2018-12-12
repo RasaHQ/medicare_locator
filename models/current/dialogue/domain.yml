@@ -1,0 +1,67 @@
+%YAML 1.1
+---
+actions:
+- utter_noworries
+- utter_greet
+- utter_goodbye
+- utter_ask_zip
+- utter_ask_specialty
+- utter_ask_type
+- utter_found_hospitals
+- utter_found_specialties
+- find_hospital
+config:
+  store_entities_as_slots: true
+entities:
+- number
+- type
+forms:
+- hospital_form
+- center_form
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- deny:
+    use_entities: true
+- search_hospital:
+    use_entities: true
+- search_treatment_center:
+    use_entities: true
+- inform:
+    use_entities: true
+slots:
+  hospitals:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  zip:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_ask_specialty:
+  - text: Are you looking for a particular specialist?
+  utter_ask_type:
+  - text: What type of treatment center are you lokking for? Hospital, Nursery Home,
+      ...
+  utter_ask_zip:
+  - text: What's your zip code?
+  utter_found_hospitals:
+  - text: I found 3 nearby hospitals - Hospital 1, Hospital 2 Hsoital 3
+  utter_found_specialties:
+  - text: 'Did you want a specific specialy? If so select one : specialty 1, specialty
+      2, specialty 3'
+  utter_goodbye:
+  - text: Talk to you later!
+  utter_greet:
+  - text: Hi. How can I help?
+  utter_noworries:
+  - text: My pleasure.

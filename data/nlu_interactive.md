@@ -2,4 +2,4 @@
 - hi
 
 ## intent:search_hospital
-- hospital
+- i want an hospital

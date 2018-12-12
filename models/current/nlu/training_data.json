@@ -1,0 +1,1469 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "See you later"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "bye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "bye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "bye",
+        "text": "See you"
+      },
+      {
+        "intent": "bye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "bye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "bye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "bye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "bye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi folks"
+      },
+      {
+        "intent": "greet",
+        "text": "hi Mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hello everybody"
+      },
+      {
+        "intent": "greet",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello robot"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "65283",
+            "entity": "number"
+          }
+        ],
+        "text": "65283"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "31635",
+            "entity": "number"
+          }
+        ],
+        "text": "31635"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "11553",
+            "entity": "number"
+          }
+        ],
+        "text": "11553"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "87930",
+            "entity": "number"
+          }
+        ],
+        "text": "87930"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "22911",
+            "entity": "number"
+          }
+        ],
+        "text": "22911"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "55815",
+            "entity": "number"
+          }
+        ],
+        "text": "55815"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "52245",
+            "entity": "number"
+          }
+        ],
+        "text": "52245"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "34218",
+            "entity": "number"
+          }
+        ],
+        "text": "34218"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "62550",
+            "entity": "number"
+          }
+        ],
+        "text": "62550"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "71269",
+            "entity": "number"
+          }
+        ],
+        "text": "71269"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "27285",
+            "entity": "number"
+          }
+        ],
+        "text": "27285"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "22742",
+            "entity": "number"
+          }
+        ],
+        "text": "22742"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "92259",
+            "entity": "number"
+          }
+        ],
+        "text": "92259"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "21826",
+            "entity": "number"
+          }
+        ],
+        "text": "21826"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "15957",
+            "entity": "number"
+          }
+        ],
+        "text": "15957"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "99344",
+            "entity": "number"
+          }
+        ],
+        "text": "99344"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "33238",
+            "entity": "number"
+          }
+        ],
+        "text": "33238"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "12935",
+            "entity": "number"
+          }
+        ],
+        "text": "12935"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "58362",
+            "entity": "number"
+          }
+        ],
+        "text": "58362"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "67301",
+            "entity": "number"
+          }
+        ],
+        "text": "67301"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "77099",
+            "entity": "number"
+          }
+        ],
+        "text": "77099"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04358",
+            "entity": "number"
+          }
+        ],
+        "text": "04358"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "01227",
+            "entity": "number"
+          }
+        ],
+        "text": "01227"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "85070",
+            "entity": "number"
+          }
+        ],
+        "text": "85070"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "52584",
+            "entity": "number"
+          }
+        ],
+        "text": "52584"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "35111",
+            "entity": "number"
+          }
+        ],
+        "text": "35111"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "63061",
+            "entity": "number"
+          }
+        ],
+        "text": "63061"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "19106",
+            "entity": "number"
+          }
+        ],
+        "text": "19106"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "20143",
+            "entity": "number"
+          }
+        ],
+        "text": "20143"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "37771",
+            "entity": "number"
+          }
+        ],
+        "text": "37771"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "47441",
+            "entity": "number"
+          }
+        ],
+        "text": "47441"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18702",
+            "entity": "number"
+          }
+        ],
+        "text": "18702"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04234",
+            "entity": "number"
+          }
+        ],
+        "text": "04234"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "75215",
+            "entity": "number"
+          }
+        ],
+        "text": "75215"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18825",
+            "entity": "number"
+          }
+        ],
+        "text": "18825"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "70039",
+            "entity": "number"
+          }
+        ],
+        "text": "70039"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "06072",
+            "entity": "number"
+          }
+        ],
+        "text": "06072"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "63047",
+            "entity": "number"
+          }
+        ],
+        "text": "63047"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "92386",
+            "entity": "number"
+          }
+        ],
+        "text": "92386"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04401",
+            "entity": "number"
+          }
+        ],
+        "text": "04401"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "20535",
+            "entity": "number"
+          }
+        ],
+        "text": "20535"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18074",
+            "entity": "number"
+          }
+        ],
+        "text": "18074"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "27012",
+            "entity": "number"
+          }
+        ],
+        "text": "27012"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "30315",
+            "entity": "number"
+          }
+        ],
+        "text": "30315"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "80161",
+            "entity": "number"
+          }
+        ],
+        "text": "80161"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "75402",
+            "entity": "number"
+          }
+        ],
+        "text": "75402"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "49449",
+            "entity": "number"
+          }
+        ],
+        "text": "49449"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "23325",
+            "entity": "number"
+          }
+        ],
+        "text": "23325"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18602",
+            "entity": "number"
+          }
+        ],
+        "text": "18602"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "62016",
+            "entity": "number"
+          }
+        ],
+        "text": "62016"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "49665",
+            "entity": "number"
+          }
+        ],
+        "text": "49665"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "92346",
+            "entity": "number"
+          }
+        ],
+        "text": "92346"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "29689",
+            "entity": "number"
+          }
+        ],
+        "text": "29689"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "08345",
+            "entity": "number"
+          }
+        ],
+        "text": "08345"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "87119",
+            "entity": "number"
+          }
+        ],
+        "text": "87119"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "97373",
+            "entity": "number"
+          }
+        ],
+        "text": "97373"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "43227",
+            "entity": "number"
+          }
+        ],
+        "text": "43227"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "52074",
+            "entity": "number"
+          }
+        ],
+        "text": "52074"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "51647",
+            "entity": "number"
+          }
+        ],
+        "text": "51647"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "68377",
+            "entity": "number"
+          }
+        ],
+        "text": "68377"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "08888",
+            "entity": "number"
+          }
+        ],
+        "text": "08888"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "36088",
+            "entity": "number"
+          }
+        ],
+        "text": "36088"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "53922",
+            "entity": "number"
+          }
+        ],
+        "text": "53922"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "02664",
+            "entity": "number"
+          }
+        ],
+        "text": "02664"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "91066",
+            "entity": "number"
+          }
+        ],
+        "text": "91066"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "99634",
+            "entity": "number"
+          }
+        ],
+        "text": "99634"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "62365",
+            "entity": "number"
+          }
+        ],
+        "text": "62365"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "32935",
+            "entity": "number"
+          }
+        ],
+        "text": "32935"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "57223",
+            "entity": "number"
+          }
+        ],
+        "text": "57223"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "33484",
+            "entity": "number"
+          }
+        ],
+        "text": "33484"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "72206",
+            "entity": "number"
+          }
+        ],
+        "text": "72206"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "42079",
+            "entity": "number"
+          }
+        ],
+        "text": "42079"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "15650",
+            "entity": "number"
+          }
+        ],
+        "text": "15650"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "79245",
+            "entity": "number"
+          }
+        ],
+        "text": "79245"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "42221",
+            "entity": "number"
+          }
+        ],
+        "text": "42221"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "70043",
+            "entity": "number"
+          }
+        ],
+        "text": "70043"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "58065",
+            "entity": "number"
+          }
+        ],
+        "text": "58065"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "72013",
+            "entity": "number"
+          }
+        ],
+        "text": "72013"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04750",
+            "entity": "number"
+          }
+        ],
+        "text": "04750"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "05155",
+            "entity": "number"
+          }
+        ],
+        "text": "05155"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "11431",
+            "entity": "number"
+          }
+        ],
+        "text": "11431"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "59257",
+            "entity": "number"
+          }
+        ],
+        "text": "59257"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "68073",
+            "entity": "number"
+          }
+        ],
+        "text": "68073"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "40066",
+            "entity": "number"
+          }
+        ],
+        "text": "40066"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "89452",
+            "entity": "number"
+          }
+        ],
+        "text": "89452"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "37659",
+            "entity": "number"
+          }
+        ],
+        "text": "37659"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "69025",
+            "entity": "number"
+          }
+        ],
+        "text": "69025"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "98640",
+            "entity": "number"
+          }
+        ],
+        "text": "98640"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "70060",
+            "entity": "number"
+          }
+        ],
+        "text": "70060"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "85662",
+            "entity": "number"
+          }
+        ],
+        "text": "85662"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "09736",
+            "entity": "number"
+          }
+        ],
+        "text": "09736"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "40122",
+            "entity": "number"
+          }
+        ],
+        "text": "40122"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04288",
+            "entity": "number"
+          }
+        ],
+        "text": "04288"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "47516",
+            "entity": "number"
+          }
+        ],
+        "text": "47516"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04579",
+            "entity": "number"
+          }
+        ],
+        "text": "04579"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "26321",
+            "entity": "number"
+          }
+        ],
+        "text": "26321"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "84602",
+            "entity": "number"
+          }
+        ],
+        "text": "84602"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "28464",
+            "entity": "number"
+          }
+        ],
+        "text": "28464"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "82725",
+            "entity": "number"
+          }
+        ],
+        "text": "82725"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "30277",
+            "entity": "number"
+          }
+        ],
+        "text": "30277"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "find me a nearby hospital"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "show me hospitals"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "i am looking for a clinic"
+      },
+      {
+        "intent": "search_hospital",
+        "text": "hospital"
+      },
+      {
+        "intent": "search_hospital",
+        "entities": [
+          {
+            "start": 41,
+            "end": 46,
+            "value": "10119",
+            "entity": "number"
+          }
+        ],
+        "text": "find me a nearby hospital my zip code is 10119"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "I want to find a treatment center nearby"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "I need to find a treatment center"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "treatment center"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "show me treatment centers nearby"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "i am looking for a treatment center"
+      },
+      {
+        "intent": "search_treatment_center",
+        "text": "i want treatment center"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thank",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thank",
+        "text": "cheers"
+      },
+      {
+        "intent": "thank",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "thank",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "thank",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thank",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "cool thank you"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
