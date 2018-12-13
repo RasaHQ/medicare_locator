@@ -4,6 +4,8 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
+import os
+
 import typing
 from typing import Dict, Text, Any, List, Union
 
@@ -18,14 +20,38 @@ if typing.TYPE_CHECKING:
     from rasa_core_sdk.executor import CollectingDispatcher
 
 
+class FindProviderTypes(Action):
+    def name(self):
+       return "find_provider_types"
+
+    def run(self, dispatcher, tracker, domain):
+
+        user = os.environ['USER']
+        passwd = os.environ['PASSWD']
+        host = os.environ['HOST']
+        db = mysql.connector.connect(host=host, user=user, passwd=passwd, db="natlhcentities")
+        cursor = db.cursor(buffered=True)
+        q = "select HCEntityTypeDesc from  hcentitytype"
+        cursor.execute(q)
+        result = cursor.fetchall()
+        buttons = []
+        for r in result:
+            buttons.append({"title":"{}".format(r[0]), "payload": "{}".format(r[0])})
+        dispatcher.utter_button_template("utter_greet", buttons, tracker )
+        return [SlotSet("provider_types_slot", result if result is not None else [])]
+
 class FindHospital(Action):
 
     def name(self):
         return "find_hospital"
 
     def run(self, dispatcher, tracker, domain):
+
         # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict[Text, Any]]
-        db = mysql.connector.connect(user="root",  passwd="rasa", db="natlhcentities")
+        user = os.environ['USER']
+        passwd = os.environ['PASSWD']
+        host = os.environ['HOST']
+        db = mysql.connector.connect(host=host, user=user, passwd=passwd, db="natlhcentities")
         cursor = db.cursor(buffered=True)
         zip = tracker.get_slot('zip')
         q = "select HCProviderName from healthcareprovider where HCProviderZipcode = {}".format(zip)

@@ -22,6 +22,7 @@
     "prev_utter_found_hospitals",
     "prev_utter_found_specialties",
     "prev_find_hospital",
+    "prev_find_provider_types",
     "prev_hospital_form",
     "prev_center_form",
     "active_form_hospital_form",

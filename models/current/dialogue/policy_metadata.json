@@ -3,11 +3,19 @@
     "action_listen": {
       "slots": []
     },
-    "hospital_form": {
-      "slots": []
-    },
     "utter_noworries": {
       "slots": []
+    },
+    "hospital_form": {
+      "slots": [
+        "requested_slot",
+        "zip"
+      ]
+    },
+    "find_hospital": {
+      "slots": [
+        "hospitals"
+      ]
     },
     "utter_greet": {
       "slots": []
@@ -27,5 +35,5 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20181207-135849"
+  "trained_at": "20181213-183730"
 }

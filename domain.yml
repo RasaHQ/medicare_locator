@@ -16,6 +16,10 @@ slots:
     type: unfeaturized
   hospitals:
     type: unfeaturized
+  provider_types_slot:
+    type: unfeaturized
+  select_type_slot:
+    type: unfeaturized
 
 forms:
   - hospital_form
@@ -31,10 +35,11 @@ actions:
 - utter_found_hospitals
 - utter_found_specialties
 - find_hospital
+- find_provider_types
 
 templates:
   utter_greet:
-  - text: "Hi. How can I help?"
+  - text: "Hi. What are you looking for ?"
 
   utter_goodbye:
   - text: "Talk to you later!"
