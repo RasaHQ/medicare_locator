@@ -36,3 +36,6 @@ cmdline:
 action-server:
 	python3 -m rasa_core_sdk.endpoint --actions actions
 
+run-cmdline:
+	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --debug --endpoints endpoints.yml
+

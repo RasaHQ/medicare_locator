@@ -1,39 +1,51 @@
 {
   "action_fingerprints": {
     "action_listen": {
+      "slots": [
+        "selected_type_slot",
+        "selected_id"
+      ]
+    },
+    "find_provider_types": {
+      "slots": [
+        "provider_types_slot"
+      ]
+    },
+    "hospital_form": {
+      "slots": [
+        "zip",
+        "requested_slot"
+      ]
+    },
+    "find_healthcare_address": {
+      "slots": [
+        "selected_address"
+      ]
+    },
+    "utter_goodbye": {
       "slots": []
     },
     "utter_noworries": {
       "slots": []
     },
-    "hospital_form": {
-      "slots": [
-        "requested_slot",
-        "zip"
-      ]
-    },
     "find_hospital": {
-      "slots": [
-        "hospitals"
-      ]
-    },
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_goodbye": {
       "slots": []
     }
   },
-  "rasa_core": "0.12.2",
+  "rasa_core": "0.13.0a4",
   "python": "3.6.5",
   "max_histories": [
     5,
-    2
+    2,
+    6,
+    6
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.form_policy.FormPolicy"
+    "rasa_core.policies.form_policy.FormPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy"
   ],
-  "trained_at": "20181213-183730"
+  "trained_at": "20181219-172552"
 }

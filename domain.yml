@@ -14,11 +14,13 @@ entities:
 slots:
   zip:
     type: unfeaturized
-  hospitals:
-    type: unfeaturized
   provider_types_slot:
     type: unfeaturized
-  select_type_slot:
+  selected_type_slot:
+    type: unfeaturized
+  selected_address:
+    type: unfeaturized
+  selected_id:
     type: unfeaturized
 
 forms:
@@ -35,8 +37,10 @@ actions:
 - utter_found_hospitals
 - utter_found_specialties
 - find_hospital
+- find_healthcare_address
 - find_provider_types
-
+- utter_address
+- utter_found_healthcare
 templates:
   utter_greet:
   - text: "Hi. What are you looking for ?"
@@ -62,3 +66,8 @@ templates:
   utter_found_specialties:
   - text: "Did you want a specific specialy? If so select one : specialty 1, specialty 2, specialty 3"
 
+  utter_address:
+  - text: "The address is {selected_address}"
+
+  utter_found_healthcare:
+  - text: "Here is a list of healthcare providers near you"

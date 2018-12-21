@@ -10,7 +10,10 @@ actions:
 - utter_found_hospitals
 - utter_found_specialties
 - find_hospital
+- find_healthcare_address
 - find_provider_types
+- utter_address
+- utter_found_healthcare
 config:
   store_entities_as_slots: true
 entities:
@@ -35,10 +38,6 @@ intents:
 - inform:
     use_entities: true
 slots:
-  hospitals:
-    auto_fill: true
-    initial_value: null
-    type: rasa_core.slots.UnfeaturizedSlot
   provider_types_slot:
     auto_fill: true
     initial_value: null
@@ -47,7 +46,15 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
-  select_type_slot:
+  selected_address:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  selected_id:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  selected_type_slot:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
@@ -56,6 +63,8 @@ slots:
     initial_value: null
     type: rasa_core.slots.UnfeaturizedSlot
 templates:
+  utter_address:
+  - text: The address is {selected_address}
   utter_ask_specialty:
   - text: Are you looking for a particular specialist?
   utter_ask_type:
@@ -63,6 +72,8 @@ templates:
       ...
   utter_ask_zip:
   - text: What's your zip code?
+  utter_found_healthcare:
+  - text: Here is a list of healthcare providers near you
   utter_found_hospitals:
   - text: I found these nearby hospitals {hospitals}
   utter_found_specialties:
