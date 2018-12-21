@@ -2,3 +2,8 @@ policies:
   - name: MemoizationPolicy
     max_history: 5
   - name: FormPolicy
+  - name: KerasPolicy
+    epochs: 50
+    max_history: 6
+  - name: MemoizationPolicy
+    max_history: 6

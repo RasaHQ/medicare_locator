@@ -8,16 +8,19 @@ intents:
 - inform
 
 entities:
-- specialty
-- number
-- type
+  - number
+  - type
 
 slots:
   zip:
     type: unfeaturized
-  specialty:
+  provider_types_slot:
     type: unfeaturized
-  type:
+  selected_type_slot:
+    type: unfeaturized
+  selected_address:
+    type: unfeaturized
+  selected_id:
     type: unfeaturized
 
 forms:
@@ -31,10 +34,16 @@ actions:
 - utter_ask_zip
 - utter_ask_specialty
 - utter_ask_type
-
+- utter_found_hospitals
+- utter_found_specialties
+- find_hospital
+- find_healthcare_address
+- find_provider_types
+- utter_address
+- utter_found_healthcare
 templates:
   utter_greet:
-  - text: "Hi. How can I help?"
+  - text: "Hi. What are you looking for ?"
 
   utter_goodbye:
   - text: "Talk to you later!"
@@ -51,3 +60,14 @@ templates:
   utter_ask_type:
   - text: "What type of treatment center are you lokking for? Hospital, Nursery Home, ..."
 
+  utter_found_hospitals:
+  - text: "I found these nearby hospitals {hospitals}"
+
+  utter_found_specialties:
+  - text: "Did you want a specific specialy? If so select one : specialty 1, specialty 2, specialty 3"
+
+  utter_address:
+  - text: "The address is {selected_address}"
+
+  utter_found_healthcare:
+  - text: "Here is a list of healthcare providers near you"
