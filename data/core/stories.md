@@ -8,7 +8,6 @@
 
 ## hi
 * greet
-    - utter_greet
     - find_provider_types
     - slot{"provider_types_slot": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
     

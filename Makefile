@@ -25,7 +25,7 @@ train-nlu:
 	python3  -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
 
 train-core:
-	python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/current/dialogue -c core_config.yml
+	python3 -m rasa_core.train -d domain.yml -s data/core -o models/current/dialogue -c core_config.yml
 
 interactive:
 	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml
