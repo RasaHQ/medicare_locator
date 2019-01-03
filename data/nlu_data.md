@@ -144,20 +144,23 @@
 - [30277](number)
  
 
-## intent:search_hospital
-- find me a nearby hospital
-- show me hospitals
-- i am looking for a clinic
-- hospital
-- find me a nearby hospital my zip code is [10119](number)
+## intent:search_provider
+- i need a [hospital](selected_type_slot)
+- find me a nearby [hospital](selected_type_slot)
+- show me [hospitals](selected_type_slot)
+- [hospital](selected_type_slot)
+- find me a nearby [hospital](selected_type_slot) my zip code is [10119](zip)
+- i need a [home health agency](selected_type_slot)
+- find me a nearby [home health agency](selected_type_slot)
+- show me [home health agency](selected_type_slot)
+- [home health agency](selected_type_slot)
+- find me a nearby [home health agency](selected_type_slot) my zip code is [10119](zip)
+- find me a nearby [nursing home](selected_type_slot)
+- show me [nursing home](selected_type_slot)
+- [nursing home](selected_type_slot)
+- find me a nearby [nursing home](selected_type_slot) my zip code is [10119](zip)
+- i need a [hospital](selected_type_slot) my zip code is [77494](zip)
 
-## intent:search_treatment_center
-- I want to find a treatment center nearby
-- I need to find a treatment center
-- treatment center
-- show me treatment centers nearby
-- i am looking for a treatment center
-- i want treatment center
 
 ## intent:thank
 - Thanks
@@ -175,3 +178,15 @@
 - amazing, thanks
 - cool, thanks
 - cool thank you
+
+## synonym:1
+- hospital
+- hospitals
+
+## synonym:2
+- home health agency
+- home health agencies
+
+## synonym:3
+- nursing home
+- nursing homes
