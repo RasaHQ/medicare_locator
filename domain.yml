@@ -3,13 +3,12 @@ intents:
 - goodbye
 - thankyou
 - deny
-- search_hospital
-- search_treatment_center
+- search_provider
 - inform
 
 entities:
   - number
-  - type
+  - provider_type
 
 slots:
   zip:

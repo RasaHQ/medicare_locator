@@ -12,7 +12,6 @@
     - find_provider_types
     - slot{"provider_types_slot": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
     
-    
 ## happy path 3
 * greet
     - utter_greet
@@ -34,6 +33,35 @@
 * thankyou
     - utter_noworries
 
+## happy path 4
+* search_provider{"selected_type_slot":2}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form{"name": null}
+    - slot{"requested_slot":"zip"}
+* inform{"number":"77494"}
+    - hospital_form
+    - slot{"zip":"77494"}
+    - slot{"requested_slot":null}
+    - find_hospital
+* inform{"selected_id":4245}
+    - find_healthcare_address
+    - utter_address
+* thankyou
+    - utter_noworries
+    
+    
+## happy path 5
+* search_provider{"selected_type_slot":2, "number":"77494"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form{"name": null}
+    - find_hospital
+* inform{"selected_id":4245}
+    - find_healthcare_address
+    - utter_address
+* thankyou
+    - utter_noworries
 
 ## Generated Story 4264792477705751069
 * greet
@@ -82,6 +110,8 @@
     - utter_address
 * thankyou
     - utter_noworries
+    
+    
 ## Generated Story 3596090009641184692
 * greet
     - utter_greet
@@ -106,6 +136,8 @@
     - utter_address
 * thankyou
     - utter_noworries
+    
+    
 ## Generated Story 7674029564932382471
 * greet
     - utter_greet
@@ -155,6 +187,7 @@
 * thankyou
     - utter_noworries
 
+
 ## Generated Story 229878229825540836
 * greet
     - utter_greet
@@ -171,8 +204,6 @@
     - form{"name": null}
     - slot{"requested_slot": null}
     - find_hospital
-
-
 
 
 ## Generated Story -1566701766864683675
@@ -201,6 +232,7 @@
 * bye
     - utter_goodbye
 
+
 ## Generated Story -6867115558197069050
 * greet
     - utter_greet
@@ -226,6 +258,7 @@
     - utter_noworries
 * bye
     - utter_goodbye
+
 
 ## Generated Story -2270219906225362893
 * greet
@@ -254,6 +287,7 @@
 * bye
     - utter_goodbye
 
+
 ## Generated Story -6009271244998140385
 * greet
     - utter_greet
@@ -280,4 +314,76 @@
     - utter_noworries
 * bye
     - utter_goodbye
+
+
+## Generated Story 2043303852060503113
+* search_provider{"selected_type_slot": "1"}
+    - slot{"selected_type_slot": "1"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "zip"}
+* form: inform{"number": "77494"}
+    - form: hospital_form
+    - slot{"zip": "77494"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+
+## Generated Story -2842815382131361445
+* search_provider{"selected_type_slot": "1"}
+    - slot{"selected_type_slot": "1"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "zip"}
+* form: inform{"number": "77494"}
+    - form: hospital_form
+    - slot{"zip": "77494"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 4245}
+    - slot{"selected_id": 4245}
+    - find_healthcare_address
+    - slot{"selected_address": "23900 KATY FREEWAY, KATY, TX"}
+    - utter_address
+* thank
+    - utter_noworries
+
+## Generated Story -9043472467572151351
+* search_provider{"selected_type_slot": "1", "zip": "77494"}
+    - slot{"selected_type_slot": "1"}
+    - slot{"zip": "77494"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 4245}
+    - slot{"selected_id": 4245}
+    - find_healthcare_address
+    - slot{"selected_address": "23900 KATY FREEWAY, KATY, TX"}
+    - utter_address
+* thank
+    - utter_noworries
+
+## Generated Story 6802955161856017335
+* search_provider{"selected_type_slot": "3", "zip": "77494"}
+    - slot{"selected_type_slot": "3"}
+    - slot{"zip": "77494"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 18582}
+    - slot{"selected_id": 18582}
+    - find_healthcare_address
+    - slot{"selected_address": "23553 WEST FERNHURST DRIVE, KATY, TX"}
+    - utter_address
+* thank
+    - utter_noworries
 
