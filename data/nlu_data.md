@@ -182,6 +182,1070 @@
 - cool, thanks
 - cool thank you
 
+
+##intent:ask_howdoing
+- Ahoy matey how are you?
+- are you alright
+- are you having a good day
+- Are you ok?
+- are you okay
+- Do you feel good?
+- how are things going
+- how are things with you?
+- How are things?
+- how are you
+- how are you doing
+- how are you doing this morning
+- how are you feeling
+- how are you today
+- How are you?
+- how do you do?
+- how have you been
+- how is it going
+- how is your day
+- how is your day going
+- how is your evening
+- How was your day?
+- How's it going
+- How's it hanging?
+- how's life
+- how's life been treating you?
+- How's life treating you friend?
+- how's your day going
+- How've you been?
+- I'm fine and you
+- is everything all right
+- Is everything ok?
+- is everything okay
+- what about your day
+- What's going on?
+- what's good
+- What's new?
+- What's up man 
+- What's up 
+- how are you?
+- Do you have a great day?
+- how are you doing today my sweet friend
+- how are you doing?
+- how are u
+- How are you? 
+- nah, I'm good - how are you doing?
+- how are yuo
+- How are you
+- how are you 
+- how you doing
+- are you ok
+- How are you today?
+- how are u?
+- okay hi how are you?
+- how r u
+- how r u>
+- and you
+- How are you men?
+- what's up?
+- how are you????
+- how ?
+- how r u ?
+- h r u ?
+- how's it going?
+- hello, how are you?
+- hw r u?
+- what's up
+- wassup>
+- hi how u doing
+- hi how u doing
+- Hi Sara! How are you?
+- how are you ?
+- how are you'
+- how are you doing today?
+- how you doing?
+- How are You?
+- what doing
+- what doing
+- how are xou
+- ¿Qué pasa?
+- hi how are you?
+- hi sara, how are you?
+- Hows it going
+- come stai?
+- How you doing?
+
+##intent:ask_weather
+- How is the weather today?
+- What's the weather like?
+- How is the weather?
+- What is the weather at your place?
+- Do you have good weather?
+- Is it raining?
+- What's it like out there?
+- Is it hot or cold?
+- Beautiful day, isn't it?
+- What's the weather forecast?
+- Is it quite breezy outside?
+- Will I require my raincoat today?
+- What is the weather for tomorrow?
+- Nice day out today?
+- What is the temperature today?
+- Can we expect any thunderstorms?
+- Will the skies be clear today?
+- Are we in for a scorcher?
+- Looks like a beautiful day hey?
+- Will we build a snowman today?
+- Is it humid out there today?
+- Are there any meteorological changes that I need to be aware of?
+- whats the weather like tomorrow?
+- hows the weather in bot world
+- how is the weather in berlin?
+- what's the weather today?
+- how's the weather?
+- what's the weather like where you are?
+- is the sun out where you are?
+- is it sunny
+- is the sun out where zou are?
+- what"s the weather
+- whats the weather in berlin?
+- how's the weather in berlin
+- excellent - is it hot in Berlin?
+- How is the weather today?
+- how is the weather?
+- weather
+- weather?
+- what's the weather like?
+- how's weather
+- how's the weather ?
+- what is the whether today
+- what is the weather in zurich?
+- what about the weather in Lüneburg
+- what's the weather today
+- what is the wather
+- what is the weather
+- Weather? 
+- What's the weather like where I am right now?
+- what is the weatehr
+- temperature?
+- what's the weather like in LA
+- what is the weather like where you are?
+- hows the waether
+- is it hot ?
+- is it hot outside ?
+- how is the weather ?
+- it is cold
+- how is the weather
+- well, if you wish: what about the weather
+- weatger
+- What's the weather like over there?
+- Is it raining
+- what is the temperature 
+- How is weather today
+- What is the weather in newyork?
+- the weather today
+- what is the weather like?
+- whats the temperature in delhi?
+- whats the temperature
+- hows the weather today in berlin?
+- what's the weather like
+
+##intent:ask_whatspossible
+- help
+- help please
+- i don't know what i want
+- I need some help
+- options
+- show me the menu
+- show me what's possible
+- so what can you do
+- so what can you help me with?
+- what are you good at?
+- what can I do here
+- what can I do with this bot
+- what is this bot for
+- cool! can I do something else here?
+- help me
+- talk to me!
+- come back
+- how can you help me
+- what else can i do
+- are there any other options?
+- hm that doesnt quite help me is there anything else you can do?
+- what can i do here
+- what can i do now
+- um what now
+- so now what
+- help?
+- now what?
+- talk to me
+- Great, is there anything else you can do, bot?
+- what can you do?
+- how can you help me?
+- can you do anything else?
+- i asked you if you can do anything else
+- anything els
+- so what next?
+- what else can I do here?
+- Can you explain me in one sentence what you are doing? 
+- what are the options?
+- what else can i do?
+- so what can you do?
+- what can you do
+- how you help me 
+- what are you doing 
+- what are you ding 
+- what are you ding 
+- help me 
+- tell me something you can do
+- what do you do?
+- what you can do
+- What can you do?
+- what can you answer
+- what do you do
+- what do you know except this?
+- can I ask you anything else?
+- how can i use you
+- what can I ask ?
+- what can you offer me?
+- What can you do for me?
+- more info
+- Can you help me?
+- what can you tell me 
+- What do you do
+- help pls
+- what can you do 
+- what can u do
+- what else can you do?
+- what can you do for me
+- tell me what's your skill
+- what cn u do for me ?
+- what you doing?
+- Could you please show me what you can/
+- what else can you help with?
+- what else can you help with?
+- What are my options
+- How can you help me
+- can you help me?
+- what u can do
+- what you can do?
+- what you can do for me?
+- how u can help me
+- what can you?
+- what you talk about?
+- what you do
+- can you help me
+- i need help
+- I need help
+- what can you do, sara?
+- hello what can you do for me
+- What are you able to do?
+- what u can do?
+- What can you tell me?
+- hi. Sara what do you do?
+- how can you help?
+- What can I ask you?
+- How you help me?
+- what are all the things you understand?
+
+##intent:ask_builder
+- can you share your boss with me?
+- i want to get to know your owner
+- i want to know the company which designed you
+- i want to know the company which generated you
+- i want to know the company which invented you
+- i want to know who invented you
+- May I ask who invented you?
+- please tell me the company who created you
+- please tell me who created you
+- tell me more about your creators
+- tell me more about your founders
+- which company brought you into existence?
+- which company created you?
+- which company invented you?
+- Who's your boss?
+- Who's your builder?
+- Who built you?
+- Who created you?
+- Who is your creator?
+- Who designed you?
+- who do you work for?
+- Who fabricated you?
+- Who generated you?
+- who had the idea to build you?
+- who had the idea to generate you?
+- who had the idea to make you?
+- who is behind all this?
+- Who is the legal owner of you?
+- who is your boss tell me
+- who is your boss?
+- who is your creator?
+- Who is your programmer?
+- Who made you?
+- Who modeled you?
+- Who owns you?
+- Who produced you?
+- Who thought to make you?
+- Who went through the trouble of setting you up?
+- and who built u?
+- who built you?
+- who build yoi
+- who made you?
+- where were you made?
+- why were you made?
+- who created you?
+- tell me more about you
+- who created you
+- who invent you 
+- who developed 
+- who developed you
+- who made u
+- you are made by who?
+- who built u?
+- who made u?
+- who is your author
+- who made you
+- who is your boss
+- who built you
+- who is your parent?
+- who are your parents 
+- who your author are?
+- who are your author?
+- you are working for which company?
+- who is your employer?
+- what is the name of the smart engineer who creted you ?
+- what is the name of the smart engineer who creted you ?
+- who is your father ?
+- who create you ?
+- who create you ?
+- who's builder
+- who is your mom
+- who is your daddy
+- Who created you?
+- Do you know who built you?
+- Who made you?
+- Who is the name of your builder?
+- Who is the name of your creator?
+- Who is the person that invented you?
+- Do you know who made you?
+- Who were you built by?
+- Who were you created by?
+- Who created you?
+- By whom were you built?
+- Who made you?
+- Who developed you?
+- Who were you created by?
+- Who created and built you?
+- Who is the person responsible for building you?
+- Who is it that built you?
+- Who is responsible for making you?
+- Who developed and created you?
+- Who created you?
+- Who was the person that made you?
+- Who put you together?
+- Who was the person that created you?
+- Who was the person who made you?
+- Who was the person that built you?
+- Who was the person who put you together?
+- Who was the one who made you?
+- Who was the one that built you?
+- Do you know who built you?
+- Who is the person who built you?
+- Tell me who built you.
+- Who is your creator?
+- Who created you?
+- Who is the builder of you?
+- Who were you built by?
+- Tell me the name of your creator.
+- What is the name of your builder?
+- Name the person who built you.
+- Who made you?
+- Who created you?
+- Who were you created by?
+- Who designed you?
+- Tell me the name of the person who built you.
+- Who were you made by?
+- Tell me the name of the individual who created you.
+- Can I ask the name of the people who designed you?
+- What person built you?
+- Who were you built by?
+- who is your creator
+
+##intent:ask_restaurant
+- restaurants
+- can i be shown a gluten free restaurant
+- i want a french restaurant
+- i'm looking for a Chinese restaurant
+- I need a new restaurant
+- help me find restaurant
+- I'm gonna need help finding a restaurant
+- Hey help me find a restaurant
+- How can you help me find a restaurant.
+- Where is the restaurant
+- Show me how to find a restaurant
+- I need to find this restaurant
+- Help me with finding this restaurant
+- Hey, can you help me with locating this restaurant.
+- Find me a place to eat
+- Can you recommend a restaurant open right now
+- What's the closest restaurant open near me
+- I am hungry, find me some place to go
+- Suggest me a good restaurant around
+- Show me the closest open restaurant
+- What's a good place to eat nearby
+- Recommend me a restaurant around here.
+- Pick a restaurant for me, please
+- Help me find a restaurant
+- Can you find a restaurant for me?
+- Find a restaurant for me?
+- Would you find me a restaurant?
+- Would you find a restaurant for me?
+- Could you find me a restaurant?
+- Could you find a restaurant for me?
+- Could you find me a restaurant to eat at?
+- Find a restaurant for me to eat at.
+- Find me a restaurant where I can eat.
+- Find a restaurant for me where I can eat.
+- I need a restaurant.
+- Can you find me a restaurant?
+- Where should I eat?
+- Where should I go for dinner?
+- Any good restaurants nearby?
+- Can you find me a burger joint?
+- I'm looking for a Spanish restaurant.
+- What restaurant would you recommend for dinner?
+- Hi, can you give me the nearest fast food place?
+- Find me a fast food restaurant.
+- Do you find me a restaurant?
+- Is there any restaurant?
+- IS there any near by restaurant?
+- Could you find me a restaurant?
+- can you find me a restaurant?
+- Would you find any restaurant?
+- Do you seek me a restaurant?
+- Have you seen me a restaurant?
+- Will you find me a restaurant?
+- will you see any restaurant for me?
+
+##intent:handleinsult
+- you're a loser lmao
+- you are a stupid bot
+- i hate you
+- Stupid
+- fuck you
+- so dumb
+- you are a moron
+- you are an idiot
+- so fucking dumb
+- are you brain dead?
+- how can you be such an idiot?
+- a baby knows more than you
+- i hate your dumb face
+- you are fucking stupid
+- bloody dunce
+- You're an idiot.
+- You are a fool.
+- You're foolish.
+- You are dumb.
+- You have no sense.
+- You are unintelligent.
+- You're a dolt.
+- You're a dunce.
+- You have no brains.
+- You have no intelligence.
+- You are dumb.
+- You are an idiot.
+- You lack intelligence.
+- You are unknowing.
+- You are shortsighted.
+- Your intelligence is laughable.
+- You know nothing.
+- You lack understanding.
+- Your mindset is naive.
+- You brain is dull.
+- you are dumb
+- you're an idiot
+- God you're a moron
+- you're so dumb
+- you are idiotic
+- you're the most moronic person I know
+- I can't believe how dumb you are
+- you are unintelligent
+- you're not smart
+- you are so ignorant
+- you are stupid
+- you're dumb
+- asshole
+- bitch
+- fuck u
+- idiot
+- deal with my ass, you bitch
+- you son of a bitch
+- shut up asshole
+- you asshole
+- are u dump?
+- are u dump?
+- fuck off
+- fuck
+- Fuck
+- Fuck you
+- fuck you machine learning bot
+- Fuck u
+- fuck you 
+- what fuck
+- fucking stupid
+- you are fucking stupid guy！
+- go fuck yourself
+- Fuck off
+- Fuck off 
+- fuck rasa
+- fuck you!
+- Fuck Off
+- ok fuck you
+- FUCK
+- fucking work
+- ok shut up
+
+##intent:ask_whoisit
+- who is this
+- who am i talking to
+- what's your name
+- who am i speaking with
+- who r u
+- what's your name bot
+- whats ur name
+- what are you called?
+- who is talking?
+- who speaks?
+- who talks?
+- who are you and what do you want from me
+- who are you?
+- who is it?
+- who are u?
+- who are you
+- I want to know who you are
+- who are y
+- yes but who are you in your heart
+- who is this?
+- hi! what's your name?
+- what is your name
+- What is your name
+- what's your name?
+- who are you??
+- who ARE YO
+- tell me something about you
+- who is this bot
+- who are you ?
+- who ar eyou
+- Who are yopu?
+- whats your name
+- what is your name?
+- Who are you
+- Whats your name?
+- what's your name ?
+- So who are you ?
+- who are you 
+- What is your name?
+- Hello. What's your name?
+- What's your name?
+- What's your name
+- ok who are you ?
+- whats your name'
+- como te llamas
+- Who are you?
+- what your name?
+- WHo are you ?
+- WHat's your name ?
+- whom i talking to
+- who r you
+- hey what is your name
+- what is sara?
+
+##intent:ask_whatisrasa
+- Can you tell me more about rasa?
+- How does Rasa work? 
+- What does Rasa build?
+- What do you do at Rasa?
+- What is Rasa?
+- What does Rasa make?
+- Can you tell me what Rasa does?
+- Give me more information about Rasa
+- what does rasa do?
+- I want to learn what rasa does
+- What does rasa do exactly?
+- tell me more about rasa
+- tell me more about your company
+- tell me more about rasa
+- I want to learn what rasa is
+- what can i do with rasa
+- what do you guys do at rasa
+- what does rasa do
+- what is rasa
+- I want to know what rasa actually does that isn't clear to me yet
+- i havent understood yet what rasa actually is
+- can you pls explain what rasa does
+- explain me what rasa does
+- explain me what rasa is
+- i dont get what rasa is
+- what is rasa actually
+- what is rasa?
+- i want to learn something about rasa
+- i want to know what rasa does
+- what is rasa core?
+- what can i build with rasa core?
+- What is rasa doing exactly? 
+- What do you do as a company? 
+- What can rasa do?
+- what is rsa
+- what is core
+- what is rasa core
+- WHAT IS IT
+- WHAT IS RASA
+- what can I do with Rasa?
+- Could you tell me more about Rasa?
+- could you tell me more about rasa
+- what does rasa mean
+- what does rasa do ?
+- Can you brief me about rasa
+- OK can u brief me Abt rasa
+- tell me bout rasa
+- I would like to know more about your product
+- how does rasa work?
+- what is rasa ?
+- can you explain rasa?
+- What components does Rasa have?
+- what is in rasa
+- i want to know about rasa
+- I want to know about rsa
+- i want to about rasa
+- tell me about rasa
+- what are the componensts of RASA
+- how does rasa work
+- What does Rasa do?
+- What exactly is Rasa?
+- so how does it all work?
+- I would like to know about rasa
+- What's rasa?
+- Rasa Is?
+- What Is rasa?
+- What is rasa?
+- sorry tell me about rasa
+- sorry tell me about rasa
+- how does RASA work?
+
+##intent:ask_isbot
+- are you a bot?
+- are you a real bot?
+- are you a bot
+- are you really a bot
+- are you a robot
+- are you a robot
+- are you a rasa bot?
+- are you a rasa bot?
+- what are you, a bot?
+- tell me, are you a bot?
+- are you a Skynet ?
+- are you a chatbot
+- are you ai
+- are you artificial intelligence
+- are you artificial
+- i guess you are a chatbot
+- you are a robot
+- you are ai
+- you are chatbot
+- are you bot
+- are you a bot ?
+- you're a bot 
+- Are you the bot?
+- Hi there, are you the bot?
+- Are you a chat bot?
+- are you rasa bot?
+- Ar you a bot ?
+- are you robot
+- are you real
+- What are you ?
+- So I'm here Today to ask one very simple question, what are you ?
+- are you real lol
+- cuz you are a bot
+- are you bot?
+- oh are you chatbot?
+- are you sure that you're a bot?
+- are you a BOT 
+
+##intent:telljoke
+- tell me a joke
+- Say something funny.
+- Give me a joke.
+- Give me a funny joke.
+- What's a good joke?
+- Do you have any jokes?
+- Do you know any jokes?
+- I need a good joke.
+- Tell me the best joke you know.
+- Tell joke.
+- Tell me something funny.
+- Tell me something funny.
+- Share a joke with me!
+- Tell me something humorous!
+- Will you tell me a joke.
+- Can you tell me a joke.
+- Would you tell me a joke
+- Please tell me a joke.
+- Could you tell me a joke.
+- Would you share a joke with me.
+- Could you please share a joke with me.
+- Make me laugh.
+- Tell me something funny.
+- Entertain me with a joke.
+- Tell me something that you think will make me laugh.
+- I want to hear something funny.
+- Give me some comic relief.
+- Can you tell a joke?
+- Know any jokes?
+- Come up with a joke you think I'll find funny.
+- Let's hear a joke from you.
+- say a joke that's funny
+- make me laugh with a joke
+- tell me something funny, like a joke
+- say a joke
+- tell me a short joke
+- tell me a story joke
+- say a funny joke
+- say a joke that's so bad it's funny
+- make me laugh with a bad joke
+- give me a good joke
+- you can say a jok
+
+##intent:ask_wherefrom
+- where do you live?
+- where do you live
+- where are you from?
+- So where are you from
+- Where are you?
+- Where were you born?
+- What city were you born in?
+- Where did you grow up?
+- What state were you born in?
+- What country were you born in?
+- Where do you come from?
+- Where were you at before you were here?
+- Where from?
+- Do you know where you come from?
+- where's your home town?
+- what country are you from?
+- are you from around here?
+- where did you grow up?
+- where are your parents from?
+- where did you spend your youth?
+- where did you come from?
+- Where were you born?
+- Where do you consider home?
+- What city do you claim to for your birth?
+- What citizenship do you lay claim to?
+- What is your heritage?
+- What is your birthplace?
+- Where did you grow up?
+- You were conceived in what location?
+- What is your root?
+- What is your origin?
+- From where did you come?
+- Where did you come from?
+- Where did you originate?
+- Where are your roots?
+- Where are your origins?
+- What area are you from?
+- What location are you from?
+- What's the name of the place you came from?
+- What is your original location?
+- Where might you be from?
+- Where do you come from?
+- Where do you live?
+- What city are you in?
+- What country are you from?
+- Around where are you from?
+- Where are you located?
+- Are you from around here?
+- You live around here?
+
+##intent:ask_time
+- what is the current time?
+- what is the time in Sydney?
+- whats the time now
+- what is the time ?
+- what is time in US ?
+- what is time is US ?
+- what is time is USA ?
+- what time it is
+- What is the time?
+- Can you give me the time?
+- Time?
+- Do you know the time?
+- Can you tell the time?
+- Give me the time.
+- Tell me the time.
+- Could you tell me what time is it?
+- Excuse me, what time is it?
+- Do you know what time it is?
+- Could you tell me the time?
+- Could you tell me the time, please?
+- What is the time?
+- Do you know the time?
+- Would you tell me what time it is?
+- Time, please!
+- Pardon me, but do you know the time?
+- Time?
+- What's the time?
+- Do you know what time it is?
+- What's the current time?
+- What time is it right now?
+- Do you have the time?
+- Can you tell me what time it is?
+- Hi, I need the time.
+- I need to know what time it is.
+- Tell me the time.
+- What is the time?
+- What's the time right now?
+- What is the current time?
+- Can you tell me the time?
+- What might the time be?
+- What is the hour and minute right now?
+- What time have we got?
+- What time is it right now?
+- What time do we have?
+- What is the exact time?
+- what is the time?
+- do you know the current time?
+- what is the current time?
+- what time do you have?
+- do you have the time?
+- tell me the current time.
+- tell me the time.
+- tell me what time you have.
+- tell me the time it is.
+- what time is it?
+
+##intent:ask_howold
+- whats your age?
+- how old?
+- what's your age?
+- when were you born?
+- what is your birthday?
+- when is your birthday?
+- how many years old are you?
+- do you know how old you are?
+- what is your exact age?
+- what year were you born?
+- can you tell me your age?
+- What is your age?
+- What is your birthdate?
+- How old will you be on your next birthday?
+- When do you celebrate your day of birth?
+- How old were you on your last birthday?
+- How many candles were on your last birthday cake?
+- Do you have friends the same age as you, if so, how old are they?
+- Tell me your day, month and year of birth.
+- Whats your age?
+- and you are how many years old?
+- whats your birth year?
+- what age were you when you celebrated your last birthday?
+- how old were you when you celebrated your last birthday?
+- tell me your age?
+- how about your age
+- how old were you on your last birthday?
+- what age are you
+- how old will you be this year?
+- What is your age?
+- What year were you born?
+- How long have you been around?
+- How long have you been alive?
+- What was your age on your last birthday?
+- What will be your age on your next birthday?
+- How many years have you lived?
+- How many years have you been alive?
+- How long have you occupied the earth?
+- What is your count of years being alive so far?
+- what is your age?
+- in what year were you born?
+- what number represents your age?
+- tell me how old you are?
+- give me your age?
+- tell me your age number?
+- how old were you on your last birthday?
+- can you tell me exactly how old you are?
+- can you tell me what number represents your age?
+- how many years old are you?
+- how old are you
+- How old are you?
+- how old are u
+
+##intent:ask_whoami
+- Who am I?
+- Okay who am I?
+- WHo am I
+- Tell me who am I?
+- Tell me who I am?
+- Do you know who I am?
+- Can you tell me who I am?
+- How do I discover who I am?
+- How can I determine who I am?
+- Do you know who am I?
+- Can you tell me who am I?
+- How do I discover who am I?
+- How can I determine who am I?
+- who are I ?
+- who may i ?
+- Shall i know who am i?
+- Tell me who I am.
+- How do I identify myself?
+- Who could I be?
+- tell me who I am?
+- what's my identity?
+- tell me what my identity is?
+- can you tell me what I am?
+- can you tell me what my identity is?
+- can you tell me who I am?
+- who am i
+
+##intent:ask_languagesbot
+- What languages can you use?
+- Which languages do you speak?
+- What are the languages you can speak?
+- In which languages can you speak?
+- What languages do you know?
+- What languages are you fluent in?
+- In which languages are you fluent?
+- What languages can you converse in?
+- What languages do you know how to use?
+- Which languages are you familiar with?
+- What languages can you use?
+- what languages are you familiar with?
+- what languages you know?
+- In what languages are you fluent enough?
+- what languages you can speak ?
+- what languages are you comfortable speaking at?
+- what languages are you good at speaking?
+- what languages you are well versed ?
+- what languages you can be comfortable speaking?
+- what languages you prefer more speaking at?
+- what languages you can handle well?
+- Do you know any other languages?
+- Do you speak any other languages?
+- What languages do you know?
+- What languages do you speak?
+- What do you speak?
+- Speak any other languages?
+- Can you communicate in any other languages?
+- What languages can you communicate in?
+- How many languages do you know?
+- what languages do you know?
+- tell me some languages you know?
+- do you speak any other languages?
+- what else do you know besides English?
+- are you bilingual?
+- are you multilingual?
+- what foreign languages do you know?
+- what foreign languages are you fluent in?
+- how many languages are you fluent in?
+- how many languages do you know?
+- How many languages do you know?
+- How many languages can you speak?
+- What languages are you fluent in?
+- How many different languages are you fluent in?
+- How many languages do you have knowledge of?
+- What are all of the different languages you can speak?
+- Are you familiar with more than one language?
+- Can you speak more than one language?
+- Do you know other languages?
+- How many languages are you familiar with?
+- can you speak in italian?
+- do you speak german?
+- Do you speak german?
+
+##intent:ask_whatismyname
+- what is my name?
+- May i know my name?
+- What is my name?
+- What do I call myself?
+- Tell me my name.
+- Explain my name to me.
+- What could be my name?
+- What name do I go by?
+- What name should I recognize for myself?
+- what's my name?
+- can you tell me my name?
+- What is my name?
+- Do I have a name?
+- Do I have a name? What is it?
+- What was I named?
+- Say my name.
+- Do you know my name?
+- What do people call me?
+- Can you tell me my name?
+- What else do people call me?
+- I have a name, what is it?
+- Tell me my name
+- I'd like to know my name
+- Inform me what my name is
+- Please let me know what my name is
+- Can you tell me what I am called?
+- I'd like to know what my name is
+- What is the name I was given?
+- What does everyone call me?
+- What am I called?
+- What did my parents name me?
+- What do my colleagues call me?
+- What would be the name on my tombstone?
+- Do you know what my name is?
+- What is my first name?
+- What is my full name?
+- What do people call me?
+- What exactly is my name?
+
+##intent:nicetomeeyou
+- Good to meet you!
+- Glad to meet you!
+- Pleased to meet you!
+- Glad we've met.
+- It's nice to finally meet you.
+- Great to meet you!
+- Pleased to make your acquaintance!
+- Nice to have met you.
+- I am glad I met you.
+- I am glad he introduced us.
+- It's great to make your acquaintance!
+- It's a pleasure to meet you!
+- I'm pleased to meet you!
+- It's great to get to know you!
+- I'm glad to meet you!
+- It's wonderful to meet you!
+- I'm thrilled to meet you!
+- I'm glad to have met you!
+- I'm happy that we have met!
+- It's a pleasure to make your acquaintance!
+- Glad to meet you
+- It’s great connecting with you.
+- Pleased to meet you.
+- Lovely to meet you.
+- Delighted to make your acquaintance.
+- It’s a pleasure to meet you
+- It was nice to have met you
+- Great seeing you
+- Great interacting with you
+- I had a great meeting with you
+- Hi, nice to meet you!
+- Great to meet you.
+- Glad to finally meet you!
+- Hi, glad to meet you.
+- Glad to make your acquaintance.
+- Good to see you!
+- Glad to meet you.
+- Happy to get to see you.
+- See you around. It was a pleasure meeting you.
+- It was a pleasure to have your company.
+- Thank you for this meeting. It was great to see you.
+- Feels great to see you!
+- I'm so happy that I could meet you.
+- It's good that I could meet you. It was a pleasure.
+- It is indeed a pleasure to be able to meet you.
+- nice to meet you
+
+
+
 ## synonym:1
 - hospital
 - hospitals

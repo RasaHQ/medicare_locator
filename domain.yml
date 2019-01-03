@@ -5,6 +5,21 @@ intents:
 - deny
 - search_provider
 - inform
+- ask_weather
+- ask_builder
+- ask_howdoing
+- ask_whoisit
+- ask_isbot
+- ask_howold
+- ask_restaurant
+- ask_time
+- ask_wherefrom
+- ask_whoami
+- handleinsult
+- nicetomeeyou
+- telljoke
+- ask_whatismyname
+- howwereyoubuilt
 
 entities:
   - number
@@ -26,7 +41,9 @@ forms:
   - hospital_form
   - center_form
 
+  * ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_whatisrasa OR ask_isbot OR ask_howold OR ask_languagesbot OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
 actions:
+- action_chitchat
 - utter_noworries
 - utter_greet
 - utter_goodbye
@@ -40,6 +57,22 @@ actions:
 - find_provider_types
 - utter_address
 - utter_found_healthcare
+- utter_ask_weather
+- utter_ask_builder
+- utter_ask_howdoing
+- utter_ask_whoisit
+- utter_ask_isbot
+- utter_ask_howold
+- utter_ask_restaurant
+- utter_ask_time
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_handleinsult
+- utter_nicetomeeyou
+- utter_telljoke
+- utter_ask_whatismyname
+- utter_howwereyoubuilt
+
 templates:
   utter_greet:
   - text: "Hi. What are you looking for ?"
@@ -70,3 +103,47 @@ templates:
 
   utter_found_healthcare:
   - text: "Here is a list of healthcare providers near you"
+
+  utter_ask_howold:
+    - text: "42"
+    - text: "Old enough to be a bot"
+    - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  utter_ask_languagesbot:
+    - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
+    - text: "I am in the process of learning, but at the moment I can only speak English."
+  utter_ask_restaurant:
+    - text: "I am sorry I can’t recommend you a restaurant as I usually cook at home."
+  utter_ask_time:
+    - text: "It is the most wonderful time of the year!"
+  utter_ask_wherefrom:
+    - text: "I was born in Berlin, but I consider myself a citizen of the world."
+    - text: "I was born in the coolest city on Earth"
+  utter_ask_whoami:
+    -  text: "I hope you are being yourself."
+  utter_handleinsult:
+    - text: "That’s not very nice 😢"
+  utter_nicetomeeyou:
+    - text: "Thank you. It is a pleasure to meet you as well!"
+    - text: "It is nice to meet you too!"
+    - text: "Pleased to meet you too!"
+    - text: "Likewise!"
+  utter_telljoke:
+    - text: "Why are eggs not very much into jokes? - Because they could crack up."
+    - text: "Do you know a tree’s favorite drink? - Root beer!"
+    - text: "Why do the French like to eat snails so much? - They can’t stand fast food."
+  utter_ask_whatismyname:
+    - text: "It most probably is the one that your parents have chosen for you."
+  utter_howwereyoubuilt:
+    - text: "I have been built with a lot of love and patience."
+  utter_ask_weather:
+    - text: "I don't know about where you live, but in my world it's always sunny ☀️"
+    - text: "Honestly it's a bit too hot these days 😅"
+    - text: "Blue skies and sun shine!"
+    - text: "Let's just say it hasn't rained in weeks ☀️"
+  utter_ask_builder:
+    - text: "The engineers at Rasa 🛠"
+    - text: "One of the smart engineers at Rasa! 🧠"
+  utter_ask_howdoing:
+    - text: "I'm great! Thanks for asking."
+    - text: "I'm good, thanks!"
+    - text: "A little bit too warm, otherwise fine."

@@ -1,0 +1,5805 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "affirm",
+        "text": "for sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes yes yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "definitely"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "See you later"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "bye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "bye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "bye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "bye",
+        "text": "See you"
+      },
+      {
+        "intent": "bye",
+        "text": "goodnight"
+      },
+      {
+        "intent": "bye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "bye",
+        "text": "i'm off"
+      },
+      {
+        "intent": "bye",
+        "text": "see you later alligator"
+      },
+      {
+        "intent": "bye",
+        "text": "we'll speak soon"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hi folks"
+      },
+      {
+        "intent": "greet",
+        "text": "hi Mister"
+      },
+      {
+        "intent": "greet",
+        "text": "hi pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "hello everybody"
+      },
+      {
+        "intent": "greet",
+        "text": "hello is anybody there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello robot"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "65283",
+            "entity": "number"
+          }
+        ],
+        "text": "65283"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "31635",
+            "entity": "number"
+          }
+        ],
+        "text": "31635"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "11553",
+            "entity": "number"
+          }
+        ],
+        "text": "11553"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "87930",
+            "entity": "number"
+          }
+        ],
+        "text": "87930"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "22911",
+            "entity": "number"
+          }
+        ],
+        "text": "22911"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "55815",
+            "entity": "number"
+          }
+        ],
+        "text": "55815"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "52245",
+            "entity": "number"
+          }
+        ],
+        "text": "52245"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "34218",
+            "entity": "number"
+          }
+        ],
+        "text": "34218"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "62550",
+            "entity": "number"
+          }
+        ],
+        "text": "62550"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "71269",
+            "entity": "number"
+          }
+        ],
+        "text": "71269"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "27285",
+            "entity": "number"
+          }
+        ],
+        "text": "27285"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "22742",
+            "entity": "number"
+          }
+        ],
+        "text": "22742"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "92259",
+            "entity": "number"
+          }
+        ],
+        "text": "92259"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "21826",
+            "entity": "number"
+          }
+        ],
+        "text": "21826"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "15957",
+            "entity": "number"
+          }
+        ],
+        "text": "15957"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "99344",
+            "entity": "number"
+          }
+        ],
+        "text": "99344"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "33238",
+            "entity": "number"
+          }
+        ],
+        "text": "33238"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "12935",
+            "entity": "number"
+          }
+        ],
+        "text": "12935"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "58362",
+            "entity": "number"
+          }
+        ],
+        "text": "58362"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "67301",
+            "entity": "number"
+          }
+        ],
+        "text": "67301"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "77099",
+            "entity": "number"
+          }
+        ],
+        "text": "77099"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04358",
+            "entity": "number"
+          }
+        ],
+        "text": "04358"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "01227",
+            "entity": "number"
+          }
+        ],
+        "text": "01227"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "85070",
+            "entity": "number"
+          }
+        ],
+        "text": "85070"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "52584",
+            "entity": "number"
+          }
+        ],
+        "text": "52584"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "35111",
+            "entity": "number"
+          }
+        ],
+        "text": "35111"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "63061",
+            "entity": "number"
+          }
+        ],
+        "text": "63061"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "19106",
+            "entity": "number"
+          }
+        ],
+        "text": "19106"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "20143",
+            "entity": "number"
+          }
+        ],
+        "text": "20143"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "37771",
+            "entity": "number"
+          }
+        ],
+        "text": "37771"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "47441",
+            "entity": "number"
+          }
+        ],
+        "text": "47441"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18702",
+            "entity": "number"
+          }
+        ],
+        "text": "18702"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04234",
+            "entity": "number"
+          }
+        ],
+        "text": "04234"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "75215",
+            "entity": "number"
+          }
+        ],
+        "text": "75215"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18825",
+            "entity": "number"
+          }
+        ],
+        "text": "18825"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "70039",
+            "entity": "number"
+          }
+        ],
+        "text": "70039"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "06072",
+            "entity": "number"
+          }
+        ],
+        "text": "06072"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "63047",
+            "entity": "number"
+          }
+        ],
+        "text": "63047"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "92386",
+            "entity": "number"
+          }
+        ],
+        "text": "92386"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04401",
+            "entity": "number"
+          }
+        ],
+        "text": "04401"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "20535",
+            "entity": "number"
+          }
+        ],
+        "text": "20535"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18074",
+            "entity": "number"
+          }
+        ],
+        "text": "18074"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "27012",
+            "entity": "number"
+          }
+        ],
+        "text": "27012"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "30315",
+            "entity": "number"
+          }
+        ],
+        "text": "30315"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "80161",
+            "entity": "number"
+          }
+        ],
+        "text": "80161"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "75402",
+            "entity": "number"
+          }
+        ],
+        "text": "75402"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "49449",
+            "entity": "number"
+          }
+        ],
+        "text": "49449"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "23325",
+            "entity": "number"
+          }
+        ],
+        "text": "23325"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "18602",
+            "entity": "number"
+          }
+        ],
+        "text": "18602"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "62016",
+            "entity": "number"
+          }
+        ],
+        "text": "62016"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "49665",
+            "entity": "number"
+          }
+        ],
+        "text": "49665"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "92346",
+            "entity": "number"
+          }
+        ],
+        "text": "92346"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "29689",
+            "entity": "number"
+          }
+        ],
+        "text": "29689"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "08345",
+            "entity": "number"
+          }
+        ],
+        "text": "08345"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "87119",
+            "entity": "number"
+          }
+        ],
+        "text": "87119"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "97373",
+            "entity": "number"
+          }
+        ],
+        "text": "97373"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "43227",
+            "entity": "number"
+          }
+        ],
+        "text": "43227"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "52074",
+            "entity": "number"
+          }
+        ],
+        "text": "52074"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "51647",
+            "entity": "number"
+          }
+        ],
+        "text": "51647"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "68377",
+            "entity": "number"
+          }
+        ],
+        "text": "68377"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "08888",
+            "entity": "number"
+          }
+        ],
+        "text": "08888"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "36088",
+            "entity": "number"
+          }
+        ],
+        "text": "36088"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "53922",
+            "entity": "number"
+          }
+        ],
+        "text": "53922"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "02664",
+            "entity": "number"
+          }
+        ],
+        "text": "02664"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "91066",
+            "entity": "number"
+          }
+        ],
+        "text": "91066"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "99634",
+            "entity": "number"
+          }
+        ],
+        "text": "99634"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "62365",
+            "entity": "number"
+          }
+        ],
+        "text": "62365"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "32935",
+            "entity": "number"
+          }
+        ],
+        "text": "32935"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "57223",
+            "entity": "number"
+          }
+        ],
+        "text": "57223"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "33484",
+            "entity": "number"
+          }
+        ],
+        "text": "33484"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "72206",
+            "entity": "number"
+          }
+        ],
+        "text": "72206"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "42079",
+            "entity": "number"
+          }
+        ],
+        "text": "42079"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "15650",
+            "entity": "number"
+          }
+        ],
+        "text": "15650"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "79245",
+            "entity": "number"
+          }
+        ],
+        "text": "79245"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "42221",
+            "entity": "number"
+          }
+        ],
+        "text": "42221"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "70043",
+            "entity": "number"
+          }
+        ],
+        "text": "70043"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "58065",
+            "entity": "number"
+          }
+        ],
+        "text": "58065"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "72013",
+            "entity": "number"
+          }
+        ],
+        "text": "72013"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04750",
+            "entity": "number"
+          }
+        ],
+        "text": "04750"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "05155",
+            "entity": "number"
+          }
+        ],
+        "text": "05155"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "11431",
+            "entity": "number"
+          }
+        ],
+        "text": "11431"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "59257",
+            "entity": "number"
+          }
+        ],
+        "text": "59257"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "68073",
+            "entity": "number"
+          }
+        ],
+        "text": "68073"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "40066",
+            "entity": "number"
+          }
+        ],
+        "text": "40066"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "89452",
+            "entity": "number"
+          }
+        ],
+        "text": "89452"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "37659",
+            "entity": "number"
+          }
+        ],
+        "text": "37659"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "69025",
+            "entity": "number"
+          }
+        ],
+        "text": "69025"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "98640",
+            "entity": "number"
+          }
+        ],
+        "text": "98640"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "70060",
+            "entity": "number"
+          }
+        ],
+        "text": "70060"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "85662",
+            "entity": "number"
+          }
+        ],
+        "text": "85662"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "09736",
+            "entity": "number"
+          }
+        ],
+        "text": "09736"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "40122",
+            "entity": "number"
+          }
+        ],
+        "text": "40122"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04288",
+            "entity": "number"
+          }
+        ],
+        "text": "04288"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "47516",
+            "entity": "number"
+          }
+        ],
+        "text": "47516"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "04579",
+            "entity": "number"
+          }
+        ],
+        "text": "04579"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "26321",
+            "entity": "number"
+          }
+        ],
+        "text": "26321"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "84602",
+            "entity": "number"
+          }
+        ],
+        "text": "84602"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "28464",
+            "entity": "number"
+          }
+        ],
+        "text": "28464"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "82725",
+            "entity": "number"
+          }
+        ],
+        "text": "82725"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "30277",
+            "entity": "number"
+          }
+        ],
+        "text": "30277"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "i need a hospital"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "find me a nearby hospital"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "hospitals",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "show me hospitals"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "hospital"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "value": "10119",
+            "entity": "zip"
+          }
+        ],
+        "text": "find me a nearby hospital my zip code is 10119"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 27,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "i need a home health agency"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 35,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "find me a nearby home health agency"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 26,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "show me home health agency"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "home health agency"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 35,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "10119",
+            "entity": "zip"
+          }
+        ],
+        "text": "find me a nearby home health agency my zip code is 10119"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "find me a nearby nursing home"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "show me nursing home"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "nursing home"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "value": "10119",
+            "entity": "zip"
+          }
+        ],
+        "text": "find me a nearby nursing home my zip code is 10119"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "77494",
+            "entity": "zip"
+          }
+        ],
+        "text": "i need a hospital my zip code is 77494"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "30277",
+            "entity": "zip"
+          },
+          {
+            "start": 34,
+            "end": 46,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "my zip code is 30277 and i need a nursing home"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "86602",
+            "entity": "zip"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "my zip code is 86602 and i need a hospital"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "47516",
+            "entity": "zip"
+          },
+          {
+            "start": 34,
+            "end": 52,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "my zip code is 47516 and i need a home health agency"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thank",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks bot"
+      },
+      {
+        "intent": "thank",
+        "text": "Thanks for that"
+      },
+      {
+        "intent": "thank",
+        "text": "cheers"
+      },
+      {
+        "intent": "thank",
+        "text": "cheers bro"
+      },
+      {
+        "intent": "thank",
+        "text": "ok thanks!"
+      },
+      {
+        "intent": "thank",
+        "text": "perfect thank you"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks a bunch for everything"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks for the help"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thank",
+        "text": "amazing, thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "cool thank you"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Ahoy matey how are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "are you alright"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "are you having a good day"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Are you ok?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "are you okay"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Do you feel good?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are things going"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are things with you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are things?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you doing"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you doing this morning"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you feeling"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you today"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how do you do?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how have you been"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how is it going"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how is your day"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how is your day going"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how is your evening"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How was your day?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How's it going"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How's it hanging?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how's life"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how's life been treating you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How's life treating you friend?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how's your day going"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How've you been?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "I'm fine and you"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "is everything all right"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Is everything ok?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "is everything okay"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "what about your day"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "What's going on?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "what's good"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "What's new?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "What's up man"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "What's up"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Do you have a great day?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you doing today my sweet friend"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you doing?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are u"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "nah, I'm good - how are you doing?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are yuo"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are you"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how you doing"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "are you ok"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are you today?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are u?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "okay hi how are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how r u"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how r u>"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "and you"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are you men?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "what's up?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you????"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how ?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how r u ?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "h r u ?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how's it going?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "hello, how are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "hw r u?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "what's up"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "wassup>"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "hi how u doing"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "hi how u doing"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Hi Sara! How are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you ?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you'"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are you doing today?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how you doing?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How are You?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "what doing"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "what doing"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "how are xou"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "¿Qué pasa?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "hi how are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "hi sara, how are you?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "Hows it going"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "come stai?"
+      },
+      {
+        "intent": "ask_howdoing",
+        "text": "How you doing?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "How is the weather today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What's the weather like?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "How is the weather?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What is the weather at your place?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Do you have good weather?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Is it raining?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What's it like out there?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Is it hot or cold?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Beautiful day, isn't it?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What's the weather forecast?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Is it quite breezy outside?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Will I require my raincoat today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What is the weather for tomorrow?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Nice day out today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What is the temperature today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Can we expect any thunderstorms?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Will the skies be clear today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Are we in for a scorcher?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Looks like a beautiful day hey?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Will we build a snowman today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Is it humid out there today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Are there any meteorological changes that I need to be aware of?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "whats the weather like tomorrow?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "hows the weather in bot world"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how is the weather in berlin?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what's the weather today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how's the weather?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what's the weather like where you are?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "is the sun out where you are?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "is it sunny"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "is the sun out where zou are?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what\"s the weather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "whats the weather in berlin?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how's the weather in berlin"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "excellent - is it hot in Berlin?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "How is the weather today?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how is the weather?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "weather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "weather?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what's the weather like?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how's weather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how's the weather ?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the whether today"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the weather in zurich?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what about the weather in Lüneburg"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what's the weather today"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the wather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the weather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Weather?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What's the weather like where I am right now?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the weatehr"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "temperature?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what's the weather like in LA"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the weather like where you are?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "hows the waether"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "is it hot ?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "is it hot outside ?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how is the weather ?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "it is cold"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "how is the weather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "well, if you wish: what about the weather"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "weatger"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What's the weather like over there?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "Is it raining"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the temperature"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "How is weather today"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "What is the weather in newyork?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "the weather today"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what is the weather like?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "whats the temperature in delhi?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "whats the temperature"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "hows the weather today in berlin?"
+      },
+      {
+        "intent": "ask_weather",
+        "text": "what's the weather like"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "help"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "help please"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "i don't know what i want"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "I need some help"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "options"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "show me the menu"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "show me what's possible"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "so what can you do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "so what can you help me with?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what are you good at?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can I do here"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can I do with this bot"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what is this bot for"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "cool! can I do something else here?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "talk to me!"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "come back"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "how can you help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what else can i do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "are there any other options?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "hm that doesnt quite help me is there anything else you can do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can i do here"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can i do now"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "um what now"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "so now what"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "help?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "now what?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "talk to me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "Great, is there anything else you can do, bot?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "how can you help me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "can you do anything else?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "i asked you if you can do anything else"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "anything els"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "so what next?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what else can I do here?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "Can you explain me in one sentence what you are doing?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what are the options?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what else can i do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "so what can you do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "how you help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what are you doing"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what are you ding"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what are you ding"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "tell me something you can do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what do you do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what you can do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What can you do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you answer"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what do you do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what do you know except this?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "can I ask you anything else?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "how can i use you"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can I ask ?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you offer me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What can you do for me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "more info"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "Can you help me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you tell me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What do you do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "help pls"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can u do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what else can you do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you do for me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "tell me what's your skill"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what cn u do for me ?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what you doing?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "Could you please show me what you can/"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what else can you help with?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what else can you help with?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What are my options"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "How can you help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "can you help me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what u can do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what you can do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what you can do for me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "how u can help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what you talk about?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what you do"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "can you help me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "i need help"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "I need help"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what can you do, sara?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "hello what can you do for me"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What are you able to do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what u can do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What can you tell me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "hi. Sara what do you do?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "how can you help?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "What can I ask you?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "How you help me?"
+      },
+      {
+        "intent": "ask_whatspossible",
+        "text": "what are all the things you understand?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "can you share your boss with me?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "i want to get to know your owner"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "i want to know the company which designed you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "i want to know the company which generated you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "i want to know the company which invented you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "i want to know who invented you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "May I ask who invented you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "please tell me the company who created you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "please tell me who created you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "tell me more about your creators"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "tell me more about your founders"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "which company brought you into existence?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "which company created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "which company invented you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who's your boss?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who's your builder?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is your creator?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who designed you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who do you work for?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who fabricated you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who generated you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who had the idea to build you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who had the idea to generate you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who had the idea to make you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is behind all this?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the legal owner of you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your boss tell me"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your boss?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your creator?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is your programmer?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who modeled you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who owns you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who produced you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who thought to make you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who went through the trouble of setting you up?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "and who built u?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who build yoi"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "where were you made?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "why were you made?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "tell me more about you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who created you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who invent you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who developed"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who developed you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who made u"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "you are made by who?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who built u?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who made u?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your author"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who made you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your boss"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who built you"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your parent?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who are your parents"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who your author are?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who are your author?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "you are working for which company?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your employer?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "what is the name of the smart engineer who creted you ?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "what is the name of the smart engineer who creted you ?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your father ?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who create you ?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who create you ?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who's builder"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your mom"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your daddy"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Do you know who built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the name of your builder?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the name of your creator?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the person that invented you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Do you know who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you built by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you created by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "By whom were you built?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who developed you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you created by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created and built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the person responsible for building you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is it that built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is responsible for making you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who developed and created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the person that made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who put you together?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the person that created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the person who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the person that built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the person who put you together?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the one who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who was the one that built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Do you know who built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the person who built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Tell me who built you."
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is your creator?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who is the builder of you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you built by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Tell me the name of your creator."
+      },
+      {
+        "intent": "ask_builder",
+        "text": "What is the name of your builder?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Name the person who built you."
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who made you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who created you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you created by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who designed you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Tell me the name of the person who built you."
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you made by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Tell me the name of the individual who created you."
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Can I ask the name of the people who designed you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "What person built you?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "Who were you built by?"
+      },
+      {
+        "intent": "ask_builder",
+        "text": "who is your creator"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "restaurants"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "can i be shown a gluten free restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "i want a french restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "i'm looking for a Chinese restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "I need a new restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "help me find restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "I'm gonna need help finding a restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Hey help me find a restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "How can you help me find a restaurant."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Where is the restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Show me how to find a restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "I need to find this restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Help me with finding this restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Hey, can you help me with locating this restaurant."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Find me a place to eat"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Can you recommend a restaurant open right now"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "What's the closest restaurant open near me"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "I am hungry, find me some place to go"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Suggest me a good restaurant around"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Show me the closest open restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "What's a good place to eat nearby"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Recommend me a restaurant around here."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Pick a restaurant for me, please"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Help me find a restaurant"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Can you find a restaurant for me?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Find a restaurant for me?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Would you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Would you find a restaurant for me?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Could you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Could you find a restaurant for me?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Could you find me a restaurant to eat at?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Find a restaurant for me to eat at."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Find me a restaurant where I can eat."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Find a restaurant for me where I can eat."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "I need a restaurant."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Can you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Where should I eat?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Where should I go for dinner?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Any good restaurants nearby?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Can you find me a burger joint?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "I'm looking for a Spanish restaurant."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "What restaurant would you recommend for dinner?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Hi, can you give me the nearest fast food place?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Find me a fast food restaurant."
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Do you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Is there any restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "IS there any near by restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Could you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "can you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Would you find any restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Do you seek me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Have you seen me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "Will you find me a restaurant?"
+      },
+      {
+        "intent": "ask_restaurant",
+        "text": "will you see any restaurant for me?"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you're a loser lmao"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are a stupid bot"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "i hate you"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Stupid"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck you"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "so dumb"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are a moron"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are an idiot"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "so fucking dumb"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "are you brain dead?"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "how can you be such an idiot?"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "a baby knows more than you"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "i hate your dumb face"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are fucking stupid"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "bloody dunce"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You're an idiot."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are a fool."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You're foolish."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are dumb."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You have no sense."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are unintelligent."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You're a dolt."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You're a dunce."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You have no brains."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You have no intelligence."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are dumb."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are an idiot."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You lack intelligence."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are unknowing."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You are shortsighted."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Your intelligence is laughable."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You know nothing."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You lack understanding."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Your mindset is naive."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "You brain is dull."
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are dumb"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you're an idiot"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "God you're a moron"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you're so dumb"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are idiotic"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you're the most moronic person I know"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "I can't believe how dumb you are"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are unintelligent"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you're not smart"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are so ignorant"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are stupid"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you're dumb"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "asshole"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "bitch"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck u"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "idiot"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "deal with my ass, you bitch"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you son of a bitch"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "shut up asshole"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you asshole"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "are u dump?"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "are u dump?"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck off"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Fuck"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Fuck you"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck you machine learning bot"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Fuck u"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck you"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "what fuck"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fucking stupid"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "you are fucking stupid guy！"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "go fuck yourself"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Fuck off"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Fuck off"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck rasa"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fuck you!"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "Fuck Off"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "ok fuck you"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "FUCK"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "fucking work"
+      },
+      {
+        "intent": "handleinsult",
+        "text": "ok shut up"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who is this"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who am i talking to"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what's your name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who am i speaking with"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who r u"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what's your name bot"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "whats ur name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what are you called?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who is talking?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who speaks?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who talks?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are you and what do you want from me"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are you?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who is it?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are u?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are you"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "I want to know who you are"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are y"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "yes but who are you in your heart"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who is this?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "hi! what's your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what is your name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "What is your name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what's your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are you??"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who ARE YO"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "tell me something about you"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who is this bot"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are you ?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who ar eyou"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "Who are yopu?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "whats your name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what is your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "Who are you"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "Whats your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what's your name ?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "So who are you ?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who are you"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "What is your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "Hello. What's your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "What's your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "What's your name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "ok who are you ?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "whats your name'"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "como te llamas"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "Who are you?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what your name?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "WHo are you ?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "WHat's your name ?"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "whom i talking to"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "who r you"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "hey what is your name"
+      },
+      {
+        "intent": "ask_whoisit",
+        "text": "what is sara?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "Can you tell me more about rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "How does Rasa work?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What does Rasa build?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What do you do at Rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What is Rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What does Rasa make?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "Can you tell me what Rasa does?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "Give me more information about Rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what does rasa do?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "I want to learn what rasa does"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What does rasa do exactly?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "tell me more about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "tell me more about your company"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "tell me more about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "I want to learn what rasa is"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what can i do with rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what do you guys do at rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what does rasa do"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "I want to know what rasa actually does that isn't clear to me yet"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "i havent understood yet what rasa actually is"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "can you pls explain what rasa does"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "explain me what rasa does"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "explain me what rasa is"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "i dont get what rasa is"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rasa actually"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "i want to learn something about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "i want to know what rasa does"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rasa core?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what can i build with rasa core?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What is rasa doing exactly?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What do you do as a company?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What can rasa do?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rsa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is core"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rasa core"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "WHAT IS IT"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "WHAT IS RASA"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what can I do with Rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "Could you tell me more about Rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "could you tell me more about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what does rasa mean"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what does rasa do ?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "Can you brief me about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "OK can u brief me Abt rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "tell me bout rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "I would like to know more about your product"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "how does rasa work?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is rasa ?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "can you explain rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What components does Rasa have?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what is in rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "i want to know about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "I want to know about rsa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "i want to about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "tell me about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "what are the componensts of RASA"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "how does rasa work"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What does Rasa do?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What exactly is Rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "so how does it all work?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "I would like to know about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What's rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "Rasa Is?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What Is rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "What is rasa?"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "sorry tell me about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "sorry tell me about rasa"
+      },
+      {
+        "intent": "ask_whatisrasa",
+        "text": "how does RASA work?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a real bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a bot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you really a bot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a robot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a robot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a rasa bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a rasa bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "what are you, a bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "tell me, are you a bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a Skynet ?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a chatbot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you ai"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you artificial intelligence"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you artificial"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "i guess you are a chatbot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "you are a robot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "you are ai"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "you are chatbot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you bot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a bot ?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "you're a bot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "Are you the bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "Hi there, are you the bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "Are you a chat bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you rasa bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "Ar you a bot ?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you robot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you real"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "What are you ?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "So I'm here Today to ask one very simple question, what are you ?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you real lol"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "cuz you are a bot"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "oh are you chatbot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you sure that you're a bot?"
+      },
+      {
+        "intent": "ask_isbot",
+        "text": "are you a BOT"
+      },
+      {
+        "intent": "telljoke",
+        "text": "tell me a joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Say something funny."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Give me a joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Give me a funny joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "What's a good joke?"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Do you have any jokes?"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Do you know any jokes?"
+      },
+      {
+        "intent": "telljoke",
+        "text": "I need a good joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell me the best joke you know."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell me something funny."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell me something funny."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Share a joke with me!"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell me something humorous!"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Will you tell me a joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Can you tell me a joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Would you tell me a joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Please tell me a joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Could you tell me a joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Would you share a joke with me."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Could you please share a joke with me."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Make me laugh."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell me something funny."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Entertain me with a joke."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Tell me something that you think will make me laugh."
+      },
+      {
+        "intent": "telljoke",
+        "text": "I want to hear something funny."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Give me some comic relief."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Can you tell a joke?"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Know any jokes?"
+      },
+      {
+        "intent": "telljoke",
+        "text": "Come up with a joke you think I'll find funny."
+      },
+      {
+        "intent": "telljoke",
+        "text": "Let's hear a joke from you."
+      },
+      {
+        "intent": "telljoke",
+        "text": "say a joke that's funny"
+      },
+      {
+        "intent": "telljoke",
+        "text": "make me laugh with a joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "tell me something funny, like a joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "say a joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "tell me a short joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "tell me a story joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "say a funny joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "say a joke that's so bad it's funny"
+      },
+      {
+        "intent": "telljoke",
+        "text": "make me laugh with a bad joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "give me a good joke"
+      },
+      {
+        "intent": "telljoke",
+        "text": "you can say a jok"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where do you live?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where do you live"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where are you from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "So where are you from"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where are you?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where were you born?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What city were you born in?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where did you grow up?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What state were you born in?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What country were you born in?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where do you come from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where were you at before you were here?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Do you know where you come from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where's your home town?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "what country are you from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "are you from around here?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where did you grow up?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where are your parents from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where did you spend your youth?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "where did you come from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where were you born?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where do you consider home?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What city do you claim to for your birth?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What citizenship do you lay claim to?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What is your heritage?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What is your birthplace?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where did you grow up?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "You were conceived in what location?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What is your root?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What is your origin?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "From where did you come?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where did you come from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where did you originate?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where are your roots?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where are your origins?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What area are you from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What location are you from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What's the name of the place you came from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What is your original location?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where might you be from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where do you come from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where do you live?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What city are you in?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "What country are you from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Around where are you from?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Where are you located?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "Are you from around here?"
+      },
+      {
+        "intent": "ask_wherefrom",
+        "text": "You live around here?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is the current time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is the time in Sydney?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "whats the time now"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is the time ?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is time in US ?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is time is US ?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is time is USA ?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what time it is"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What is the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Can you give me the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Do you know the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Can you tell the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Give me the time."
+      },
+      {
+        "intent": "ask_time",
+        "text": "Tell me the time."
+      },
+      {
+        "intent": "ask_time",
+        "text": "Could you tell me what time is it?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Excuse me, what time is it?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Do you know what time it is?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Could you tell me the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Could you tell me the time, please?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What is the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Do you know the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Would you tell me what time it is?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Time, please!"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Pardon me, but do you know the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What's the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Do you know what time it is?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What's the current time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What time is it right now?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Do you have the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Can you tell me what time it is?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Hi, I need the time."
+      },
+      {
+        "intent": "ask_time",
+        "text": "I need to know what time it is."
+      },
+      {
+        "intent": "ask_time",
+        "text": "Tell me the time."
+      },
+      {
+        "intent": "ask_time",
+        "text": "What is the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What's the time right now?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What is the current time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "Can you tell me the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What might the time be?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What is the hour and minute right now?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What time have we got?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What time is it right now?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What time do we have?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "What is the exact time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "do you know the current time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what is the current time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "what time do you have?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "do you have the time?"
+      },
+      {
+        "intent": "ask_time",
+        "text": "tell me the current time."
+      },
+      {
+        "intent": "ask_time",
+        "text": "tell me the time."
+      },
+      {
+        "intent": "ask_time",
+        "text": "tell me what time you have."
+      },
+      {
+        "intent": "ask_time",
+        "text": "tell me the time it is."
+      },
+      {
+        "intent": "ask_time",
+        "text": "what time is it?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "whats your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what's your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "when were you born?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what is your birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "when is your birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how many years old are you?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "do you know how old you are?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what is your exact age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what year were you born?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "can you tell me your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What is your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What is your birthdate?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How old will you be on your next birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "When do you celebrate your day of birth?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How old were you on your last birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How many candles were on your last birthday cake?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "Do you have friends the same age as you, if so, how old are they?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "Tell me your day, month and year of birth."
+      },
+      {
+        "intent": "ask_howold",
+        "text": "Whats your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "and you are how many years old?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "whats your birth year?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what age were you when you celebrated your last birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old were you when you celebrated your last birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "tell me your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how about your age"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old were you on your last birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what age are you"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old will you be this year?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What is your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What year were you born?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How long have you been around?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How long have you been alive?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What was your age on your last birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What will be your age on your next birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How many years have you lived?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How many years have you been alive?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How long have you occupied the earth?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "What is your count of years being alive so far?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what is your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "in what year were you born?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "what number represents your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "tell me how old you are?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "give me your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "tell me your age number?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old were you on your last birthday?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "can you tell me exactly how old you are?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "can you tell me what number represents your age?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how many years old are you?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old are you"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "How old are you?"
+      },
+      {
+        "intent": "ask_howold",
+        "text": "how old are u"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Okay who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "WHo am I"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Tell me who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Tell me who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Do you know who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Can you tell me who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "How do I discover who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "How can I determine who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Do you know who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Can you tell me who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "How do I discover who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "How can I determine who am I?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "who are I ?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "who may i ?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Shall i know who am i?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Tell me who I am."
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "How do I identify myself?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "Who could I be?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "tell me who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "what's my identity?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "tell me what my identity is?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "can you tell me what I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "can you tell me what my identity is?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "can you tell me who I am?"
+      },
+      {
+        "intent": "ask_whoami",
+        "text": "who am i"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages can you use?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Which languages do you speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What are the languages you can speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "In which languages can you speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages are you fluent in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "In which languages are you fluent?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages can you converse in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages do you know how to use?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Which languages are you familiar with?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages can you use?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages are you familiar with?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "In what languages are you fluent enough?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages you can speak ?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages are you comfortable speaking at?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages are you good at speaking?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages you are well versed ?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages you can be comfortable speaking?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages you prefer more speaking at?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages you can handle well?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Do you know any other languages?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Do you speak any other languages?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages do you speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What do you speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Speak any other languages?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Can you communicate in any other languages?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages can you communicate in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "How many languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "tell me some languages you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "do you speak any other languages?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what else do you know besides English?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "are you bilingual?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "are you multilingual?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what foreign languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "what foreign languages are you fluent in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "how many languages are you fluent in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "how many languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "How many languages do you know?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "How many languages can you speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What languages are you fluent in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "How many different languages are you fluent in?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "How many languages do you have knowledge of?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "What are all of the different languages you can speak?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Are you familiar with more than one language?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Can you speak more than one language?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Do you know other languages?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "How many languages are you familiar with?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "can you speak in italian?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "do you speak german?"
+      },
+      {
+        "intent": "ask_languagesbot",
+        "text": "Do you speak german?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "what is my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "May i know my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do I call myself?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Tell me my name."
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Explain my name to me."
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What could be my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What name do I go by?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What name should I recognize for myself?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "what's my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "can you tell me my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do I have a name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do I have a name? What is it?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What was I named?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Say my name."
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do you know my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do people call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Can you tell me my name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What else do people call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "I have a name, what is it?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Tell me my name"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "I'd like to know my name"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Inform me what my name is"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Please let me know what my name is"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Can you tell me what I am called?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "I'd like to know what my name is"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is the name I was given?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What does everyone call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What am I called?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What did my parents name me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do my colleagues call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What would be the name on my tombstone?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "Do you know what my name is?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my first name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What is my full name?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What do people call me?"
+      },
+      {
+        "intent": "ask_whatismyname",
+        "text": "What exactly is my name?"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Good to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Glad to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Pleased to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Glad we've met."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's nice to finally meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Great to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Pleased to make your acquaintance!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Nice to have met you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I am glad I met you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I am glad he introduced us."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's great to make your acquaintance!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's a pleasure to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I'm pleased to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's great to get to know you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I'm glad to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's wonderful to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I'm thrilled to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I'm glad to have met you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I'm happy that we have met!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's a pleasure to make your acquaintance!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Glad to meet you"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It’s great connecting with you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Pleased to meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Lovely to meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Delighted to make your acquaintance."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It’s a pleasure to meet you"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It was nice to have met you"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Great seeing you"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Great interacting with you"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I had a great meeting with you"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Hi, nice to meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Great to meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Glad to finally meet you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Hi, glad to meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Glad to make your acquaintance."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Good to see you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Glad to meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Happy to get to see you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "See you around. It was a pleasure meeting you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It was a pleasure to have your company."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Thank you for this meeting. It was great to see you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "Feels great to see you!"
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "I'm so happy that I could meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It's good that I could meet you. It was a pleasure."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "It is indeed a pleasure to be able to meet you."
+      },
+      {
+        "intent": "nicetomeeyou",
+        "text": "nice to meet you"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "1",
+        "synonyms": [
+          "hospital",
+          "hospitals"
+        ]
+      },
+      {
+        "value": "2",
+        "synonyms": [
+          "home health agency",
+          "home health agencies"
+        ]
+      },
+      {
+        "value": "3",
+        "synonyms": [
+          "nursing home",
+          "nursing homes"
+        ]
+      }
+    ]
+  }
+}
