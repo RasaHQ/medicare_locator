@@ -369,3 +369,21 @@
 * thank
     - utter_noworries
 
+## Generated Story 6802955161856017335
+* search_provider{"selected_type_slot": "3", "zip": "77494"}
+    - slot{"selected_type_slot": "3"}
+    - slot{"zip": "77494"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 18582}
+    - slot{"selected_id": 18582}
+    - find_healthcare_address
+    - slot{"selected_address": "23553 WEST FERNHURST DRIVE, KATY, TX"}
+    - utter_address
+* thank
+    - utter_noworries
+

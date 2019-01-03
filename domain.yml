@@ -3,9 +3,7 @@ intents:
 - goodbye
 - thankyou
 - deny
-- search_hospital
 - search_provider
-- search_treatment_center
 - inform
 
 entities:

@@ -4,18 +4,14 @@ digraph  {
 2 [label=find_hospital, fontsize=12, class=active];
 3 [label=find_healthcare_address, fontsize=12, class=active];
 4 [label=utter_address, fontsize=12, class=active];
-5 [label=utter_noworries, fontsize=12, class=active];
-6 [label="  ?  ", shape=rect, class="intent dashed active"];
-7 [label="i need a hospital my zip code is 77494", shape=rect, style=filled, fillcolor=lightblue, class="intent active"];
-8 [label=informselected_id4245, shape=rect, style=filled, fillcolor=lightblue, class="intent active"];
-9 [label=thanks, shape=rect, style=filled, fillcolor=lightblue, class="intent active"];
-0 -> 7  [key=0, class=active];
+5 [label="  ?  ", shape=rect, class="intent dashed active"];
+6 [label="i need a hospital my zip code is 77494", shape=rect, style=filled, fillcolor=lightblue, class="intent active"];
+7 [label=informselected_id4245, shape=rect, style=filled, fillcolor=lightblue, class="intent active"];
+0 -> 6  [key=0, class=active];
 1 -> 2  [key=NONE, label="", class=active];
-2 -> 8  [key=0, class=active];
+2 -> 7  [key=0, class=active];
 3 -> 4  [key=NONE, label="", class=active];
-4 -> 9  [key=0, class=active];
-5 -> 6  [key=NONE, label="", class=active];
-7 -> 1  [key=0, class=active];
-8 -> 3  [key=0, class=active];
-9 -> 5  [key=0, class=active];
+4 -> 5  [key=NONE, label="", class=active];
+6 -> 1  [key=0, class=active];
+7 -> 3  [key=0, class=active];
 }

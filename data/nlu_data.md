@@ -160,6 +160,9 @@
 - [nursing home](selected_type_slot)
 - find me a nearby [nursing home](selected_type_slot) my zip code is [10119](zip)
 - i need a [hospital](selected_type_slot) my zip code is [77494](zip)
+- my zip code is [30277](zip) and i need a [nursing home](selected_type_slot)
+- my zip code is [86602](zip) and i need a [hospital](selected_type_slot)
+- my zip code is [47516](zip) and i need a [home health agency](selected_type_slot)
 
 
 ## intent:thank
