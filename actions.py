@@ -200,15 +200,15 @@ class FindHealthCareAddress(Action):
         if type == FACILITY_TYPES["hospital"]["resource"]:
             address = "{}, {}, {}".format(selected["address"].title(),
                                           selected["zip_code"].title(),
-                                          selected["city"])
+                                          selected["city"].title())
         elif type == FACILITY_TYPES["nursing_home"]["resource"]:
             address = "{}, {}, {}".format(selected["provider_address"].title(),
                                           selected["provider_zip_code"].title(),
-                                          selected["provider_city"])
+                                          selected["provider_city"].title())
         else:
             address = "{}, {}, {}".format(selected["address"].title(),
                                           selected["zip"].title(),
-                                          selected["city"])
+                                          selected["city"].title())
 
         return [
             SlotSet("selected_address", address if results is not None else "")]
