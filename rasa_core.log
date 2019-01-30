@@ -1765,3 +1765,801 @@ There is a memorised next action '0'
 Predicted next action using policy_2_MemoizationPolicy
 Predicted next action 'action_listen' with prob 1.00.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/current/nlu/intent_classifier_tensorflow_embedding.ckpt
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65283', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 4 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9294813275337219}' and entities '[{'start': 9, 'end': 17, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.9246546144557561, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 33, 'end': 38, 'value': '65283', 'entity': 'zip', 'confidence': 0.43158149791012257, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65283', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 40 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65283', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 54 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65283', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 60 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65283', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 70 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'hospital_form' with prob 0.98.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65283' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65283', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 80 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65283
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'hospital_form' with prob 0.74.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0}, {'prev_hospital_form': 1.0, 'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0}, {'entity_selected_type_slot': 1.0, 'entity_zip': 1.0, 'intent_search_provider': 1.0, 'prev_find_hospital': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/current/nlu/intent_classifier_tensorflow_embedding.ckpt
+/usr/local/lib/python3.6/site-packages/pykwalify/core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Available web server routes: 
+static                                             HEAD, GET, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, GET, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'hi i need a hospital my zip code is 65238' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65238', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 4 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65238
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65238' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65238', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65238
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'hospital_form' with prob 0.98.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '/restart' with intent '{'name': 'restart', 'confidence': 1.0}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65238
+Predicted next action 'action_restart' with prob 1.00.
+Action 'action_restart' ended with events '['Restarted()']'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65238' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65238', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65238
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, None, None, {}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}]
+There is a memorised next action '36'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'hospital_form' with prob 1.00.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, None, {}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'hi i need a hospital my zip code is 65238' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 12, 'end': 20, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 36, 'end': 41, 'value': '65238', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 38 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65238
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [None, {}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'hospital_form' with prob 0.98.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message ''hi i need a hospital my zip code is 65238' with intent '{'name': 'search_provider', 'confidence': 0.9213405251502991}' and entities '[{'start': 13, 'end': 21, 'value': '1', 'entity': 'selected_type_slot', 'confidence': 0.924654275798116, 'extractor': 'ner_crf', 'processors': ['ner_synonyms']}, {'start': 37, 'end': 42, 'value': '65238', 'entity': 'zip', 'confidence': 0.4315814979102099, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 48 events
+Current slot values: 
+	provider_types_slot: None
+	requested_slot: None
+	selected_address: None
+	selected_id: None
+	selected_type_slot: 1
+	zip: 65238
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'hospital_form' with prob 0.74.
+Calling action endpoint to run action 'hospital_form'.
+Action 'hospital_form' ended with events '['Form(hospital_form)', 'FollowupAction(action: find_hospital)', 'Form(None)', 'SlotSet(key: requested_slot, value: None)']'
+Predicted next action 'find_hospital' with prob 1.00.
+Calling action endpoint to run action 'find_hospital'.
+Failed to run custom action 'find_hospital'. Action server responded with a non 200 status code of 500. Make sure your action server properly runs actions and returns a 200 once the action is executed. Error: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+Encountered an exception while running action 'find_hospital'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 339, in run
+    response.raise_for_status()
+  File "/usr/local/lib/python3.6/site-packages/requests/models.py", line 940, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5055/webhook
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/processor.py", line 341, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "/usr/local/lib/python3.6/site-packages/rasa_core/actions/action.py", line 359, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Action 'find_hospital' ended with events '[]'
+There is no active form
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_selected_type_slot' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'entity_zip' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Current tracker state [{'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'intent_search_provider': 1.0, 'prev_action_listen': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_hospital_form': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}, {'entity_selected_type_slot': 1.0, 'prev_find_hospital': 1.0, 'intent_search_provider': 1.0, 'entity_zip': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

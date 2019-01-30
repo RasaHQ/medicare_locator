@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c63e84-6aec-4ace-9ba6-8ad2febb4c88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/core_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/core/chithcat.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/core/chithcat.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/core/stories.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/core/stories.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nlu_interactive.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu_interactive.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nlu_data.md" beforeDir="false" afterPath="$PROJECT_DIR$/data/nlu_data.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nlu_interactive.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/domain.yml" beforeDir="false" afterPath="$PROJECT_DIR$/domain.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/crf_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/crf_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/entity_synonyms.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/entity_synonyms.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/intent_featurizer_count_vectors.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/intent_featurizer_count_vectors.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/current/nlu/training_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/models/current/nlu/training_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rasa_core.log" beforeDir="false" afterPath="$PROJECT_DIR$/rasa_core.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/story_graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/story_graph.dot" afterDir="false" />
     </list>
@@ -23,17 +29,19 @@
     <session id="849788396">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="24" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.141" value="1" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,38 +49,48 @@
           <entry key="Makefile" value="3" />
           <entry key="dot" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="md" value="17" />
+          <entry key="json" value="1" />
+          <entry key="md" value="30" />
           <entry key="png" value="1" />
-          <entry key="py" value="9" />
-          <entry key="txt" value="3" />
-          <entry key="yml" value="10" />
+          <entry key="py" value="19" />
+          <entry key="txt" value="7" />
+          <entry key="yml" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="Markdown" value="17" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="9" />
-          <entry key="YAML" value="10" />
+          <entry key="JSON" value="1" />
+          <entry key="Markdown" value="30" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="19" />
+          <entry key="Scratch" value="3" />
+          <entry key="YAML" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="41" />
+          <entry key="dummy" value="2" />
           <entry key="gitignore" value="25" />
-          <entry key="md" value="5978" />
-          <entry key="py" value="3654" />
-          <entry key="txt" value="21" />
-          <entry key="yml" value="1419" />
+          <entry key="md" value="7851" />
+          <entry key="py" value="12712" />
+          <entry key="txt" value="36" />
+          <entry key="yml" value="1715" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="5978" />
-          <entry key="PLAIN_TEXT" value="87" />
-          <entry key="Python" value="3654" />
-          <entry key="YAML" value="1419" />
+          <entry key="Markdown" value="7851" />
+          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="Python" value="12712" />
+          <entry key="Scratch" value="15" />
+          <entry key="YAML" value="1715" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -83,11 +101,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/core/stories.md">
+        <entry file="file://$PROJECT_DIR$/actions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2192">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
+              <folding>
+                <element signature="e#24#62#0" expanded="true" />
+                <marker date="1548775264366" expanded="true" signature="1560:4555" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/e2e_stories.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="150">
-                <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <first_editor relative-caret-position="144">
+                <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -95,19 +126,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core_config.yml">
+        <entry file="file:///usr/local/lib/python3.6/site-packages/rasa_core_sdk/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="2384">
+              <caret line="159" column="65" selection-start-line="159" selection-start-column="65" selection-end-line="159" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/flask_cors/decorator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="1984">
+              <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.6/site-packages/rasa_core_sdk/executor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2624">
+              <caret line="177" column="55" selection-start-line="177" selection-start-column="55" selection-end-line="177" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/core/stories.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="281">
+                <caret line="400" column="18" selection-start-line="400" selection-start-column="18" selection-end-line="400" selection-end-column="18" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/core/interactive.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="432">
+                <caret line="27" selection-start-line="27" selection-end-line="27" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -115,22 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domain.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/actions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3870">
-              <caret line="258" column="17" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
-              <folding>
-                <element signature="e#24#62#0" expanded="true" />
-                <marker date="1546524409522" expanded="true" signature="629:1518" ph="..." />
-                <marker date="1546524409522" expanded="true" signature="1545:3752" ph="..." />
-              </folding>
+            <state relative-caret-position="1584">
+              <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -139,49 +189,10 @@
         <entry file="file://$PROJECT_DIR$/data/nlu_data.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="382">
-                <caret line="462" column="16" selection-start-line="462" selection-start-column="16" selection-end-line="462" selection-end-column="16" />
+              <first_editor relative-caret-position="545">
+                <caret line="286" column="69" selection-start-line="286" selection-start-column="69" selection-end-line="286" selection-end-column="69" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/core/chithcat.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="805">
-                <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nlu_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -194,7 +205,6 @@
       <find>Hospital_form</find>
       <find>HospitalForm</find>
       <find>utter_ask_zip</find>
-      <find>\n</find>
       <find>(</find>
       <find>user</find>
       <find>provider_type_slot</find>
@@ -204,6 +214,15 @@
       <find>thankyou</find>
       <find>ask_weather</find>
       <find>ask_languagesbot OR</find>
+      <find>find_provider</find>
+      <find>search_provider</find>
+      <find>^\S</find>
+      <find>^\w</find>
+      <find>^\w+</find>
+      <find>-</find>
+      <find>\n</find>
+      <find>9wzi-peqs</find>
+      <find>los</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
@@ -211,10 +230,19 @@
       <replace>](</replace>
       <replace>os.environ['DB_USER']</replace>
       <replace>thankyou</replace>
+      <replace>- [</replace>
+      <replace>\(city)\n</replace>
+      <replace>](city)\n</replace>
+      <replace>b27b-2uc7</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="chitchat" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -223,28 +251,31 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/zipcodes.txt" />
         <option value="$PROJECT_DIR$/data/stories.md" />
-        <option value="$PROJECT_DIR$/actions.py" />
-        <option value="$PROJECT_DIR$/data/nlu_data.md" />
         <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/domain.yml" />
         <option value="$PROJECT_DIR$/core_config.yml" />
-        <option value="$PROJECT_DIR$/data/core/stories.md" />
         <option value="$PROJECT_DIR$/data/core/chithcat.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.txt" />
+        <option value="$PROJECT_DIR$/data/nlu_data.md" />
+        <option value="$PROJECT_DIR$/actions.py" />
+        <option value="$PROJECT_DIR$/data/core/stories.md" />
+        <option value="$PROJECT_DIR$/domain.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1680" />
-    <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="1028" />
+    <option name="x" value="-1570" />
+    <option name="y" value="71" />
+    <option name="width" value="1440" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,15 +294,21 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="healthcare_locator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="healthcare_locator" type="462c0819:PsiDirectoryNode" />
+              <item name="results" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -348,16 +385,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1680" y="22" width="1680" height="1028" extended-state="0" />
+    <frame x="-1570" y="71" width="1440" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28893587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32971668" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32951653" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.08867667" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32905984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40203562" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -404,57 +441,164 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/actions.py</url>
-          <line>208</line>
+          <line>337</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/actions.py</url>
-          <line>221</line>
+          <line>350</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/actions.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="10" />
+          <line>257</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>126</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>230</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/actions.py</url>
+          <line>192</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="5193">
+        <watch expression="slot_to_fill" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>&quot;select HCProviderName from healthcareprovider where HCEntityTypeID = 1 and HCProviderZipcode = {0};&quot;.format(
-            zip)</expression-string>
+        <expression-string>create_path(ENDPOINTS[&quot;base&quot;], resource,
+                                ENDPOINTS[resource][&quot;city_query&quot;], city)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>create_path(ENDPOINTS[&quot;base&quot;], resource,
+                                ENDPOINTS[resource][&quot;zip_code_query&quot;], zips)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;/inform{\&quot;selected_type_slot\&quot;: \&quot;&quot;+ r.get(&quot;resource&quot;)+&quot;\&quot;}&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>payload = &quot;/inform{\&quot;selected_type_slot\&quot;: \&quot;&quot;+ r.get(&quot;resource&quot;)+&quot;\&quot;}&quot;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>payload = &quot;/inform{\&quot;selected_type_slot\&quot;: {}}&quot;.format(
+                r.get(&quot;resource&quot;))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>payload = &quot;/inform{\&quot;selected_type_slot\&quot;: \&quot;{}\&quot;}&quot;.format(
+                r.get(&quot;resource&quot;))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;/inform{\&quot;selected_type_slot\&quot;: \&quot;{}\&quot;}&quot;.format(
+                r.get(&quot;resource&quot;))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>{&quot;zip&quot;: self.from_entity(entity=&quot;number&quot;, intent=&quot;inform&quot;)
+                }</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;select HCProviderID, HCProviderName from healthcareprovider where &quot; \
+        &quot;HCProviderZipcode in ({}) and HCEntityTypeID = {}&quot;.format(
+        &quot;,&quot;.join(zips), type)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>&quot;,&quot;.join(result)</expression-string>
+        <expression-string>(base + query).format(resource, values)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cursor.fetchone()</expression-string>
+        <expression-string>r</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cursor.fetchone()[0]</expression-string>
+        <expression-string>results</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cursor.fetchall()</expression-string>
+        <expression-string>base + resource + query.format(values)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cursor.execute(q)</expression-string>
+        <expression-string>r.get(&quot;resource&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.from_entity(entity=&quot;number&quot;, intent=&quot;inform&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>slot_values.items()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>results[0][0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>results[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -468,16 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6075">
           <caret line="427" column="65" selection-start-line="427" selection-start-column="65" selection-end-line="427" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/e2e_stories.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -513,21 +647,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain2.yml" />
-    <entry file="file://$PROJECT_DIR$/data/nlu_interactive.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/site-packages/rasa_core_sdk/executor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zipcodes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -535,10 +654,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/failed_stories.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="153" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/nlu_2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlu_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/core/chithcat.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1024">
+            <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -551,59 +723,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/models/current/dialogue/domain.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="512">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nlu_config.yml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="1824">
+          <caret column="5" selection-end-column="5" />
+          <caret line="1" column="6" selection-start-line="1" selection-end-line="1" selection-end-column="6" />
+          <caret line="2" column="8" selection-start-line="2" selection-end-line="2" selection-end-column="8" />
+          <caret line="3" column="9" selection-start-line="3" selection-end-line="3" selection-end-column="9" />
+          <caret line="4" column="12" selection-start-line="4" selection-end-line="4" selection-end-column="12" />
+          <caret line="5" column="8" selection-start-line="5" selection-end-line="5" selection-end-column="8" />
+          <caret line="6" column="5" selection-start-line="6" selection-end-line="6" selection-end-column="5" />
+          <caret line="7" column="8" selection-start-line="7" selection-end-line="7" selection-end-column="8" />
+          <caret line="8" column="7" selection-start-line="8" selection-end-line="8" selection-end-column="7" />
+          <caret line="9" column="7" selection-start-line="9" selection-end-line="9" selection-end-column="7" />
+          <caret line="10" column="9" selection-start-line="10" selection-end-line="10" selection-end-column="9" />
+          <caret line="11" column="3" selection-start-line="11" selection-end-line="11" selection-end-column="3" />
+          <caret line="12" column="3" selection-start-line="12" selection-end-line="12" selection-end-column="3" />
+          <caret line="13" column="7" selection-start-line="13" selection-end-line="13" selection-end-column="7" />
+          <caret line="14" column="7" selection-start-line="14" selection-end-line="14" selection-end-column="7" />
+          <caret line="15" column="12" selection-start-line="15" selection-end-line="15" selection-end-column="12" />
+          <caret line="16" column="10" selection-start-line="16" selection-end-line="16" selection-end-column="10" />
+          <caret line="17" column="6" selection-start-line="17" selection-end-line="17" selection-end-column="6" />
+          <caret line="18" column="4" selection-start-line="18" selection-end-line="18" selection-end-column="4" />
+          <caret line="19" column="10" selection-start-line="19" selection-end-line="19" selection-end-column="10" />
+          <caret line="20" column="3" selection-start-line="20" selection-end-line="20" selection-end-column="3" />
+          <caret line="21" column="7" selection-start-line="21" selection-end-line="21" selection-end-column="7" />
+          <caret line="22" column="6" selection-start-line="22" selection-end-line="22" selection-end-column="6" />
+          <caret line="23" column="3" selection-start-line="23" selection-end-line="23" selection-end-column="3" />
+          <caret line="24" column="7" selection-start-line="24" selection-end-line="24" selection-end-column="7" />
+          <caret line="25" column="6" selection-start-line="25" selection-end-line="25" selection-end-column="6" />
+          <caret line="26" column="9" selection-start-line="26" selection-end-line="26" selection-end-column="9" />
+          <caret line="27" column="9" selection-start-line="27" selection-end-line="27" selection-end-column="9" />
+          <caret line="28" column="2" selection-start-line="28" selection-end-line="28" selection-end-column="2" />
+          <caret line="29" column="8" selection-start-line="29" selection-end-line="29" selection-end-column="8" />
+          <caret line="30" column="7" selection-start-line="30" selection-end-line="30" selection-end-column="7" />
+          <caret line="31" column="7" selection-start-line="31" selection-end-line="31" selection-end-column="7" />
+          <caret line="32" column="6" selection-start-line="32" selection-end-line="32" selection-end-column="6" />
+          <caret line="33" column="8" selection-start-line="33" selection-end-line="33" selection-end-column="8" />
+          <caret line="34" column="8" selection-start-line="34" selection-end-line="34" selection-end-column="8" />
+          <caret line="35" column="6" selection-start-line="35" selection-end-line="35" selection-end-column="6" />
+          <caret line="36" column="7" selection-start-line="36" selection-end-line="36" selection-end-column="7" />
+          <caret line="37" column="10" selection-start-line="37" selection-end-line="37" selection-end-column="10" />
+          <caret line="38" column="7" selection-start-line="38" selection-end-line="38" selection-end-column="7" />
+          <caret line="39" column="10" selection-start-line="39" selection-end-line="39" selection-end-column="10" />
+          <caret line="40" column="5" selection-start-line="40" selection-end-line="40" selection-end-column="5" />
+          <caret line="41" column="8" selection-start-line="41" selection-end-line="41" selection-end-column="8" />
+          <caret line="42" column="8" selection-start-line="42" selection-end-line="42" selection-end-column="8" />
+          <caret line="43" column="11" selection-start-line="43" selection-end-line="43" selection-end-column="11" />
+          <caret line="44" column="10" selection-start-line="44" selection-end-line="44" selection-end-column="10" />
+          <caret line="45" column="7" selection-start-line="45" selection-end-line="45" selection-end-column="7" />
+          <caret line="46" column="6" selection-start-line="46" selection-end-line="46" selection-end-column="6" />
+          <caret line="47" column="3" selection-start-line="47" selection-end-line="47" selection-end-column="3" />
+          <caret line="48" column="6" selection-start-line="48" selection-end-line="48" selection-end-column="6" />
+          <caret line="49" column="3" selection-start-line="49" selection-end-line="49" selection-end-column="3" />
+          <caret line="50" column="6" selection-start-line="50" selection-end-line="50" selection-end-column="6" />
+          <caret line="51" column="10" selection-start-line="51" selection-end-line="51" selection-end-column="10" />
+          <caret line="52" column="7" selection-start-line="52" selection-end-line="52" selection-end-column="7" />
+          <caret line="53" column="6" selection-start-line="53" selection-end-line="53" selection-end-column="6" />
+          <caret line="54" column="6" selection-start-line="54" selection-end-line="54" selection-end-column="6" />
+          <caret line="55" column="6" selection-start-line="55" selection-end-line="55" selection-end-column="6" />
+          <caret line="56" column="10" selection-start-line="56" selection-end-line="56" selection-end-column="10" />
+          <caret line="57" column="10" selection-start-line="57" selection-end-line="57" selection-end-column="10" />
+          <caret line="58" column="12" selection-start-line="58" selection-end-line="58" selection-end-column="12" />
+          <caret line="59" column="6" selection-start-line="59" selection-end-line="59" selection-end-column="6" />
+          <caret line="60" column="7" selection-start-line="60" selection-end-line="60" selection-end-column="7" />
+          <caret line="61" column="11" selection-start-line="61" selection-end-line="61" selection-end-column="11" />
+          <caret line="62" column="6" selection-start-line="62" selection-end-line="62" selection-end-column="6" />
+          <caret line="63" column="7" selection-start-line="63" selection-end-line="63" selection-end-column="7" />
+          <caret line="64" column="7" selection-start-line="64" selection-end-line="64" selection-end-column="7" />
+          <caret line="65" column="11" selection-start-line="65" selection-end-line="65" selection-end-column="11" />
+          <caret line="66" column="4" selection-start-line="66" selection-end-line="66" selection-end-column="4" />
+          <caret line="67" column="3" selection-start-line="67" selection-end-line="67" selection-end-column="3" />
+          <caret line="68" column="12" selection-start-line="68" selection-end-line="68" selection-end-column="12" />
+          <caret line="69" column="8" selection-start-line="69" selection-end-line="69" selection-end-column="8" />
+          <caret line="70" column="7" selection-start-line="70" selection-end-line="70" selection-end-column="7" />
+          <caret line="71" column="7" selection-start-line="71" selection-end-line="71" selection-end-column="7" />
+          <caret line="72" column="11" selection-start-line="72" selection-end-line="72" selection-end-column="11" />
+          <caret line="73" column="8" selection-start-line="73" selection-end-line="73" selection-end-column="8" />
+          <caret line="74" column="9" selection-start-line="74" selection-end-line="74" selection-end-column="9" />
+          <caret line="75" column="5" selection-start-line="75" selection-end-line="75" selection-end-column="5" />
+          <caret line="76" column="10" selection-start-line="76" selection-end-line="76" selection-end-column="10" />
+          <caret line="77" column="6" selection-start-line="77" selection-end-line="77" selection-end-column="6" />
+          <caret line="78" column="7" selection-start-line="78" selection-end-line="78" selection-end-column="7" />
+          <caret line="79" column="7" selection-start-line="79" selection-end-line="79" selection-end-column="7" />
+          <caret line="80" column="6" selection-start-line="80" selection-end-line="80" selection-end-column="6" />
+          <caret line="81" column="4" selection-start-line="81" selection-end-line="81" selection-end-column="4" />
+          <caret line="82" column="6" selection-start-line="82" selection-end-line="82" selection-end-column="6" />
+          <caret line="83" column="6" selection-start-line="83" selection-end-line="83" selection-end-column="6" />
+          <caret line="84" column="10" selection-start-line="84" selection-end-line="84" selection-end-column="10" />
+          <caret line="85" column="4" selection-start-line="85" selection-end-line="85" selection-end-column="4" />
+          <caret line="86" column="5" selection-start-line="86" selection-end-line="86" selection-end-column="5" />
+          <caret line="87" column="6" selection-start-line="87" selection-end-line="87" selection-end-column="6" />
+          <caret line="88" column="8" selection-start-line="88" selection-end-line="88" selection-end-column="8" />
+          <caret line="89" column="4" selection-start-line="89" selection-end-line="89" selection-end-column="4" />
+          <caret line="90" column="4" selection-start-line="90" selection-end-line="90" selection-end-column="4" />
+          <caret line="91" column="7" selection-start-line="91" selection-end-line="91" selection-end-column="7" />
+          <caret line="92" column="4" selection-start-line="92" selection-end-line="92" selection-end-column="4" />
+          <caret line="93" column="4" selection-start-line="93" selection-end-line="93" selection-end-column="4" />
+          <caret line="94" column="10" selection-start-line="94" selection-end-line="94" selection-end-column="10" />
+          <caret line="95" column="9" selection-start-line="95" selection-end-line="95" selection-end-column="9" />
+          <caret line="96" column="6" selection-start-line="96" selection-end-line="96" selection-end-column="6" />
+          <caret line="97" column="7" selection-start-line="97" selection-end-line="97" selection-end-column="7" />
+          <caret line="98" column="8" selection-start-line="98" selection-end-line="98" selection-end-column="8" />
+          <caret line="99" column="7" selection-start-line="99" selection-end-line="99" selection-end-column="7" />
+          <caret line="100" column="8" selection-start-line="100" selection-end-line="100" selection-end-column="8" />
+          <caret line="101" column="4" selection-start-line="101" selection-end-line="101" selection-end-column="4" />
+          <caret line="102" column="10" selection-start-line="102" selection-end-line="102" selection-end-column="10" />
+          <caret line="103" column="3" selection-start-line="103" selection-end-line="103" selection-end-column="3" />
+          <caret line="104" column="8" selection-start-line="104" selection-end-line="104" selection-end-column="8" />
+          <caret line="105" column="4" selection-start-line="105" selection-end-line="105" selection-end-column="4" />
+          <caret line="106" column="7" selection-start-line="106" selection-end-line="106" selection-end-column="7" />
+          <caret line="107" column="5" selection-start-line="107" selection-end-line="107" selection-end-column="5" />
+          <caret line="108" column="11" selection-start-line="108" selection-end-line="108" selection-end-column="11" />
+          <caret line="109" column="5" selection-start-line="109" selection-end-line="109" selection-end-column="5" />
+          <caret line="110" column="8" selection-start-line="110" selection-end-line="110" selection-end-column="8" />
+          <caret line="111" column="2" selection-start-line="111" selection-end-line="111" selection-end-column="2" />
+          <caret line="112" column="9" selection-start-line="112" selection-end-line="112" selection-end-column="9" />
+          <caret line="113" column="10" selection-start-line="113" selection-end-line="113" selection-end-column="10" />
+          <caret line="114" column="11" selection-start-line="114" selection-end-line="114" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="80">
+          <caret line="5" column="17" selection-end-line="114" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core_config.yml">
+    <entry file="file:///usr/local/lib/python3.6/site-packages/rasa_core_sdk/endpoint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="207">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stories.md" />
+    <entry file="file://$PROJECT_DIR$/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2192">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#24#62#0" expanded="true" />
+            <marker date="1548775264366" expanded="true" signature="1560:4555" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/e2e_stories.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="144">
+            <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/site-packages/rasa_core_sdk/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2384">
+          <caret line="159" column="65" selection-start-line="159" selection-start-column="65" selection-end-line="159" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.6/lib/python/site-packages/flask_cors/decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1984">
+          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/site-packages/rasa_core_sdk/executor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2624">
+          <caret line="177" column="55" selection-start-line="177" selection-start-column="55" selection-end-line="177" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/core/interactive.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="432">
+            <caret line="27" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+        <state relative-caret-position="1584">
+          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3870">
-          <caret line="258" column="17" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
-          <folding>
-            <element signature="e#24#62#0" expanded="true" />
-            <marker date="1546524409522" expanded="true" signature="629:1518" ph="..." />
-            <marker date="1546524409522" expanded="true" signature="1545:3752" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/core/stories.md">
+    <entry file="file://$PROJECT_DIR$/data/nlu_interactive.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="150">
-            <caret line="10" selection-start-line="10" selection-end-line="10" />
-          </first_editor>
+        <state split_layout="SPLIT">
+          <first_editor />
           <second_editor />
         </state>
       </provider>
@@ -611,27 +936,20 @@
     <entry file="file://$PROJECT_DIR$/data/nlu_data.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="382">
-            <caret line="462" column="16" selection-start-line="462" selection-start-column="16" selection-end-line="462" selection-end-column="16" />
+          <first_editor relative-caret-position="545">
+            <caret line="286" column="69" selection-start-line="286" selection-start-column="69" selection-end-line="286" selection-end-column="69" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/core/chithcat.md">
+    <entry file="file://$PROJECT_DIR$/data/core/stories.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="805">
-            <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+          <first_editor relative-caret-position="281">
+            <caret line="400" column="18" selection-start-line="400" selection-start-column="18" selection-end-line="400" selection-end-column="18" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

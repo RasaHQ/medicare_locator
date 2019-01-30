@@ -386,3 +386,40 @@
 * thank
     - utter_noworries
 
+## Generated Story 7705410132766754806
+* search_provider{"city": "los angeles", "selected_type_slot": "rbry-mqwu"}
+    - slot{"city": "los angeles"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform
+    - find_healthcare_address
+    - utter_address
+## Generated Story 5758489530445768408
+* greet
+    - find_provider_types
+
+## Generated Story 3521979841098892052
+* greet
+    - find_provider_types
+    - slot{"provider_types_slot": {"home_health": {"name": "Home Health Agency", "resource": "9wzi-peqs"}, "hospital": {"name": "hospital", "resource": "rbry-mqwu"}, "nursing_home": {"name": "nursing home", "resource": "b27b-2uc7"}}}
+* inform{"selected_type_slot": "rbry-mqwu"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "zip"}
+* inform{"city": "Reno"}
+    - slot{"city": "Reno"}
+    - find_hospital
+* inform{"selected_id": 290009}
+    - slot{"selected_id": 290009}
+    - find_healthcare_address
+    - slot{"selected_address": "235 W 6Th St, 89503, RENO"}
+    - utter_address
+* thank
+    - utter_noworries
+

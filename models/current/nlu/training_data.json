@@ -1350,6 +1350,1386 @@
         "text": "30277"
       },
       {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Sitka",
+            "entity": "city"
+          }
+        ],
+        "text": "Sitka"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Juneau",
+            "entity": "city"
+          }
+        ],
+        "text": "Juneau"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Wrangell",
+            "entity": "city"
+          }
+        ],
+        "text": "Wrangell"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Anchorage",
+            "entity": "city"
+          }
+        ],
+        "text": "Anchorage"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Jacksonville",
+            "entity": "city"
+          }
+        ],
+        "text": "Jacksonville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Anaconda",
+            "entity": "city"
+          }
+        ],
+        "text": "Anaconda"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Butte",
+            "entity": "city"
+          }
+        ],
+        "text": "Butte"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Oklahoma",
+            "entity": "city"
+          }
+        ],
+        "text": "Oklahoma"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Houston",
+            "entity": "city"
+          }
+        ],
+        "text": "Houston"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Phoenix",
+            "entity": "city"
+          }
+        ],
+        "text": "Phoenix"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Nashville",
+            "entity": "city"
+          }
+        ],
+        "text": "Nashville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Los",
+            "entity": "city"
+          }
+        ],
+        "text": "Los"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "San",
+            "entity": "city"
+          }
+        ],
+        "text": "San"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Suffolk",
+            "entity": "city"
+          }
+        ],
+        "text": "Suffolk"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Buckeye",
+            "entity": "city"
+          }
+        ],
+        "text": "Buckeye"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Indianapolis",
+            "entity": "city"
+          }
+        ],
+        "text": "Indianapolis"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Chesapeake",
+            "entity": "city"
+          }
+        ],
+        "text": "Chesapeake"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Dallas",
+            "entity": "city"
+          }
+        ],
+        "text": "Dallas"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Fort",
+            "entity": "city"
+          }
+        ],
+        "text": "Fort"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Louisville",
+            "entity": "city"
+          }
+        ],
+        "text": "Louisville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "San",
+            "entity": "city"
+          }
+        ],
+        "text": "San"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Memphis",
+            "entity": "city"
+          }
+        ],
+        "text": "Memphis"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Kansas",
+            "entity": "city"
+          }
+        ],
+        "text": "Kansas"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "New",
+            "entity": "city"
+          }
+        ],
+        "text": "New"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Augusta",
+            "entity": "city"
+          }
+        ],
+        "text": "Augusta"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Austin",
+            "entity": "city"
+          }
+        ],
+        "text": "Austin"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Charlotte",
+            "entity": "city"
+          }
+        ],
+        "text": "Charlotte"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Lexington",
+            "entity": "city"
+          }
+        ],
+        "text": "Lexington"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "El",
+            "entity": "city"
+          }
+        ],
+        "text": "El"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Virginia",
+            "entity": "city"
+          }
+        ],
+        "text": "Virginia"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Cusseta",
+            "entity": "city"
+          }
+        ],
+        "text": "Cusseta"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Chicago",
+            "entity": "city"
+          }
+        ],
+        "text": "Chicago"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Tucson",
+            "entity": "city"
+          }
+        ],
+        "text": "Tucson"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Columbus",
+            "entity": "city"
+          }
+        ],
+        "text": "Columbus"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Columbus",
+            "entity": "city"
+          }
+        ],
+        "text": "Columbus"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Valdez",
+            "entity": "city"
+          }
+        ],
+        "text": "Valdez"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Preston",
+            "entity": "city"
+          }
+        ],
+        "text": "Preston"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Huntsville",
+            "entity": "city"
+          }
+        ],
+        "text": "Huntsville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Boulder",
+            "entity": "city"
+          }
+        ],
+        "text": "Boulder"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "California",
+            "entity": "city"
+          }
+        ],
+        "text": "California"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Tulsa",
+            "entity": "city"
+          }
+        ],
+        "text": "Tulsa"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Colorado",
+            "entity": "city"
+          }
+        ],
+        "text": "Colorado"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Goodyear",
+            "entity": "city"
+          }
+        ],
+        "text": "Goodyear"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Albuquerque",
+            "entity": "city"
+          }
+        ],
+        "text": "Albuquerque"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Scottsdale",
+            "entity": "city"
+          }
+        ],
+        "text": "Scottsdale"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Hibbing",
+            "entity": "city"
+          }
+        ],
+        "text": "Hibbing"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Norman",
+            "entity": "city"
+          }
+        ],
+        "text": "Norman"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "San",
+            "entity": "city"
+          }
+        ],
+        "text": "San"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Peoria",
+            "entity": "city"
+          }
+        ],
+        "text": "Peoria"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "New",
+            "entity": "city"
+          }
+        ],
+        "text": "New"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Corpus",
+            "entity": "city"
+          }
+        ],
+        "text": "Corpus"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Montgomery",
+            "entity": "city"
+          }
+        ],
+        "text": "Montgomery"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Wichita",
+            "entity": "city"
+          }
+        ],
+        "text": "Wichita"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Aurora",
+            "entity": "city"
+          }
+        ],
+        "text": "Aurora"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Denver",
+            "entity": "city"
+          }
+        ],
+        "text": "Denver"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Sierra",
+            "entity": "city"
+          }
+        ],
+        "text": "Sierra"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Georgetown",
+            "entity": "city"
+          }
+        ],
+        "text": "Georgetown"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Birmingham",
+            "entity": "city"
+          }
+        ],
+        "text": "Birmingham"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Fayetteville",
+            "entity": "city"
+          }
+        ],
+        "text": "Fayetteville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Carson",
+            "entity": "city"
+          }
+        ],
+        "text": "Carson"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Raleigh",
+            "entity": "city"
+          }
+        ],
+        "text": "Raleigh"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Bakersfield",
+            "entity": "city"
+          }
+        ],
+        "text": "Bakersfield"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Mobile",
+            "entity": "city"
+          }
+        ],
+        "text": "Mobile"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Detroit",
+            "entity": "city"
+          }
+        ],
+        "text": "Detroit"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Bunnell",
+            "entity": "city"
+          }
+        ],
+        "text": "Bunnell"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Chattanooga",
+            "entity": "city"
+          }
+        ],
+        "text": "Chattanooga"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Mesa",
+            "entity": "city"
+          }
+        ],
+        "text": "Mesa"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Las",
+            "entity": "city"
+          }
+        ],
+        "text": "Las"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Philadelphia",
+            "entity": "city"
+          }
+        ],
+        "text": "Philadelphia"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Portland",
+            "entity": "city"
+          }
+        ],
+        "text": "Portland"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Atlanta",
+            "entity": "city"
+          }
+        ],
+        "text": "Atlanta"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Winston",
+            "entity": "city"
+          }
+        ],
+        "text": "Winston"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Brownsville",
+            "entity": "city"
+          }
+        ],
+        "text": "Brownsville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Columbia",
+            "entity": "city"
+          }
+        ],
+        "text": "Columbia"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Lynchburg",
+            "entity": "city"
+          }
+        ],
+        "text": "Lynchburg"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Omaha",
+            "entity": "city"
+          }
+        ],
+        "text": "Omaha"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Greensboro",
+            "entity": "city"
+          }
+        ],
+        "text": "Greensboro"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Kansas",
+            "entity": "city"
+          }
+        ],
+        "text": "Kansas"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Lubbock",
+            "entity": "city"
+          }
+        ],
+        "text": "Lubbock"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Fernley",
+            "entity": "city"
+          }
+        ],
+        "text": "Fernley"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Marana",
+            "entity": "city"
+          }
+        ],
+        "text": "Marana"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Yuma",
+            "entity": "city"
+          }
+        ],
+        "text": "Yuma"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Little",
+            "entity": "city"
+          }
+        ],
+        "text": "Little"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Athens",
+            "entity": "city"
+          }
+        ],
+        "text": "Athens"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Hartsville",
+            "entity": "city"
+          }
+        ],
+        "text": "Hartsville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Port",
+            "entity": "city"
+          }
+        ],
+        "text": "Port"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Tampa",
+            "entity": "city"
+          }
+        ],
+        "text": "Tampa"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Fresno",
+            "entity": "city"
+          }
+        ],
+        "text": "Fresno"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Unalaska",
+            "entity": "city"
+          }
+        ],
+        "text": "Unalaska"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Eloy",
+            "entity": "city"
+          }
+        ],
+        "text": "Eloy"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Salt",
+            "entity": "city"
+          }
+        ],
+        "text": "Salt"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Jackson",
+            "entity": "city"
+          }
+        ],
+        "text": "Jackson"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Fort",
+            "entity": "city"
+          }
+        ],
+        "text": "Fort"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Casa",
+            "entity": "city"
+          }
+        ],
+        "text": "Casa"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Charleston",
+            "entity": "city"
+          }
+        ],
+        "text": "Charleston"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Henderson",
+            "entity": "city"
+          }
+        ],
+        "text": "Henderson"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Durham",
+            "entity": "city"
+          }
+        ],
+        "text": "Durham"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Abilene",
+            "entity": "city"
+          }
+        ],
+        "text": "Abilene"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Palmdale",
+            "entity": "city"
+          }
+        ],
+        "text": "Palmdale"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Babbitt",
+            "entity": "city"
+          }
+        ],
+        "text": "Babbitt"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Surprise",
+            "entity": "city"
+          }
+        ],
+        "text": "Surprise"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Cape",
+            "entity": "city"
+          }
+        ],
+        "text": "Cape"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Shreveport",
+            "entity": "city"
+          }
+        ],
+        "text": "Shreveport"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Rio",
+            "entity": "city"
+          }
+        ],
+        "text": "Rio"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Savannah",
+            "entity": "city"
+          }
+        ],
+        "text": "Savannah"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Reno",
+            "entity": "city"
+          }
+        ],
+        "text": "Reno"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Orlando",
+            "entity": "city"
+          }
+        ],
+        "text": "Orlando"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "North",
+            "entity": "city"
+          }
+        ],
+        "text": "North"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Tallahassee",
+            "entity": "city"
+          }
+        ],
+        "text": "Tallahassee"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "North",
+            "entity": "city"
+          }
+        ],
+        "text": "North"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Amarillo",
+            "entity": "city"
+          }
+        ],
+        "text": "Amarillo"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "St",
+            "entity": "city"
+          }
+        ],
+        "text": "St"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Knoxville",
+            "entity": "city"
+          }
+        ],
+        "text": "Knoxville"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Sacramento",
+            "entity": "city"
+          }
+        ],
+        "text": "Sacramento"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Clarksville",
+            "entity": "city"
+          }
+        ],
+        "text": "Clarksville"
+      },
+      {
         "intent": "search_provider",
         "entities": [
           {
@@ -1606,6 +2986,240 @@
           }
         ],
         "text": "my zip code is 47516 and i need a home health agency"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 21,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "77474",
+            "entity": "zip"
+          }
+        ],
+        "text": "i need a nursing home at 77474"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "77474",
+            "entity": "zip"
+          }
+        ],
+        "text": "i need a hospital at 77474"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 27,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "value": "77474",
+            "entity": "zip"
+          }
+        ],
+        "text": "i need a home health agency at 77474"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Amarillo",
+            "entity": "city"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "i am in Amarillo and i need a nursing home"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Amarillo",
+            "entity": "city"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "i am in Amarillo and i need a hospital"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "Amarillo",
+            "entity": "city"
+          },
+          {
+            "start": 30,
+            "end": 47,
+            "value": "home healt agency",
+            "entity": "selected_type_slot"
+          }
+        ],
+        "text": "i am in Amarillo and i need a home healt agency"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 21,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "value": "Clarksville",
+            "entity": "city"
+          }
+        ],
+        "text": "i need a nursing home in Clarksville"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 21,
+            "end": 32,
+            "value": "Clarksville",
+            "entity": "city"
+          }
+        ],
+        "text": "i need a hospital in Clarksville"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 9,
+            "end": 27,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 31,
+            "end": 42,
+            "value": "Clarksville",
+            "entity": "city"
+          }
+        ],
+        "text": "i need a home health agency in Clarksville"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "nursing home",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "value": "Detroit",
+            "entity": "city"
+          }
+        ],
+        "text": "show me nursing home in Detroit"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "hospital",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "value": "Detroit",
+            "entity": "city"
+          }
+        ],
+        "text": "show me hospital in Detroit"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 8,
+            "end": 26,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "value": "Detroit",
+            "entity": "city"
+          }
+        ],
+        "text": "show me home health agency in Detroit"
+      },
+      {
+        "intent": "search_provider",
+        "entities": [
+          {
+            "start": 17,
+            "end": 35,
+            "value": "home health agency",
+            "entity": "selected_type_slot"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "value": "Reno",
+            "entity": "city"
+          }
+        ],
+        "text": "find me a nearby home health agency in Reno"
       },
       {
         "intent": "thank",
@@ -5780,21 +7394,21 @@
     "lookup_tables": [],
     "entity_synonyms": [
       {
-        "value": "1",
+        "value": "rbry-mqwu",
         "synonyms": [
           "hospital",
           "hospitals"
         ]
       },
       {
-        "value": "2",
+        "value": "b27b-2uc",
         "synonyms": [
           "home health agency",
           "home health agencies"
         ]
       },
       {
-        "value": "3",
+        "value": "9wzi-peqs",
         "synonyms": [
           "nursing home",
           "nursing homes"
