@@ -1,2 +1,0 @@
-model_checkpoint_path: "/Users/edoardopedrotti/projects/healthcare_locator/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"
-all_model_checkpoint_paths: "/Users/edoardopedrotti/projects/healthcare_locator/models/current/nlu/intent_classifier_tensorflow_embedding.ckpt"
