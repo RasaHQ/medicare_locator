@@ -28,7 +28,7 @@ train-core:
 	python3 -m rasa_core.train -d domain.yml -s data/core -o models/current/dialogue -c core_config.yml
 
 interactive:
-	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml
+	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml 
 
 cmdline:
 	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
@@ -38,4 +38,3 @@ action-server:
 
 run-cmdline:
 	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --debug --endpoints endpoints.yml
-

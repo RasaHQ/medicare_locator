@@ -1,8 +1,10 @@
-## intent:inform
-- /inform[{"selected_id":450847}](selected_id:450847)
+## intent:greet
+- hi
 
-## intent:search_provider
-- hi i need a [hospital](selected_type_slot:rbry-mqwu) in [Katy](city)
+## intent:inform
+- /inform[{"selected_type_slot": "rbry-mqwu"}](selected_type_slot:rbry-mqwu)
+- [San Francisco](city:san francisco)
+- /inform[{"selected_id":"050407"}](selected_id:050407)
 
 ## intent:thank
-- thank you
+- thanks

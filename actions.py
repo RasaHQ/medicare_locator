@@ -171,7 +171,7 @@ class FindHospital(Action):
             else:
                 provider_id = r["provider_number"]
                 name = r["provider_name"]
-            payload = "/inform{\"selected_id\":" + provider_id + "}"
+            payload = "/inform{\"selected_id\":\"" + provider_id + "\"}"
             buttons.append(
                 {"title": "{}".format(name.title()), "payload": payload})
         dispatcher.utter_button_message(
