@@ -1,2 +1,10 @@
 *~
 actions.out
+models
+.idea
+results
+ngrok
+*.log
+results/
+__pycache__
+.DS_Store

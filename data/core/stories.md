@@ -8,7 +8,6 @@
 
 ## hi
 * greet
-    - utter_greet
     - find_provider_types
     - slot{"provider_types_slot": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
     
@@ -383,6 +382,116 @@
     - slot{"selected_id": 18582}
     - find_healthcare_address
     - slot{"selected_address": "23553 WEST FERNHURST DRIVE, KATY, TX"}
+    - utter_address
+* thank
+    - utter_noworries
+
+## Generated Story 7705410132766754806
+* search_provider{"city": "los angeles", "selected_type_slot": "rbry-mqwu"}
+    - slot{"city": "los angeles"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform
+    - find_healthcare_address
+    - utter_address
+## Generated Story 5758489530445768408
+* greet
+    - find_provider_types
+
+## Generated Story 3521979841098892052
+* greet
+    - find_provider_types
+    - slot{"provider_types_slot": {"home_health": {"name": "Home Health Agency", "resource": "9wzi-peqs"}, "hospital": {"name": "hospital", "resource": "rbry-mqwu"}, "nursing_home": {"name": "nursing home", "resource": "b27b-2uc7"}}}
+* inform{"selected_type_slot": "rbry-mqwu"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "zip"}
+* inform{"city": "Reno"}
+    - slot{"city": "Reno"}
+    - find_hospital
+* inform{"selected_id": 290009}
+    - slot{"selected_id": 290009}
+    - find_healthcare_address
+    - slot{"selected_address": "235 W 6Th St, 89503, RENO"}
+    - utter_address
+* thank
+    - utter_noworries
+
+## Generated Story -4570785208265469611
+* search_provider{"city": "Nashville", "selected_type_slot": "rbry-mqwu"}
+    - slot{"city": "Nashville"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 440218}
+    - slot{"selected_id": 440218}
+    - find_healthcare_address
+    - slot{"selected_address": "2011 Murphy Avenue, 37203, NASHVILLE"}
+    - utter_address
+* thank
+    - utter_noworries
+    
+    
+## Generated Story -1649803402647515033
+* search_provider{"selected_type_slot": "rbry-mqwu", "city": "Nashville"}
+    - slot{"city": "Nashville"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 141308}
+    - slot{"selected_id": 141308}
+    - find_healthcare_address
+    - slot{"selected_address": "705 S Grand Ave, 62263, NASHVILLE"}
+    - utter_address
+
+## Generated Story 8946502886363481066
+* search_provider{"selected_type_slot": "rbry-mqwu", "city": "Katy"}
+    - slot{"city": "Katy"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - form: followup{"name": "find_hospital"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - find_hospital
+* inform{"selected_id": 450847}
+    - slot{"selected_id": 450847}
+    - find_healthcare_address
+    - slot{"selected_address": "23900 Katy Freeway, 77494, Katy"}
+    - utter_address
+* thank
+    - utter_noworries
+
+## Generated Story -5444068926301179191
+* greet
+    - find_provider_types
+    - slot{"provider_types_slot": {"home_health": {"name": "Home Health Agency", "resource": "9wzi-peqs"}, "hospital": {"name": "hospital", "resource": "rbry-mqwu"}, "nursing_home": {"name": "nursing home", "resource": "b27b-2uc7"}}}
+* inform{"selected_type_slot": "rbry-mqwu"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
+    - hospital_form
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "zip"}
+* inform{"city": "san francisco"}
+    - slot{"city": "san francisco"}
+    - find_hospital
+* inform{"selected_id": "050407"}
+    - slot{"selected_id": "050407"}
+    - find_healthcare_address
+    - slot{"selected_address": "845 Jackson St, 94133, San Francisco"}
     - utter_address
 * thank
     - utter_noworries
