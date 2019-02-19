@@ -5,4 +5,4 @@ models
 results
 ngrok
 *.log
-results
+results/
