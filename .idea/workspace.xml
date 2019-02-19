@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c63e84-6aec-4ace-9ba6-8ad2febb4c88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/credentials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/e2e_stories.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nlu.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nlu_2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nlu_interactive.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa_core.log" beforeDir="false" afterPath="$PROJECT_DIR$/rasa_core.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipcodes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rasa_core.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +62,7 @@
         <counts>
           <entry key="Makefile" value="51" />
           <entry key="dummy" value="2" />
-          <entry key="gitignore" value="57" />
+          <entry key="gitignore" value="60" />
           <entry key="md" value="9492" />
           <entry key="py" value="12949" />
           <entry key="txt" value="37" />
@@ -79,7 +72,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="9492" />
-          <entry key="PLAIN_TEXT" value="132" />
+          <entry key="PLAIN_TEXT" value="135" />
           <entry key="Python" value="12949" />
           <entry key="Scratch" value="15" />
           <entry key="YAML" value="1786" />
@@ -136,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state>
+              <caret column="48" selection-start-column="48" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -159,11 +152,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -844,13 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/nlu_2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -896,8 +882,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
