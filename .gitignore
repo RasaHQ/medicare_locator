@@ -4,3 +4,5 @@ models
 .idea
 results
 ngrok
+*.log
+results
