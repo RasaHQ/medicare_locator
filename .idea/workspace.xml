@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c63e84-6aec-4ace-9ba6-8ad2febb4c88" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rasa_core.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/healthcare_locator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +66,7 @@
         <counts>
           <entry key="Makefile" value="51" />
           <entry key="dummy" value="2" />
-          <entry key="gitignore" value="60" />
+          <entry key="gitignore" value="94" />
           <entry key="md" value="9492" />
           <entry key="py" value="12949" />
           <entry key="txt" value="37" />
@@ -72,7 +76,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="9492" />
-          <entry key="PLAIN_TEXT" value="135" />
+          <entry key="PLAIN_TEXT" value="169" />
           <entry key="Python" value="12949" />
           <entry key="Scratch" value="15" />
           <entry key="YAML" value="1786" />
@@ -155,8 +159,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -376,6 +380,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1680" y="22" width="1680" height="965" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24713683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -889,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>

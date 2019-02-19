@@ -7,3 +7,4 @@ ngrok
 *.log
 results/
 __pycache__
+.DS_Store
