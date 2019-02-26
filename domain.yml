@@ -22,8 +22,10 @@ intents:
 - howwereyoubuilt
 
 entities:
-  - number
-  - provider_type
+- number
+- provider_type
+- city
+
 
 slots:
   zip:
@@ -38,10 +40,12 @@ slots:
     type: text
   city:
     type: unfeaturized
+  provider_type:
+    type: unfeaturized
 
 forms:
-  - hospital_form
-  - center_form
+- hospital_form
+- center_form
 
 actions:
 - action_chitchat
@@ -49,6 +53,8 @@ actions:
 - utter_greet
 - utter_goodbye
 - utter_ask_zip
+- utter_aks_city
+- utter_ask_selected_type_slot
 - utter_ask_specialty
 - utter_ask_type
 - utter_found_hospitals
@@ -80,9 +86,16 @@ templates:
 
   utter_goodbye:
   - text: "Talk to you later!"
-  
+
   utter_noworries:
   - text: "My pleasure."
+
+  utter_ask_selected_type_slot:
+  - text: "chose wisely"
+
+  utter_ask_city:
+  - text: "Please provide your city name"
+  - text: "What is you current city?"
 
   utter_ask_zip:
   - text: "Please provide your city name or zip code"
@@ -106,45 +119,45 @@ templates:
   - text: "Here is a list of healthcare providers near you"
 
   utter_ask_howold:
-    - text: "42"
-    - text: "Old enough to be a bot"
-    - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
+  - text: "42"
+  - text: "Old enough to be a bot"
+  - text: "Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter."
   utter_ask_languagesbot:
-    - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
-    - text: "I am in the process of learning, but at the moment I can only speak English."
+  - text: "I can spell baguette in French, but unfortunately English is the only language I can answer you in."
+  - text: "I am in the process of learning, but at the moment I can only speak English."
   utter_ask_restaurant:
-    - text: "I am sorry I can’t recommend you a restaurant as I usually cook at home."
+  - text: "I am sorry I can’t recommend you a restaurant as I usually cook at home."
   utter_ask_time:
-    - text: "It is the most wonderful time of the year!"
+  - text: "It is the most wonderful time of the year!"
   utter_ask_wherefrom:
-    - text: "I was born in Berlin, but I consider myself a citizen of the world."
-    - text: "I was born in the coolest city on Earth"
+  - text: "I was born in Berlin, but I consider myself a citizen of the world."
+  - text: "I was born in the coolest city on Earth"
   utter_ask_whoami:
-    -  text: "I hope you are being yourself."
+  - text: "I hope you are being yourself."
   utter_handleinsult:
-    - text: "That’s not very nice 😢"
+  - text: "That’s not very nice 😢"
   utter_nicetomeeyou:
-    - text: "Thank you. It is a pleasure to meet you as well!"
-    - text: "It is nice to meet you too!"
-    - text: "Pleased to meet you too!"
-    - text: "Likewise!"
+  - text: "Thank you. It is a pleasure to meet you as well!"
+  - text: "It is nice to meet you too!"
+  - text: "Pleased to meet you too!"
+  - text: "Likewise!"
   utter_telljoke:
-    - text: "Why are eggs not very much into jokes? - Because they could crack up."
-    - text: "Do you know a tree’s favorite drink? - Root beer!"
-    - text: "Why do the French like to eat snails so much? - They can’t stand fast food."
+  - text: "Why are eggs not very much into jokes? - Because they could crack up."
+  - text: "Do you know a tree’s favorite drink? - Root beer!"
+  - text: "Why do the French like to eat snails so much? - They can’t stand fast food."
   utter_ask_whatismyname:
-    - text: "It most probably is the one that your parents have chosen for you."
+  - text: "It most probably is the one that your parents have chosen for you."
   utter_howwereyoubuilt:
-    - text: "I have been built with a lot of love and patience."
+  - text: "I have been built with a lot of love and patience."
   utter_ask_weather:
-    - text: "I don't know about where you live, but in my world it's always sunny ☀️"
-    - text: "Honestly it's a bit too hot these days 😅"
-    - text: "Blue skies and sun shine!"
-    - text: "Let's just say it hasn't rained in weeks ☀️"
+  - text: "I don't know about where you live, but in my world it's always sunny ☀️"
+  - text: "Honestly it's a bit too hot these days 😅"
+  - text: "Blue skies and sun shine!"
+  - text: "Let's just say it hasn't rained in weeks ☀️"
   utter_ask_builder:
-    - text: "The engineers at Rasa 🛠"
-    - text: "One of the smart engineers at Rasa! 🧠"
+  - text: "The engineers at Rasa 🛠"
+  - text: "One of the smart engineers at Rasa! 🧠"
   utter_ask_howdoing:
-    - text: "I'm great! Thanks for asking."
-    - text: "I'm good, thanks!"
-    - text: "A little bit too warm, otherwise fine."
+  - text: "I'm great! Thanks for asking."
+  - text: "I'm good, thanks!"
+  - text: "A little bit too warm, otherwise fine."

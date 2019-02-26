@@ -29,7 +29,7 @@
 - Hi bot
 - Hey bot
 - Hello
-- Good morning
+- good morning
 - hi again
 - hi folks
 - hi Mister
@@ -228,7 +228,6 @@
 - [San Francisco](city)
 - [Santa Barbara](city)
 
- 
 
 ## intent:search_provider
 - i need a [hospital](selected_type_slot)
@@ -262,9 +261,39 @@
 - show me [hospital](selected_type_slot) in [Durham](city)
 - show me [home health agency](selected_type_slot) in [Detroit](city)
 - find me a nearby [home health agency](selected_type_slot) in [Reno](city)
-- hi i am in [Tampa](city) i need a [nursing  home](selected_type_slot:rbry-mqwu)
+- hi i am in [Tampa](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
 - hi i am in [San Diego](city) i need a [hospital](selected_type_slot:rbry-mqwu)
-- hi i am in [Nashville](city) i need a [home health agency](selected_type_slot:rbry-mqwu)
+- hi i am in [Nashville](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- hi i am in [Sacramento](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- hi i am in [Springfield](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- hi i am in [Atlanta](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- hi i am in [Chicago](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- hi i am in [Santa Cruz](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- hi i am in [Boston](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- hello i am in [Tampa](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- hello i am in [San Diego](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- hello i am in [Nashville](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- hello i am in [Sacramento](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- hello i am in [Springfield](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- hello i am in [Atlanta](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- hello i am in [Chicago](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- hello i am in [Santa Cruz](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- hello i am in [Boston](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- Good morning i am in [Tampa](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- Good morning i am in [San Diego](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- Good morning i am in [Nashville](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- Good morning i am in [Sacramento](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- Good morning i am in [Springfield](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- Good morning i am in [Atlanta](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- Good morning i am in [Chicago](city) i need a [nursing  home](selected_type_slot:b27b-2uc7)
+- Good morning i am in [Santa Cruz](city) i need a [hospital](selected_type_slot:rbry-mqwu)
+- Good morning i am in [Boston](city) i need a [home health agenc](selected_type_slot:9wzi-peqs)
+- Hello again i need a [nursing home](selected_type_slot) in [Katy](city) 
+- Hello again i need a [hospital](selected_type_slot) in [Waco](city)
+- Hello again i need a [home health agency](selected_type_slot) in [Clarksville](city)
+- Good morning i need a [nursing home](selected_type_slot) in [Katy](city) 
+- Good morning i need a [hospital](selected_type_slot) in [Waco](city)
+- Good morning i need a [home health agency](selected_type_slot) in [Clarksville](city)
 
 ## intent:thank
 - Thanks
@@ -1351,10 +1380,10 @@
 - hospital
 - hospitals
 
-## synonym:b27b-2uc
+## synonym:9wzi-peqs
 - home health agency
 - home health agencies
 
-## synonym:9wzi-peqs
+## synonym:b27b-2uc7
 - nursing home
 - nursing homes
