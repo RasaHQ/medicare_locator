@@ -2,124 +2,29 @@
 * ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
     - action_chitchat
     - find_provider_types
-
-
-## happy path 3 1
+    
+## chitchat form 1
 * greet
     - utter_greet
-    - find_provider_types
-    - slot{"provider_types_slot": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
-* ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
-    - action_chitchat
-    - utter_greet
-    - find_provider_types
-* inform{"selected_type_slot":1}
     - hospital_form
     - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* inform{"number":"77494"}
+    - slot{"requested_slot":"selected_type_slot"}
+* ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
+    - action_chitchat
+    - find_provider_types
+* inform{"selected_type_slot": "rbry-mqwu"}
+    - slot{"selected_type_slot": "rbry-mqwu"}
     - hospital_form
-    - slot{"zip":"77494"}
-    - slot{"requested_slot":null}
+    - form{"name": "hospital_form"}
+    - slot{"requested_slot": "city"}
+* inform{"city": "san francisco"}
+    - slot{"city": "san francisco"}
     - find_hospital
-* inform{"selected_id":4245}
+* inform{"selected_id": "050407"}
+    - slot{"selected_id": "050407"}
     - find_healthcare_address
+    - slot{"selected_address": "845 Jackson St, 94133, San Francisco"}
     - utter_address
-* thankyou
-    - utter_noworries
+* thank
+    - utter_noworries 
 
-## happy path 3 2
-* greet
-    - utter_greet
-    - find_provider_types
-    - slot{"provider_types_slot": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
-* inform{"selected_type_slot":1}
-    - hospital_form
-    - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
-    - action_chitchat
-    - hospital_form
-    - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* inform{"number":"77494"}
-    - hospital_form
-    - slot{"zip":"77494"}
-    - slot{"requested_slot":null}
-    - find_hospital
-* inform{"selected_id":4245}
-    - find_healthcare_address
-    - utter_address
-* thankyou
-    - utter_noworries
-    
-## happy path 3 3
-* greet
-    - utter_greet
-    - find_provider_types
-    - slot{"provider_types_slot": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
-* inform{"selected_type_slot":1}
-    - hospital_form
-    - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* inform{"number":"77494"}
-    - hospital_form
-    - slot{"zip":"77494"}
-    - slot{"requested_slot":null}
-    - find_hospital
-* ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
-    - action_chitchat
-    - find_hospital
-* inform{"selected_id":4245}
-    - find_healthcare_address
-    - utter_address
-* thankyou
-    - utter_noworries
-    
-## happy path 4 1
-* search_provider{"selected_type_slot":2}
-    - hospital_form
-    - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
-    - action_chitchat
-    - hospital_form
-    - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* inform{"number":"77494"}
-    - hospital_form
-    - slot{"zip":"77494"}
-    - slot{"requested_slot":null}
-    - find_hospital
-* inform{"selected_id":4245}
-    - find_healthcare_address
-    - utter_address
-* thankyou
-    - utter_noworries
-    
-    
-## happy path 4 2
-* search_provider{"selected_type_slot":2}
-    - hospital_form
-    - form{"name": "hospital_form"}
-    - form{"name": null}
-    - slot{"requested_slot":"zip"}
-* inform{"number":"77494"}
-    - hospital_form
-    - slot{"zip":"77494"}
-    - slot{"requested_slot":null}
-    - find_hospital
-* ask_weather OR ask_builder OR ask_howdoing OR ask_whoisit OR ask_isbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR nicetomeeyou OR telljoke OR ask_whatismyname OR howwereyoubuilt
-    - action_chitchat
-    - find_hospital
-* inform{"selected_id":4245}
-    - find_healthcare_address
-    - utter_address
-* thankyou
-    - utter_noworries

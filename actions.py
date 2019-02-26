@@ -4,11 +4,9 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-import os
 import typing
 from typing import Dict, Text, Any, List, Union
 
-import mysql.connector
 import requests
 from rasa_core_sdk import Action
 from rasa_core_sdk import ActionExecutionRejection
@@ -87,24 +85,7 @@ def create_path(base, resource, query, values):
         return (base + query).format(resource, values)
 
 
-def find_provider(zips, city, resource, max_radius=20, min_results=3,
-                  increment=5):
-    if zips is not None:
-        full_path = create_path(ENDPOINTS["base"], resource,
-                                ENDPOINTS[resource]["zip_code_query"], [zips])
-        results = requests.get(full_path).json()
-        if len(results) == 0:
-
-            radius = 5
-            while radius < max_radius and len(results) < min_results:
-                zips = find_near_zip_codes(zip, radius)
-                zips.append(zip)
-                full_path = create_path(ENDPOINTS["base"], resource,
-                                        ENDPOINTS[resource]["zip_code_query"],
-                                        zips)
-                results = requests.get(full_path).json()
-                radius += increment
-
+def find_provider(city, resource):
     if city is not None:
         full_path = create_path(ENDPOINTS["base"], resource,
                                 ENDPOINTS[resource]["city_query"], city.upper())
@@ -113,32 +94,11 @@ def find_provider(zips, city, resource, max_radius=20, min_results=3,
     return results
 
 
-def do_zip_code_exist(zip):
-    user = os.environ['DB_USER']
-    passwd = os.environ['PASSWD']
-    host = os.environ['HOST']
-    db = mysql.connector.connect(host=host, user=user, passwd=passwd,
-                                 db="natlhcentities")
-    cursor = db.cursor(buffered=True)
-    q = "select exists (select * from  uszipcode where ZipCode = '{}')".format(
-        zip)
-    cursor.execute(q)
-    results = cursor.fetchall()
-    return results[0][0] == 1
-
-
-def find_near_zip_codes(zip, radius):
-    api_key = "v4hu7DhkF2wrTQ9JXYkOgT0V51DUuxVn6f4SBP8YXbcXqfuBbLdeoX3Vt8rnhLmS"
-    base_url = "https://www.zipcodeapi.com/rest/{}/radius.json/{}/{}/miles?minimal"
-    r = requests.get(base_url.format(api_key, zip, radius))
-    return r.json().get("zip_codes")
-
-
-def create_query(type, zips):
-    q = "select HCProviderID, HCProviderName from healthcareprovider where " \
-        "HCProviderZipcode in ({}) and HCEntityTypeID = {}".format(
-        ",".join(zips), type)
-    return q
+def _resolve_name(facility_types, resource):
+    for k, v in FACILITY_TYPES.items():
+        if v.get("resource") == resource:
+            return v.get("name")
+    return ""
 
 
 class FindHospital(Action):
@@ -148,17 +108,15 @@ class FindHospital(Action):
 
     def run(self, dispatcher, tracker, domain):
         # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict[Text, Any]]
-        zip = tracker.get_slot('zip')
         city = tracker.get_slot('city')
         type = tracker.get_slot('selected_type_slot')
-        # if not do_zip_code_exist(zip):
-        #     dispatcher.utter_message("Please, provide a valid zipcode.")
-        #     return []
-        results = find_provider(zip, city, type)
+        results = find_provider(city, type)
         if len(results) == 0:
+            name = _resolve_name(FACILITY_TYPES, type)
             dispatcher.utter_message(
-                "Sorry, we could not find a heathcare provider within 20 miles from your ZIP code.")
+                "Sorry, we could not find a {} in {}.".format(name, city))
             return []
+
         buttons = []
         print("found {} providers".format(len(results)))
         for r in results:
@@ -228,34 +186,15 @@ class HospitalForm(FormAction):
         # type: (Tracker) -> List[Text]
         """A list of required slots that the form has to fill"""
 
-        if tracker.get_slot("zip") is not None:
-            return []
-        elif tracker.get_slot("city") is not None:
-            return []
-        else:
-            return ["zip", "city"]
+        return ["selected_type_slot", "city"]
 
     def slot_mappings(self):
         # type: () -> Dict[Text: Union[Dict, List[Dict]]]
-        return {"zip": self.from_entity(entity="number", intent="inform")}
-
-    @staticmethod
-    def is_zip(string):
-        # type: (Text) -> bool
-        #       if tracker.get_slot("zip") is not None:
-
-        #             return []
-        #         elif tracker.get_slot("city") is not None:
-        #             return []
-        #         else:
-        #             return ["zip", "city"]
-        """Check if a string is an integer"""
-        # try:
-        #     int(string)
-        #     return len(string) == 5
-        # except ValueError:
-        #     return False
-        return do_zip_code_exist(string)
+        return {
+            "city": self.from_entity(entity="city", intent="inform"),
+            "selected_type_slot": self.from_entity(entity="provider_type",
+                                                   intent="inform")
+        }
 
     @staticmethod
     def is_city(string):
@@ -288,15 +227,10 @@ class HospitalForm(FormAction):
         # we'll check when validation failed in order
         # to add appropriate utterances
         for slot, value in slot_values.items():
-            if slot == 'zip':
-                if not self.is_zip(value):
-                    dispatcher.utter_template('utter_wrong_num_people',
-                                              tracker)
-                    # validation failed, set slot to None
-                    slot_values[slot] = None
-            elif slot == 'city':
+            if slot == 'city':
                 if not self.is_city(value):
                     dispatcher.utter_message("Please enter a valid city")
+                    slot_values[slot] = None
         # validation succeed, set the slots values to the extracted values
         return [SlotSet(slot, value) for slot, value in slot_values.items()]
 
@@ -308,84 +242,6 @@ class HospitalForm(FormAction):
         # utter submit template
         dispatcher.utter_template('utter_submit', tracker)
         return [FollowupAction('find_hospital')]
-
-
-class CenterForm(FormAction):
-    """Example of a custom form action"""
-
-    def name(self):
-        # type: () -> Text
-        """Unique identifier of the form"""
-
-        return "center_form"
-
-    @staticmethod
-    def required_slots(tracker):
-        # type: (Tracker) -> List[Text]
-        """A list of required slots that the form has to fill"""
-
-        return ["zip", "type"]
-
-    def slot_mappings(self):
-        # type: () -> Dict[Text: Union[Dict, List[Dict]]]
-        return {"zip": self.from_entity(entity="number"),
-                "type": self.from_entity(entity="type")}
-
-    @staticmethod
-    def is_zip(string):
-        # type: (Text) -> bool
-        """Check if a string is an integer"""
-        try:
-            int(string)
-            return len(string) == 5
-        except ValueError:
-            return False
-
-    def validate(self, dispatcher, tracker, domain):
-        # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict]
-        """Validate extracted requested slot
-            else reject the execution of the form action
-        """
-        # extract other slots that were not requested
-        # but set by corresponding entity
-        slot_values = self.extract_other_slots(dispatcher, tracker, domain)
-
-        # extract requested slot
-        slot_to_fill = tracker.get_slot(REQUESTED_SLOT)
-        if slot_to_fill:
-            slot_values.update(self.extract_requested_slot(dispatcher,
-                                                           tracker, domain))
-            if not slot_values:
-                # reject form action execution
-                # if some slot was requested but nothing was extracted
-                # it will allow other policies to predict another action
-                raise ActionExecutionRejection(self.name(),
-                                               "Failed to validate slot {0} "
-                                               "with action {1}"
-                                               "".format(slot_to_fill,
-                                                         self.name()))
-
-        # we'll check when validation failed in order
-        # to add appropriate utterances
-        for slot, value in slot_values.items():
-            if slot == 'zip':
-                if not self.is_zip(value):
-                    dispatcher.utter_template('utter_wrong_num_people',
-                                              tracker)
-                    # validation failed, set slot to None
-                    slot_values[slot] = None
-
-        # validation succeed, set the slots values to the extracted values
-        return [SlotSet(slot, value) for slot, value in slot_values.items()]
-
-    def submit(self, dispatcher, tracker, domain):
-        # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict]
-        """Define what the form has to do
-            after all required slots are filled"""
-
-        # utter submit template
-        dispatcher.utter_template('utter_submit', tracker)
-        return []
 
 
 class ActionChitchat(Action):

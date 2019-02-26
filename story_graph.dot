@@ -1,0 +1,18 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+1 [class=active, fontsize=12, label=find_provider_types];
+2 [class=active, fontsize=12, label=hospital_form];
+4 [class=active, fontsize=12, label=find_hospital];
+5 [class="intent dashed active", label="  ?  ", shape=rect];
+6 [class="intent active", fillcolor=lightblue, label=hi, shape=rect, style=filled];
+7 [class="intent active", fillcolor=lightblue, label="informselected_type_slot rbry-mqwu", shape=rect, style=filled];
+8 [class="intent active", fillcolor=lightblue, label=Pordenone, shape=rect, style=filled];
+0 -> 6  [class=active, key=0];
+1 -> 7  [class=active, key=0];
+2 -> 4  [class=active, key=NONE, label=""];
+2 -> 8  [class=active, key=0];
+4 -> 5  [class=active, key=NONE, label=""];
+6 -> 1  [class=active, key=0];
+7 -> 2  [class=active, key=0];
+8 -> 2  [class=active, key=0];
+}
