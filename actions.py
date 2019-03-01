@@ -71,7 +71,8 @@ class FindProviderTypes(Action):
             buttons.append(
                 {"title": "{}".format(r.get("name").title()),
                  "payload": payload})
-        dispatcher.utter_button_template("utter_greet", buttons, tracker)
+        dispatcher.utter_button_template("utter_greet", buttons,
+                                         tracker, button_type="vertical")
         return [SlotSet("provider_types_slot",
                         FACILITY_TYPES if FACILITY_TYPES is not None else [])]
 
@@ -111,8 +112,8 @@ class FindHospital(Action):
         city = tracker.get_slot('city')
         type = tracker.get_slot('selected_type_slot')
         results = find_provider(city, type)
+        name = _resolve_name(FACILITY_TYPES, type)
         if len(results) == 0:
-            name = _resolve_name(FACILITY_TYPES, type)
             dispatcher.utter_message(
                 "Sorry, we could not find a {} in {}.".format(name, city))
             return []
@@ -132,8 +133,10 @@ class FindHospital(Action):
             payload = "/inform{\"selected_id\":\"" + provider_id + "\"}"
             buttons.append(
                 {"title": "{}".format(name.title()), "payload": payload})
+
         dispatcher.utter_button_message(
-            "Here is a list of healthcare providers near you", buttons)
+            "Here is a list of {} near you".format(name), buttons,
+            button_type="vertical")
 
         return []
 
