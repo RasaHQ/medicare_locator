@@ -91,7 +91,7 @@ templates:
   - text: "My pleasure."
 
   utter_ask_selected_type_slot:
-  - text: "chose wisely"
+  - text: "Choose one of the following Hospital, Nursing home or Home Health Agency"
 
   utter_ask_city:
   - text: "Please provide your city name"
