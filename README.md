@@ -15,7 +15,7 @@ To install Medicare Locator, please clone the repo and run:
 
 ```
 cd medicare_locator
-pip install -e .
+pip install -r requirements.txt
 ```
 This will install the bot and all of its requirements.
 Note that it was written in Python 3 so might not work with PY2.
@@ -74,6 +74,6 @@ your website.
 `action-server` - Starts the action server.
 
 ## :gift: License
-Licensed under the GNU General Public License v3. Copyright 2018 Rasa Technologies
+Licensed under the GNU General Public License v3. Copyright 2019 Rasa Technologies
 GmbH. [Copy of the license](https://github.com/RasaHQ/rasa-demo/blob/master/LICENSE).
 Licensees may convey the work under this license. There is no warranty for the work.
