@@ -56,7 +56,7 @@ make action-server
 
 Now to test the Medicare Locator with both these models run:
 ```
-make run-cmdline
+make cmdline
 ```
 
 To run Medicare Locator in interactive learning mode run:
