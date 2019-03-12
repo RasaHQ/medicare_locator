@@ -38,7 +38,7 @@ This will install the bot and all of its requirements.
 ## How to run Medicare Locator
 
 Train the core model by running:
-````
+```
 make train-core
 ```
 This will train the Rasa Core model and store it inside the `/models/current/dialogue` folder of your project directory.
