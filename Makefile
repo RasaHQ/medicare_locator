@@ -6,11 +6,17 @@ help:
 	@echo "    clean"
 	@echo "        Remove python artifacts and build artifacts."
 	@echo "    train-nlu"
-	@echo "        Trains a new nlu model using the projects Rasa NLU config"
+	@echo "        Trains a new nlu model using the projects Rasa NLU config."
 	@echo "    train-core"
-	@echo "        Trains a new dialogue model using the story training data"
+	@echo "        Trains a new dialogue model using the story training data."
 	@echo "    action-server"
 	@echo "        Starts the server for custom action."
+	@echo "    interactive"
+	@echo "        Starts interactive training using the current model."
+	@echo "    cmdline"
+	@echo "        This will load the assistant in your terminal for you to chat."
+	@echo "    run-cmdline"
+	@echo "        This will load the assistant in your terminal for you to chat in debug mode."
 
 clean:
 	find . -name '*.pyc' -exec rm -f {} +
