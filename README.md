@@ -9,7 +9,7 @@ It supports the following user goals:
 - Searching for an Hospital, Nursing Home or Home Health Agency in a US city
 - Handling basic chitchat
 
-## 🤖 How to install and setup Medicare Locator
+## 💾 How to install and setup Medicare Locator
 
 To install Medicare Locator, please clone the repo:
 ```
@@ -35,7 +35,7 @@ python -m spacy download en
 
 This will install the bot and all of its requirements.
 
-## How to run Medicare Locator
+## 🤖 How to run Medicare Locator
 
 Train the core model by running:
 ```
