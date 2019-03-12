@@ -108,7 +108,8 @@ class FindHospital(Action):
         return "find_hospital"
 
     def run(self, dispatcher, tracker, domain):
-        # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict[Text, Any]]
+        # type: (CollectingDispatcher, Tracker,
+        # Dict[Text, Any]) -> List[Dict[Text, Any]]
         city = tracker.get_slot('city')
         type = tracker.get_slot('selected_type_slot')
         results = find_provider(city, type)
@@ -135,8 +136,9 @@ class FindHospital(Action):
                 {"title": "{}".format(name.title()), "payload": payload})
 
         dispatcher.utter_button_message(
-            "Here is a list of {} near you".format(name), buttons,
-            button_type="vertical")
+            "Here is a list of the first 3 {} near you".format(name),
+            buttons[:3], button_type="vertical")
+        # todo: vertical is not working + limit button number make it rule based
 
         return []
 
