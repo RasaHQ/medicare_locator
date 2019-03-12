@@ -11,19 +11,19 @@ It supports the following user goals:
 
 ## 🤖 How to install and setup Medicare Locator
 
-To install Medicare Locator, please clone the repo
+To install Medicare Locator, please clone the repo:
 ```
 git clone https://github.com/RasaHQ/medicare_locator.git
 cd medicare_locator
 ```
 The Medicare Locator uses Python 3.5 and 3.6 and has not been tested with other versions.
 Use the requirements.txt file to install the appropriate dependencies
-via pip. If you do not have pip installed yet first do
+via pip. If you do not have pip installed yet first do:
 ```
 sudo easy_install pip
 ```
 
-otherwise execute directly
+otherwise execute directly:
 ```
 pip install -r requirements.txt
 ```
@@ -37,10 +37,16 @@ This will install the bot and all of its requirements.
 
 ## How to run Medicare Locator
 
-Train the core model by running: `make train-core`.
+Train the core model by running:
+````
+make train-core
+```
 This will train the Rasa Core model and store it inside the `/models/current/dialogue` folder of your project directory.
 
-Train the NLU model by running: `make train-nlu`.
+Train the NLU model by running:
+````
+make train-nlu
+```
 This will train the NLU model and store it inside the `/models/current/nlu` folder of your project directory.
 
 In a new terminal start the server for the custom action by running:
