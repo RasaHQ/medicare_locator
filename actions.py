@@ -136,7 +136,7 @@ class FindHospital(Action):
                 {"title": "{}".format(name.title()), "payload": payload})
 
         dispatcher.utter_button_message(
-            "Here is a list of the first 3 {} near you".format(name),
+            "Here is a list of 3 {}s near you".format(name),
             buttons[:3], button_type="vertical")
         # todo: vertical is not working + limit button number make it rule based
 
