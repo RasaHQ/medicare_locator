@@ -2,7 +2,7 @@
 
 ## 🏥 Introduction
 
-This is an open source starter pack for developers of how to automate full conversations in healthcare
+This is an open source starter pack for developers of how to automate full conversations in healthcare.
 
 It supports the following user goals:
 
