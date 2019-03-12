@@ -44,7 +44,7 @@ make train-core
 This will train the Rasa Core model and store it inside the `/models/current/dialogue` folder of your project directory.
 
 Train the NLU model by running:
-````
+```
 make train-nlu
 ```
 This will train the NLU model and store it inside the `/models/current/nlu` folder of your project directory.
