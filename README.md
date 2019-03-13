@@ -61,7 +61,7 @@ make cmdline
 After the bot has loaded you can start chatting to it. If you start by saying `Hi` for example,
 the bot will reply by asking you what you are looking for and show you a number of options in form of buttons.
 Since those buttons do not show when testing the bot in the command line, you can imitate a button click by copy
-and pasting the intent of the button of your choice as your input (illustrated in the example below).
+and pasting the intent of the button of your choice as your input.
 
 An example conversation in the command line could look something like this:
 ```
