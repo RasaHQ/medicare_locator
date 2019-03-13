@@ -92,11 +92,14 @@ make interactive
 
 ## 📱 Use Telegram as Chat platform
 In order to chat to the Medicare Locator through Telegram you can do the following:
+
 **Step 1**: First if you don't already use Telegram, download it and set it up with your phone.
 Once you are registered with Telegram you start by setting up a Telegram bot.
+
 **Step 2**: To setup your own bot go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
 enter `/newbot` and follow the instructions.
 You should get your `access_token`, and the username you set will be your `verify`. Save this information as you will need it later.
+
 **Step 3**: Now you will need to connect to Telegram via a webhook. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
 set it up on your computer. Move `ngrok` to your working directory and in a new terminal run:
 ```
@@ -112,6 +115,7 @@ You will have to update the `webhook_url` everytime you do redo Step 3, the `acc
 ```
 make action-server
 ```
+
 **Step 6**: In a new terminal connect to Telegram by running:
 ```
 make telegram
