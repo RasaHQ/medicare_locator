@@ -2,11 +2,11 @@
 
 ## 🏥 Introduction
 
-This is an open source starter pack for developers of how to automate full conversations in healthcare.
+This is an open source starter pack for developers, to show how to automate full conversations in healthcare.
 
 It supports the following user goals:
 
-- Searching for an Hospital, Nursing Home or Home Health Agency in a US city
+- Searching for a hospital, nursing home or home health agency in a US city
 - Handling basic chitchat
 
 ## 💾 How to install and setup Medicare Locator
@@ -92,7 +92,7 @@ make interactive
 ## More about the Medicare Locator demo bot
 There are some custom actions that require connections to external services,
 specifically `FindHospital` and `FindHealthCareAddress`. These two actions 
-connect to Medicare APIs. These APIs do no require tokens or any form of authentication.
+connect to Medicare APIs. These APIs do not require tokens or any form of authentication.
 
 For more information about Medicare APIs please visit [data.medicare.gov](https://data.medicare.gov/)
 
