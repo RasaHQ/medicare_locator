@@ -50,7 +50,7 @@ make train-nlu
 ```
 This will train the NLU model and store it inside the `/models/current/nlu` folder of your project directory.
 
-**Step 3 **: In a new terminal start the server for the custom action by running:
+**Step 3**: In a new terminal start the server for the custom action by running:
 ```
 make action-server
 ```
@@ -94,10 +94,10 @@ make interactive
 In order to chat to the Medicare Locator through Telegram you can do the following:
 1. First if you don't already use Telegram, download it and set it up with your phone.
 Once you are registered with Telegram you start by setting up a Telegram bot.
-2. Now go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
+2. To setup your own bot go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
 enter `/newbot` and follow the instructions.
 You should get your `access_token`, and the username you set will be your `verify`. Save this information as you will need it later.
-3. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
+3. You need to connect to Telegram via a webhook. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
 set it up on your computer. Move ngrok to your working directory and in a new terminal run:
 ```
 ./ngrok http 5005
