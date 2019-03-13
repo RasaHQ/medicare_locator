@@ -71,8 +71,7 @@ class FindProviderTypes(Action):
             buttons.append(
                 {"title": "{}".format(r.get("name").title()),
                  "payload": payload})
-        dispatcher.utter_button_template("utter_greet", buttons,
-                                         tracker, button_type="vertical")
+        dispatcher.utter_button_template("utter_greet", buttons, tracker, button_type="custom")
         return [SlotSet("provider_types_slot",
                         FACILITY_TYPES if FACILITY_TYPES is not None else [])]
 
@@ -96,7 +95,7 @@ def find_provider(city, resource):
 
 
 def _resolve_name(facility_types, resource):
-    for k, v in FACILITY_TYPES.items():
+    for k, v in facility_types.items():
         if v.get("resource") == resource:
             return v.get("name")
     return ""
@@ -113,7 +112,7 @@ class FindHospital(Action):
         city = tracker.get_slot('city')
         type = tracker.get_slot('selected_type_slot')
         results = find_provider(city, type)
-        name = _resolve_name(FACILITY_TYPES, type)
+        button_name = _resolve_name(FACILITY_TYPES, type)
         if len(results) == 0:
             dispatcher.utter_message(
                 "Sorry, we could not find a {} in {}.".format(name, city))
@@ -136,9 +135,9 @@ class FindHospital(Action):
                 {"title": "{}".format(name.title()), "payload": payload})
 
         dispatcher.utter_button_message(
-            "Here is a list of 3 {}s near you".format(name),
-            buttons[:3], button_type="vertical")
-        # todo: vertical is not working + limit button number make it rule based
+            "Here is a list of 3 {}s near you".format(button_name),
+            buttons[:3], button_type="custom")  # limited buttons to 3 here
+        # todo:note: button options are not working BUG in rasa core
 
         return []
 
