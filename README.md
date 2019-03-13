@@ -92,31 +92,32 @@ make interactive
 
 ## 📱 Use Telegram as Chat platform
 In order to chat to the Medicare Locator through Telegram you can do the following:
-1. First if you don't already use Telegram, download it and set it up with your phone.
+**Step 1**: First if you don't already use Telegram, download it and set it up with your phone.
 Once you are registered with Telegram you start by setting up a Telegram bot.
-2. To setup your own bot go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
+**Step 2**: To setup your own bot go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
 enter `/newbot` and follow the instructions.
 You should get your `access_token`, and the username you set will be your `verify`. Save this information as you will need it later.
-3. You need to connect to Telegram via a webhook. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
-set it up on your computer. Move ngrok to your working directory and in a new terminal run:
+**Step 3**: Now you will need to connect to Telegram via a webhook. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
+set it up on your computer. Move `ngrok` to your working directory and in a new terminal run:
 ```
 ./ngrok http 5005
 ```
 Ngrok will create a https address for your computer. For Telegram you need the address in this format:
 `https://xxxxxx.ngrok.io/webhooks/telegram/webhook`
 
-4. Go to the *credentials.yml* file and input your personal `access_token`, `verify` and `webhook_url`.
+**Step 4**: Go to the *credentials.yml* file that you downloaded from the repo and input your personal `access_token`, `verify` and `webhook_url`.
+You will have to update the `webhook_url` everytime you do redo Step 3, the `access_token` and `verify` will stay the same.
 
-5. In a new terminal start the server for the custom action by running:
+**Step 5**: In a new terminal start the server for the custom action by running:
 ```
 make action-server
 ```
-6. In a new terminal connect to Telegram by running:
+**Step 6**: In a new terminal connect to Telegram by running:
 ```
 make telegram
 ```
 
-7. Now you and anyone on Telegram are able to chat to your bot!
+**Step 7**: Now you and anyone on Telegram are able to chat to your bot. You can find it by searching for its name on Telegram.
 
 Detailed information about this can also be found in the [Rasa Docs](https://rasa.com/docs/core/connectors/#telegram-connector).
 
