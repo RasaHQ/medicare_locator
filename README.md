@@ -11,7 +11,7 @@ It supports the following user goals:
 
 ## 💾 How to install and setup Medicare Locator
 
-To install Medicare Locator, please clone the repo:
+**Step 1**: To install Medicare Locator, please clone the repo:
 ```
 git clone https://github.com/RasaHQ/medicare_locator.git
 cd medicare_locator
@@ -22,13 +22,14 @@ via pip. If you do not have pip installed yet first do:
 ```
 sudo easy_install pip
 ```
+otherwise move to the next step directly.
 
-otherwise execute directly:
+**Step 2**: Install requirements:
 ```
 pip install -r requirements.txt
 ```
 
-You also need to install a spaCy English language model by running:
+**Step 3**: Install the spaCy English language model by running:
 ```
 python -m spacy download en
 ```
@@ -37,24 +38,24 @@ This will install the bot and all of its requirements.
 
 ## 🤖 How to run Medicare Locator
 
-Train the core model by running:
+**Step 1**: Train the core model by running:
 ```
 make train-core
 ```
 This will train the Rasa Core model and store it inside the `/models/current/dialogue` folder of your project directory.
 
-Train the NLU model by running:
+**Step 2**: Train the NLU model by running:
 ```
 make train-nlu
 ```
 This will train the NLU model and store it inside the `/models/current/nlu` folder of your project directory.
 
-In a new terminal start the server for the custom action by running:
+**Step 3 **: In a new terminal start the server for the custom action by running:
 ```
 make action-server
 ```
 
-Now to test the Medicare Locator with both these models you can run:
+**Step 4**: Now to test the Medicare Locator with both these models you can run:
 ```
 make cmdline
 ```
@@ -84,10 +85,41 @@ Find help for this in the [Rasa Docs](https://rasa.com/docs/).
 A helpful option to extend training data and get to know your bot is interactive learning,
 here you can correct your bot at every step in the conversation and automatically save the data for future training.
 
-To run Medicare Locator in interactive learning mode run:
+**Step 5**: To run Medicare Locator in interactive learning mode run:
 ```
 make interactive
 ```
+
+## 📱 Use Telegram as Chat platform
+In order to chat to the Medicare Locator through Telegram you can do the following:
+1. First if you don't already use Telegram, download it and set it up with your phone.
+Once you are registered with Telegram you start by setting up a Telegram bot.
+2. Now go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
+enter `/newbot` and follow the instructions.
+You should get your `access_token`, and the username you set will be your `verify`. Save this information as you will need it later.
+3. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
+set it up on your computer. Move ngrok to your working directory and in a new terminal run:
+```
+./ngrok http 5005
+```
+Ngrok will create a https address for your computer. For Telegram you need the address in this format:
+`https://xxxxxx.ngrok.io/webhooks/telegram/webhook`
+
+4. Go to the *credentials.yml* file and input your personal `access_token`, `verify` and `webhook_url`.
+
+5. In a new terminal start the server for the custom action by running:
+```
+make action-server
+```
+6. In a new terminal connect to Telegram by running:
+```
+make telegram
+```
+
+7. Now you and anyone on Telegram are able to chat to your bot!
+
+Detailed information about this can also be found in the [Rasa Docs](https://rasa.com/docs/core/connectors/#telegram-connector).
+
 
 ## More about the Medicare Locator demo bot
 There are some custom actions that require connections to external services,
@@ -115,7 +147,12 @@ your website.
 
 `core_config.yml` - the Core config file
 
+`credentials.yml` - contains credentials for the use with Telegram
+
+`endpoints.yml` - contains url for endpoint
+
 ## 🛠 Makefile overview
+Run `make help` to see an overview of all make commands available.
 
 `train-nlu` - Train the NLU model.
 
@@ -126,6 +163,8 @@ your website.
 `cmdline` - Run the Medicare Locator Bot.
 
 `action-server` - Starts the action server.
+
+`telegram` - Set up webhook for Telegram.
 
 ## :gift: License
 Licensed under the GNU General Public License v3. Copyright 2019 Rasa Technologies

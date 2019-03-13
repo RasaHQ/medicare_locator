@@ -17,6 +17,8 @@ help:
 	@echo "        This will load the assistant in your terminal for you to chat."
 	@echo "    run-cmdline"
 	@echo "        This will load the assistant in your terminal for you to chat in debug mode."
+	@echo "    telegram"
+	@echo "        This will use your credentials.yml file to setup a webhook for the use with Telegram."
 
 clean:
 	find . -name '*.pyc' -exec rm -f {} +
@@ -34,7 +36,7 @@ train-core:
 	python3 -m rasa_core.train -d domain.yml -s data/core -o models/current/dialogue -c core_config.yml
 
 interactive:
-	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml 
+	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml --debug
 
 cmdline:
 	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
@@ -44,3 +46,6 @@ action-server:
 
 run-cmdline:
 	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --debug --endpoints endpoints.yml
+
+telegram:
+	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5005 --credentials credentials.yml --debug --endpoints endpoints.yml
