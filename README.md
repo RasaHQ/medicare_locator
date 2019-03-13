@@ -54,16 +54,42 @@ In a new terminal start the server for the custom action by running:
 make action-server
 ```
 
-Now to test the Medicare Locator with both these models run:
+Now to test the Medicare Locator with both these models you can run:
 ```
 make cmdline
 ```
+After the bot has loaded you can start chatting to it. If you start by saying `Hi` for example,
+the bot will reply by asking you what you are looking for and show you a number of options in form of buttons.
+Since those buttons do not show when testing the bot in the command line, you can imitate a button click by copy
+and pasting the intent of the button of your choice as your input (illustrated in the example below).
+
+An example conversation in the command line could look something like this:
+```
+Your input ->  Hi
+Hi. What are you looking for ?
+Buttons:
+1: Hospital (/inform{"selected_type_slot": "rbry-mqwu"})
+2: Nursing Home (/inform{"selected_type_slot": "b27b-2uc7"})
+3: Home Health Agency (/inform{"selected_type_slot": "9wzi-peqs"})
+Your input ->  /inform{"selected_type_slot": "rbry-mqwu"}
+What is you current city?
+Your input ->  Seattle
+...
+```
+
+Try out different conversations and see what the current state of the bot can do!
+After playing around a bit you can try to modify and extend the bot by adding custom actions and intents for example.
+Find help for this in the [Rasa Docs](https://rasa.com/docs/).
+
+A helpful option to extend training data and get to know your bot is interactive learning,
+here you can correct your bot at every step in the conversation and automatically save the data for future training.
 
 To run Medicare Locator in interactive learning mode run:
 ```
 make interactive
 ```
 
+## More about the Medicare Locator demo bot
 There are some custom actions that require connections to external services,
 specifically `FindHospital` and `FindHealthCareAddress`. These two actions 
 connect to Medicare APIs. These APIs do no require tokens or any form of authentication.
