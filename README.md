@@ -26,12 +26,12 @@ otherwise move to the next step directly.
 
 **Step 2**: Install requirements:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 **Step 3**: Install the spaCy English language model by running:
 ```
-python -m spacy download en
+python3 -m spacy download en
 ```
 
 This will install the bot and all of its requirements.
