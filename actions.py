@@ -17,6 +17,14 @@ if typing.TYPE_CHECKING:
     from rasa_core_sdk import Tracker
     from rasa_core_sdk.executor import CollectingDispatcher
 
+# We use the medicore.gov database to find information about 3 different
+# healthcare facility types, given a city name, zip code or facility ID
+# the identifiers for each facility type is given by the medicare database
+# rbry-mqwu is for hospitals
+# b27b-2uc7 is for nursing homes
+# 9wzi-peqs is for home health agencies
+# NOTE: currently the zip code option is not implemented -->todo
+
 ENDPOINTS = {
     "base": "https://data.medicare.gov/resource/{}.json",
     "rbry-mqwu": {
@@ -28,7 +36,6 @@ ENDPOINTS = {
         "city_query": "?provider_city={}",
         "zip_code_query": "?$where=provider_zip_code in({})",
         "id_query": "?federal_provider_number={}"
-
     },
     "9wzi-peqs": {
         "city_query": "?city={}",
@@ -57,26 +64,34 @@ FACILITY_TYPES = {
 }
 
 
-class FindProviderTypes(Action):
+class FindFacilityTypes(Action):
+    '''This action class allows to display buttons for each facility type
+    for the user to chose from to fill the facility_type entity slot.'''
+
     def name(self):
-        return "find_provider_types"
+        """Unique identifier of the action"""
+
+        return "find_facility_types"
 
     def run(self, dispatcher, tracker, domain):
         buttons = []
         for t in FACILITY_TYPES:
-            r = FACILITY_TYPES[t]
-            payload = "/inform{\"selected_type_slot\": \"" + r.get(
+            facility_type = FACILITY_TYPES[t]
+            payload = "/inform{\"facility_type\": \"" + facility_type.get(
                 "resource") + "\"}"
 
             buttons.append(
-                {"title": "{}".format(r.get("name").title()),
+                {"title": "{}".format(facility_type.get("name").title()),
                  "payload": payload})
-        dispatcher.utter_button_template("utter_greet", buttons, tracker, button_type="custom")
-        return [SlotSet("provider_types_slot",
+        dispatcher.utter_button_template("utter_greet", buttons, tracker,
+                                         button_type="custom")
+        return [SlotSet("facility_types",
                         FACILITY_TYPES if FACILITY_TYPES is not None else [])]
 
 
-def create_path(base, resource, query, values):
+def _create_path(base, resource, query, values):
+    '''Creates a path to find provider using the endpoints.'''
+    
     if isinstance(values, list):
         return (base + query).format(resource,
                                      ', '.join(
@@ -85,66 +100,75 @@ def create_path(base, resource, query, values):
         return (base + query).format(resource, values)
 
 
-def find_provider(city, resource):
-    if city is not None:
-        full_path = create_path(ENDPOINTS["base"], resource,
-                                ENDPOINTS[resource]["city_query"], city.upper())
-        results = requests.get(full_path).json()
+def _find_facilities(city, resource):
+    '''Returns json of facilities matching the search criteria.'''
 
+    full_path = _create_path(ENDPOINTS["base"], resource, 
+                             ENDPOINTS[resource]["city_query"], city.upper())
+    results = requests.get(full_path).json()
     return results
 
 
 def _resolve_name(facility_types, resource):
-    for k, v in facility_types.items():
-        if v.get("resource") == resource:
-            return v.get("name")
+    for key, value in facility_types.items():
+        if value.get("resource") == resource:
+            return value.get("name")
     return ""
 
 
-class FindHospital(Action):
+class FindFacilities(Action):
+    '''This action class retrieves a list of all facilities matching
+    the supplied search criteria and displays buttons of three random search
+    results to the user to chose from.'''
 
     def name(self):
-        return "find_hospital"
+        """Unique identifier of the action"""
+
+        return "find_facilities"
 
     def run(self, dispatcher, tracker, domain):
-        # type: (CollectingDispatcher, Tracker,
-        # Dict[Text, Any]) -> List[Dict[Text, Any]]
         city = tracker.get_slot('city')
-        type = tracker.get_slot('selected_type_slot')
-        results = find_provider(city, type)
-        button_name = _resolve_name(FACILITY_TYPES, type)
+        facility_type = tracker.get_slot('facility_type')
+        results = _find_facilities(city, facility_type)
+        button_name = _resolve_name(FACILITY_TYPES, facility_type)
         if len(results) == 0:
             dispatcher.utter_message(
-                "Sorry, we could not find a {} in {}.".format(name, city))
+                "Sorry, we could not find a {} in {}.".format(button_name, city))
             return []
 
         buttons = []
-        print("found {} providers".format(len(results)))
+        print("found {} facilities".format(len(results)))
         for r in results:
-            if type == FACILITY_TYPES["hospital"]["resource"]:
-                provider_id = r.get("provider_id")
+            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
+                facility_id = r.get("provider_id")
                 name = r["hospital_name"]
-            elif type == FACILITY_TYPES["nursing_home"]["resource"]:
-                provider_id = r["federal_provider_number"]
+            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
+                facility_id = r["federal_provider_number"]
                 name = r["provider_name"]
             else:
-                provider_id = r["provider_number"]
+                facility_id = r["provider_number"]
                 name = r["provider_name"]
-            payload = "/inform{\"selected_id\":\"" + provider_id + "\"}"
+
+            payload = "/inform{\"facility_id\":\"" + facility_id + "\"}"
             buttons.append(
                 {"title": "{}".format(name.title()), "payload": payload})
 
+        # limit number of buttons to 3 here for clear presentation purpose only
         dispatcher.utter_button_message(
             "Here is a list of 3 {}s near you".format(button_name),
-            buttons[:3], button_type="custom")  # limited buttons to 3 here
-        # todo:note: button options are not working BUG in rasa core
+            buttons[:3], button_type="custom")
+        # todo:note: button options are not working BUG in rasa_core
 
         return []
 
 
 class FindHealthCareAddress(Action):
+    '''This action class retrieves the address of the users
+    healthcare facility choice to display it to the user.'''
 
     def name(self):
+        """Unique identifier of the action"""
+
         return "find_healthcare_address"
 
     def run(self,
@@ -152,18 +176,18 @@ class FindHealthCareAddress(Action):
             tracker,  # type: Tracker
             domain  # type:  Dict[Text, Any]
             ):
-        type = tracker.get_slot('selected_type_slot')
-        healthcare_id = tracker.get_slot("selected_id")
-        full_path = create_path(ENDPOINTS["base"], type,
-                                ENDPOINTS[type]["id_query"],
+        facility_type = tracker.get_slot('facility_type')
+        healthcare_id = tracker.get_slot("facility_id")
+        full_path = _create_path(ENDPOINTS["base"], facility_type,
+                                ENDPOINTS[facility_type]["id_query"],
                                 healthcare_id)
         results = requests.get(full_path).json()
         selected = results[0]
-        if type == FACILITY_TYPES["hospital"]["resource"]:
+        if facility_type == FACILITY_TYPES["hospital"]["resource"]:
             address = "{}, {}, {}".format(selected["address"].title(),
                                           selected["zip_code"].title(),
                                           selected["city"].title())
-        elif type == FACILITY_TYPES["nursing_home"]["resource"]:
+        elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
             address = "{}, {}, {}".format(selected["provider_address"].title(),
                                           selected["provider_zip_code"].title(),
                                           selected["provider_city"].title())
@@ -173,51 +197,48 @@ class FindHealthCareAddress(Action):
                                           selected["city"].title())
 
         return [
-            SlotSet("selected_address", address if results is not None else "")]
+            SlotSet("facility_address", address if results is not None else "")]
 
 
-class HospitalForm(FormAction):
-    """Example of a custom form action"""
+class FacilityForm(FormAction):
+    """Custom form action to fill all slots required to find specific type
+    of healthcare facilities in a certain city."""
 
     def name(self):
-        # type: () -> Text
         """Unique identifier of the form"""
 
-        return "hospital_form"
+        return "facility_form"
 
     @staticmethod
     def required_slots(tracker):
         # type: (Tracker) -> List[Text]
         """A list of required slots that the form has to fill"""
 
-        return ["selected_type_slot", "city"]
+        return ["facility_type", "city"]
 
     def slot_mappings(self):
         # type: () -> Dict[Text: Union[Dict, List[Dict]]]
         return {
-            "city": self.from_entity(entity="city", intent="inform"),
-            "selected_type_slot": self.from_entity(entity="provider_type",
-                                                   intent="inform")
+            "facility_type": self.from_entity(entity="facility_type",
+                                              intent=["inform",
+                                                      "search_provider"]),
+            "city": self.from_entity(entity="city", intent="inform")
         }
-
-    @staticmethod
-    def is_city(string):
-        return True
 
     def validate(self, dispatcher, tracker, domain):
         # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict]
         """Validate extracted requested slot
-            else reject the execution of the form action
-        """
+        else reject the execution of the form action"""
+
         # extract other slots that were not requested
         # but set by corresponding entity
         slot_values = self.extract_other_slots(dispatcher, tracker, domain)
-
         # extract requested slot
         slot_to_fill = tracker.get_slot(REQUESTED_SLOT)
         if slot_to_fill:
             slot_values.update(self.extract_requested_slot(dispatcher,
                                                            tracker, domain))
+
             if not slot_values:
                 # reject form action execution
                 # if some slot was requested but nothing was extracted
@@ -228,14 +249,6 @@ class HospitalForm(FormAction):
                                                "".format(slot_to_fill,
                                                          self.name()))
 
-        # we'll check when validation failed in order
-        # to add appropriate utterances
-        for slot, value in slot_values.items():
-            if slot == 'city':
-                if not self.is_city(value):
-                    dispatcher.utter_message("Please enter a valid city")
-                    slot_values[slot] = None
-        # validation succeed, set the slots values to the extracted values
         return [SlotSet(slot, value) for slot, value in slot_values.items()]
 
     def submit(self, dispatcher, tracker, domain):
@@ -245,8 +258,8 @@ class HospitalForm(FormAction):
 
         # utter submit template
         dispatcher.utter_template('utter_submit', tracker)
-        return [FollowupAction('find_hospital')]
-
+        return [FollowupAction('find_facilities')]
+    
 
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""

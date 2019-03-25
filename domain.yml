@@ -22,30 +22,27 @@ intents:
 - howwereyoubuilt
 
 entities:
-- number
-- provider_type
+- facility_type
 - city
-
+- zip
 
 slots:
   zip:
     type: unfeaturized
-  provider_types_slot:
+  facility_type:
     type: unfeaturized
-  selected_type_slot:
+  facility_address:
     type: unfeaturized
-  selected_address:
-    type: unfeaturized
-  selected_id:
+  facility_id:
     type: text
   city:
     type: unfeaturized
-  provider_type:
+  facility_types:
     type: unfeaturized
 
 forms:
-- hospital_form
-- center_form
+- facility_form
+- find_address_form
 
 actions:
 - action_chitchat
@@ -54,14 +51,13 @@ actions:
 - utter_goodbye
 - utter_ask_zip
 - utter_aks_city
-- utter_ask_selected_type_slot
+- utter_ask_facility_type
 - utter_ask_specialty
-- utter_ask_type
 - utter_found_hospitals
 - utter_found_specialties
-- find_hospital
+- find_facilities
 - find_healthcare_address
-- find_provider_types
+- find_facility_types
 - utter_address
 - utter_found_healthcare
 - utter_ask_weather
@@ -90,33 +86,18 @@ templates:
   utter_noworries:
   - text: "My pleasure."
 
-  utter_ask_selected_type_slot:
-  - text: "Choose one of the following Hospital, Nursing home or Home Health Agency"
+  utter_ask_facility_type:
+  - text: "Choose one of the following Hospital, Nursing home or Home Health Agency."
 
   utter_ask_city:
-  - text: "Please provide your city name"
+  - text: "Please provide your city name."
   - text: "What is you current city?"
 
-  utter_ask_zip:
-  - text: "Please provide your city name or zip code"
-
-  utter_ask_specialty:
-  - text: "Are you looking for a particular specialist?"
-
-  utter_ask_type:
-  - text: "What type of treatment center are you lokking for? Hospital, Nursery Home, ..."
-
-  utter_found_hospitals:
-  - text: "I found these nearby hospitals {hospitals}"
-
-  utter_found_specialties:
-  - text: "Did you want a specific specialty? If so select one : specialty 1, specialty 2, specialty 3"
+  utter_use_once_zip_added:
+  - text: "Please provide your city name or zip code."
 
   utter_address:
-  - text: "The address is {selected_address}"
-
-  utter_found_healthcare:
-  - text: "Here is a list of healthcare providers near you"
+  - text: "The address is {facility_address}."
 
   utter_ask_howold:
   - text: "42"
