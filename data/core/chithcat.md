@@ -16,9 +16,9 @@
     - slot{"facility_type": "rbry-mqwu"}
     - facility_form
     - form{"name": "facility_form"}
-    - slot{"requested_slot": "city"}
-* inform{"city": "san francisco"}
-    - slot{"city": "san francisco"}
+    - slot{"requested_slot": "location"}
+* inform{"location": "san francisco"}
+    - slot{"location": "san francisco"}
     - find_facilities
 * inform{"facility_id": "050407"}
     - slot{"facility_id": "050407"}

@@ -23,21 +23,18 @@ intents:
 
 entities:
 - facility_type
-- city
-- zip
+- location
 
 slots:
-  zip:
-    type: unfeaturized
   facility_type:
     type: unfeaturized
   facility_address:
     type: unfeaturized
   facility_id:
     type: text
-  city:
-    type: unfeaturized
   facility_types:
+    type: unfeaturized
+  location:
     type: unfeaturized
 
 forms:
@@ -49,17 +46,12 @@ actions:
 - utter_noworries
 - utter_greet
 - utter_goodbye
-- utter_ask_zip
-- utter_aks_city
+- utter_aks_location
 - utter_ask_facility_type
-- utter_ask_specialty
-- utter_found_hospitals
-- utter_found_specialties
 - find_facilities
 - find_healthcare_address
 - find_facility_types
 - utter_address
-- utter_found_healthcare
 - utter_ask_weather
 - utter_ask_builder
 - utter_ask_howdoing
@@ -78,23 +70,24 @@ actions:
 
 templates:
   utter_greet:
-  - text: "Hi. What are you looking for ?"
+  - text: "Hi. What are you looking for?"
+  - text: "Hey there! Please choose one of the healthcare facility options:"
 
   utter_goodbye:
   - text: "Talk to you later!"
 
   utter_noworries:
   - text: "My pleasure."
+  - text: "You are welcome!"
 
   utter_ask_facility_type:
   - text: "Choose one of the following Hospital, Nursing home or Home Health Agency."
 
-  utter_ask_city:
+  utter_ask_location:
   - text: "Please provide your city name."
   - text: "What is you current city?"
-
-  utter_use_once_zip_added:
   - text: "Please provide your city name or zip code."
+  - text: "Please enter your zip code or city name to find local providers."
 
   utter_address:
   - text: "The address is {facility_address}."

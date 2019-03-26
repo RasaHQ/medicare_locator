@@ -20,7 +20,7 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
-    - slot{"requested_slot":"city"}
+    - slot{"requested_slot":"location"}
 * inform{"facility_id":4245}
     - find_healthcare_address
     - utter_address
@@ -36,11 +36,11 @@
     - slot{"facility_type": "9wzi-peqs"}
     - facility_form
     - form{"name": "facility_form"}
-    - slot{"requested_slot": "city"}
-* form: inform{"city": "austin"}
-    - slot{"city": "austin"}
+    - slot{"requested_slot": "location"}
+* form: inform{"location": "austin"}
+    - slot{"location": "austin"}
     - form: facility_form
-    - slot{"city": "austin"}
+    - slot{"location": "austin"}
     - form: followup{"name": "find_facilities"}
     - form{"name": null}
     - slot{"requested_slot": null}
@@ -54,8 +54,8 @@
     - utter_noworries
     
 ## Generated Story -5318182399020957170
-* search_provider{"city": "Austin", "facility_type": "rbry-mqwu"}
-    - slot{"city": "Austin"}
+* search_provider{"location": "Austin", "facility_type": "rbry-mqwu"}
+    - slot{"location": "Austin"}
     - slot{"facility_type": "rbry-mqwu"}
     - find_facilities
 * inform{"facility_id": "450871"}
