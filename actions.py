@@ -29,17 +29,17 @@ ENDPOINTS = {
     "base": "https://data.medicare.gov/resource/{}.json",
     "rbry-mqwu": {
         "city_query": "?city={}",
-        "zip_code_query": "?$where=zip_code in({})",
+        "zip_code_query": "?zip_code={}",
         "id_query": "?provider_id={}"
     },
     "b27b-2uc7": {
         "city_query": "?provider_city={}",
-        "zip_code_query": "?$where=provider_zip_code in({})",
+        "zip_code_query": "?provider_zip_code={}",
         "id_query": "?federal_provider_number={}"
     },
     "9wzi-peqs": {
         "city_query": "?city={}",
-        "zip_code_query": "?$where=zip in({})",
+        "zip_code_query": "?zip={}",
         "id_query": "?provider_number={}"
     }
 }
@@ -91,7 +91,7 @@ class FindFacilityTypes(Action):
 
 def _create_path(base, resource, query, values):
     '''Creates a path to find provider using the endpoints.'''
-    
+
     if isinstance(values, list):
         return (base + query).format(resource,
                                      ', '.join(
@@ -100,11 +100,18 @@ def _create_path(base, resource, query, values):
         return (base + query).format(resource, values)
 
 
-def _find_facilities(city, resource):
+def _find_facilities(location, resource):
     '''Returns json of facilities matching the search criteria.'''
 
-    full_path = _create_path(ENDPOINTS["base"], resource, 
-                             ENDPOINTS[resource]["city_query"], city.upper())
+    if str.isdigit(location):
+        full_path = _create_path(ENDPOINTS["base"], resource,
+                                 ENDPOINTS[resource]["zip_code_query"],
+                                 location)
+    else:
+        full_path = _create_path(ENDPOINTS["base"], resource,
+                                 ENDPOINTS[resource]["city_query"],
+                                 location.upper())
+
     results = requests.get(full_path).json()
     return results
 
@@ -127,13 +134,16 @@ class FindFacilities(Action):
         return "find_facilities"
 
     def run(self, dispatcher, tracker, domain):
-        city = tracker.get_slot('city')
+
+        location = tracker.get_slot('location')
         facility_type = tracker.get_slot('facility_type')
-        results = _find_facilities(city, facility_type)
+
+        results = _find_facilities(location, facility_type)
         button_name = _resolve_name(FACILITY_TYPES, facility_type)
         if len(results) == 0:
             dispatcher.utter_message(
-                "Sorry, we could not find a {} in {}.".format(button_name, city))
+                "Sorry, we could not find a {} in {}.".format(button_name,
+                                                              location))
             return []
 
         buttons = []
@@ -155,7 +165,8 @@ class FindFacilities(Action):
 
         # limit number of buttons to 3 here for clear presentation purpose only
         dispatcher.utter_button_message(
-            "Here is a list of 3 {}s near you".format(button_name),
+            "Here is a list of {} {}s near you".format(len(buttons[:3]),
+                                                       button_name),
             buttons[:3], button_type="custom")
         # todo:note: button options are not working BUG in rasa_core
 
@@ -202,11 +213,10 @@ class FindHealthCareAddress(Action):
 
 class FacilityForm(FormAction):
     """Custom form action to fill all slots required to find specific type
-    of healthcare facilities in a certain city."""
+    of healthcare facilities in a certain city or zip code."""
 
     def name(self):
         """Unique identifier of the form"""
-
         return "facility_form"
 
     @staticmethod
@@ -214,7 +224,7 @@ class FacilityForm(FormAction):
         # type: (Tracker) -> List[Text]
         """A list of required slots that the form has to fill"""
 
-        return ["facility_type", "city"]
+        return ["facility_type", "location"]
 
     def slot_mappings(self):
         # type: () -> Dict[Text: Union[Dict, List[Dict]]]
@@ -222,8 +232,9 @@ class FacilityForm(FormAction):
             "facility_type": self.from_entity(entity="facility_type",
                                               intent=["inform",
                                                       "search_provider"]),
-            "city": self.from_entity(entity="city", intent="inform")
-        }
+            "location": self.from_entity(entity="location",
+                                         intent=["inform",
+                                                 "search_provider"])}
 
     def validate(self, dispatcher, tracker, domain):
         # type: (CollectingDispatcher, Tracker, Dict[Text, Any]) -> List[Dict]
@@ -233,12 +244,12 @@ class FacilityForm(FormAction):
         # extract other slots that were not requested
         # but set by corresponding entity
         slot_values = self.extract_other_slots(dispatcher, tracker, domain)
+
         # extract requested slot
         slot_to_fill = tracker.get_slot(REQUESTED_SLOT)
         if slot_to_fill:
             slot_values.update(self.extract_requested_slot(dispatcher,
                                                            tracker, domain))
-
             if not slot_values:
                 # reject form action execution
                 # if some slot was requested but nothing was extracted
@@ -259,7 +270,7 @@ class FacilityForm(FormAction):
         # utter submit template
         dispatcher.utter_template('utter_submit', tracker)
         return [FollowupAction('find_facilities')]
-    
+
 
 class ActionChitchat(Action):
     """Returns the chitchat utterance dependent on the intent"""
