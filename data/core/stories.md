@@ -11,6 +11,7 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
+    - find_facilities
 * inform{"facility_id": 4245}
     - find_healthcare_address
     - utter_address
@@ -22,6 +23,7 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
+    - find_facilities
 * inform{"facility_id": "747604"}
     - find_healthcare_address
     - utter_address
@@ -29,6 +31,7 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
+    - find_facilities
 * inform{"facility_id": 4245}   
     - find_healthcare_address
     - utter_address
@@ -38,6 +41,7 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
+    - find_facilities
 * inform{"facility_id": "450871"}
     - find_healthcare_address
     - utter_address

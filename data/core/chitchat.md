@@ -10,6 +10,7 @@
     - action_chitchat
     - facility_form
     - form{"name": null}
+    - find_facilities
 * inform{"facility_id": "050407"}
     - find_healthcare_address
     - utter_address
@@ -29,6 +30,7 @@
 * affirm
     - facility_form 
     - form{"name": null}
+    - find_facilities
 * inform{"facility_id": "050407"}
     - find_healthcare_address
     - utter_address
