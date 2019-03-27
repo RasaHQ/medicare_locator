@@ -1,67 +1,45 @@
 ## story_goodbye
 * goodbye
- - utter_goodbye
+    - utter_goodbye
 
 ## story_thankyou
 * thankyou
- - utter_noworries
+    - utter_noworries
 
-## hi
+## happy_path
 * greet
-    - find_facility_types
-    - slot{"facility_type": [[1, "HOSPITAL"], [2, "HOME HEALTH AGENCY"], [3, "Nursing Home"]]}
-
-## new facility_form story
-* greet
-    - facility_form
-    - form{"name": "facility_form"}
-    - slot{"requested_slot":"facility_type"}
-* inform{"facility_type":1}
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
-    - slot{"requested_slot":"location"}
-* inform{"facility_id":4245}
+* inform{"facility_id": 4245}
     - find_healthcare_address
     - utter_address
 * thankyou
     - utter_noworries
     
-    
-## Generated Story -4480193758190304006
+## happy_path_multi_requests
 * greet
-    - find_facility_types
-    - slot{"facility_types": {"home_health": {"name": "Home Health Agency", "resource": "9wzi-peqs"}, "hospital": {"name": "hospital", "resource": "rbry-mqwu"}, "nursing_home": {"name": "nursing home", "resource": "b27b-2uc7"}}}
-* inform{"facility_type": "9wzi-peqs"}
-    - slot{"facility_type": "9wzi-peqs"}
     - facility_form
     - form{"name": "facility_form"}
-    - slot{"requested_slot": "location"}
-* form: inform{"location": "austin"}
-    - slot{"location": "austin"}
-    - form: facility_form
-    - slot{"location": "austin"}
-    - form: followup{"name": "find_facilities"}
     - form{"name": null}
-    - slot{"requested_slot": null}
-    - find_facilities
 * inform{"facility_id": "747604"}
-    - slot{"facility_id": "747604"}
     - find_healthcare_address
-    - slot{"facility_address": "1508 Dessau Ridge Lane, Suite # 705, 78754, Austin"}
     - utter_address
-* thankyou
-    - utter_noworries
-    
-## Generated Story -5318182399020957170
-* search_provider{"location": "Austin", "facility_type": "rbry-mqwu"}
-    - slot{"location": "Austin"}
-    - slot{"facility_type": "rbry-mqwu"}
-    - find_facilities
-* inform{"facility_id": "450871"}
-    - slot{"facility_id": "450871"}
+* search_provider{"facility_type": "rbry-mqwu"}
+    - facility_form
+    - form{"name": "facility_form"}
+    - form{"name": null}
+* inform{"facility_id": 4245}   
     - find_healthcare_address
-    - slot{"facility_address": "3003 Bee Caves Road, 78746, Austin"}
+    - utter_address
+       
+## happy_path2
+* search_provider{"location": "Austin", "facility_type": "rbry-mqwu"}
+    - facility_form
+    - form{"name": "facility_form"}
+    - form{"name": null}
+* inform{"facility_id": "450871"}
+    - find_healthcare_address
     - utter_address
 * thankyou
     - utter_noworries
