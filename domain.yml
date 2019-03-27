@@ -38,7 +38,6 @@ slots:
 
 forms:
 - facility_form
-- find_address_form
 
 actions:
 - action_chitchat
