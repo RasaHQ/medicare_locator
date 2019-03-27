@@ -4,18 +4,16 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-# import typing
-from typing import Dict, Text, Any, List, Union
+from rasa_core_sdk import Tracker
+from rasa_core_sdk.executor import CollectingDispatcher
+
+from typing import Dict, Text, Any, List
 
 import requests
 from rasa_core_sdk import Action
 from rasa_core_sdk import ActionExecutionRejection
 from rasa_core_sdk.events import SlotSet, FollowupAction
 from rasa_core_sdk.forms import FormAction, REQUESTED_SLOT
-
-# if typing.TYPE_CHECKING:
-from rasa_core_sdk import Tracker
-from rasa_core_sdk.executor import CollectingDispatcher
 
 # We use the medicore.gov database to find information about 3 different
 # healthcare facility types, given a city name, zip code or facility ID
