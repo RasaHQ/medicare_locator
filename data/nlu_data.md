@@ -5,6 +5,20 @@
 - for sure
 - yes yes yes
 - definitely
+- yeah
+- si
+- ok
+- okay
+
+## intent:deny
+- no
+- not today
+- no thanks
+- no thank you
+- uh no
+- noope
+- do you have something else
+- no this does not work for me
 
 ## intent:bye
 - Bye
@@ -1374,7 +1388,6 @@
 - It's good that I could meet you. It was a pleasure.
 - It is indeed a pleasure to be able to meet you.
 - nice to meet you
-
 
 
 ## synonym:rbry-mqwu
