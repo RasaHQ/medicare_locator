@@ -48,6 +48,7 @@ actions:
 - utter_aks_location
 - utter_ask_facility_type
 - find_facilities
+- find_facility_types
 - find_healthcare_address
 - utter_address
 - utter_continue
