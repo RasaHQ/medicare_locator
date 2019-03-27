@@ -3,6 +3,7 @@ intents:
 - goodbye
 - thankyou
 - deny
+- affirm
 - search_provider
 - inform
 - ask_weather
@@ -31,8 +32,6 @@ slots:
   facility_address:
     type: unfeaturized
   facility_id:
-    type: text
-  facility_types:
     type: unfeaturized
   location:
     type: unfeaturized
@@ -50,8 +49,8 @@ actions:
 - utter_ask_facility_type
 - find_facilities
 - find_healthcare_address
-- find_facility_types
 - utter_address
+- utter_continue
 - utter_ask_weather
 - utter_ask_builder
 - utter_ask_howdoing
@@ -72,9 +71,12 @@ templates:
   utter_greet:
   - text: "Hi. What are you looking for?"
   - text: "Hey there! Please choose one of the healthcare facility options:"
+  - text: "Hello! What can I help you find today?"
 
   utter_goodbye:
   - text: "Talk to you later!"
+  - text: "Have a good day."
+  - text: "Until next time!"
 
   utter_noworries:
   - text: "My pleasure."
@@ -91,6 +93,10 @@ templates:
 
   utter_address:
   - text: "The address is {facility_address}."
+
+  utter_continue:
+  - text: "Do you want to continue the healthcare facility search?"
+  - text: "You are going off topic. Are you still looking for a healthcare provider?"
 
   utter_ask_howold:
   - text: "42"
