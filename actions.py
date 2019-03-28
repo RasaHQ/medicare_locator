@@ -197,22 +197,30 @@ class FindHealthCareAddress(Action):
                                  ENDPOINTS[facility_type]["id_query"],
                                  healthcare_id)
         results = requests.get(full_path).json()
-        selected = results[0]
-        if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-            address = "{}, {}, {}".format(selected["address"].title(),
-                                          selected["zip_code"].title(),
-                                          selected["city"].title())
-        elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-            address = "{}, {}, {}".format(selected["provider_address"].title(),
-                                          selected["provider_zip_code"].title(),
-                                          selected["provider_city"].title())
-        else:
-            address = "{}, {}, {}".format(selected["address"].title(),
-                                          selected["zip"].title(),
-                                          selected["city"].title())
+        if results:
+            selected = results[0]
+            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
+                address = "{}, {}, {}".format(selected["address"].title(),
+                                              selected["zip_code"].title(),
+                                              selected["city"].title())
+            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
+                address = "{}, {}, {}".format(selected["provider_address"].title(),
+                                              selected["provider_zip_code"].title(),
+                                              selected["provider_city"].title())
+            else:
+                address = "{}, {}, {}".format(selected["address"].title(),
+                                              selected["zip"].title(),
+                                              selected["city"].title())
 
-        return [
-            SlotSet("facility_address", address if results is not None else "")]
+            return [SlotSet("facility_address", address)]
+        else:
+            print("No address found. Most likely this action was executed "
+                  "before the user choose a healthcare facility from the "
+                  "provided list. "
+                  "If this is a common problem in your dialogue flow,"
+                  "using a form instead for this action might be appropriate.")
+
+            return [SlotSet("facility_address", "not found")]
 
 
 class FacilityForm(FormAction):
