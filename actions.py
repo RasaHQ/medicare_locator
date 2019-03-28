@@ -171,7 +171,7 @@ class FindFacilities(Action):
         dispatcher.utter_button_message(
             "Here is a list of {} {}s near you".format(len(buttons[:3]),
                                                        button_name),
-            buttons[:3], button_type="custom")
+            buttons[:3], button_type="vertical")
         # todo: note: button options are not working BUG in rasa_core
 
         return []
