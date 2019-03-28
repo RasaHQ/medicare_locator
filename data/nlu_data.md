@@ -1401,3 +1401,6 @@
 ## synonym:b27b-2uc7
 - nursing home
 - nursing homes
+
+# regex:location
+- [0-9]{5}
