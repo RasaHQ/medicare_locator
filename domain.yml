@@ -9,8 +9,6 @@ intents:
 - ask_weather
 - ask_builder
 - ask_howdoing
-- ask_whoisit
-- ask_isbot
 - ask_howold
 - ask_restaurant
 - ask_time
@@ -20,7 +18,7 @@ intents:
 - nicetomeeyou
 - telljoke
 - ask_whatismyname
-- howwereyoubuilt
+- ask_languagesbot
 
 entities:
 - facility_type
@@ -54,8 +52,6 @@ actions:
 - utter_ask_weather
 - utter_ask_builder
 - utter_ask_howdoing
-- utter_ask_whoisit
-- utter_ask_isbot
 - utter_ask_howold
 - utter_ask_restaurant
 - utter_ask_time
@@ -65,7 +61,7 @@ actions:
 - utter_nicetomeeyou
 - utter_telljoke
 - utter_ask_whatismyname
-- utter_howwereyoubuilt
+- utter_ask_languagesbot
 
 templates:
   utter_greet:
@@ -127,8 +123,6 @@ templates:
   - text: "Why do the French like to eat snails so much? - They can’t stand fast food."
   utter_ask_whatismyname:
   - text: "It most probably is the one that your parents have chosen for you."
-  utter_howwereyoubuilt:
-  - text: "I have been built with a lot of love and patience."
   utter_ask_weather:
   - text: "I don't know about where you live, but in my world it's always sunny ☀️"
   - text: "Honestly it's a bit too hot these days 😅"
