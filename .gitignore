@@ -9,3 +9,4 @@ results/
 __pycache__
 .DS_Store
 credentials.yml
+story_graph.dot

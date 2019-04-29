@@ -14,7 +14,7 @@ from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet, FollowupAction
 from rasa_core_sdk.forms import FormAction
 
-# We use the medicore.gov database to find information about 3 different
+# We use the medicare.gov database to find information about 3 different
 # healthcare facility types, given a city name, zip code or facility ID
 # the identifiers for each facility type is given by the medicare database
 # rbry-mqwu is for hospitals
@@ -41,7 +41,6 @@ ENDPOINTS = {
 }
 
 FACILITY_TYPES = {
-
     "hospital":
         {
             "name": "hospital",
@@ -54,15 +53,15 @@ FACILITY_TYPES = {
         },
     "home_health":
         {
-            "name": "Home Health Agency",
+            "name": "home health agency",
             "resource": "9wzi-peqs"
         }
 }
 
 
 class FindFacilityTypes(Action):
-    '''This action class allows to display buttons for each facility type
-    for the user to chose from to fill the facility_type entity slot.'''
+    """This action class allows to display buttons for each facility type
+    for the user to chose from to fill the facility_type entity slot."""
 
     def name(self) -> Text:
         """Unique identifier of the action"""
@@ -85,13 +84,13 @@ class FindFacilityTypes(Action):
                  "payload": payload})
 
         dispatcher.utter_button_template("utter_greet", buttons, tracker,
-                                         button_type="custom")
+                                         button_type="vertical")
         return []
 
 
 def _create_path(base: Text, resource: Text,
                  query: Text, values: Text) -> Text:
-    '''Creates a path to find provider using the endpoints.'''
+    """Creates a path to find provider using the endpoints."""
 
     if isinstance(values, list):
         return (base + query).format(
@@ -101,7 +100,7 @@ def _create_path(base: Text, resource: Text,
 
 
 def _find_facilities(location: Text, resource: Text) -> List[Dict]:
-    '''Returns json of facilities matching the search criteria.'''
+    """Returns json of facilities matching the search criteria."""
 
     if str.isdigit(location):
         full_path = _create_path(ENDPOINTS["base"], resource,
@@ -124,9 +123,9 @@ def _resolve_name(facility_types, resource) ->Text:
 
 
 class FindFacilities(Action):
-    '''This action class retrieves a list of all facilities matching
+    """This action class retrieves a list of all facilities matching
     the supplied search criteria and displays buttons of random search
-    results to the user to pick from.'''
+    results to the user to pick from."""
 
     def name(self) -> Text:
         """Unique identifier of the action"""
@@ -150,8 +149,8 @@ class FindFacilities(Action):
             return []
 
         buttons = []
-        print("found {} facilities".format(len(results)))
-        for r in results:
+        # limit number of results to 3 for clear presentation purposes
+        for r in results[:3]:
             if facility_type == FACILITY_TYPES["hospital"]["resource"]:
                 facility_id = r.get("provider_id")
                 name = r["hospital_name"]
@@ -166,19 +165,23 @@ class FindFacilities(Action):
             buttons.append(
                 {"title": "{}".format(name.title()), "payload": payload})
 
-        # limit number of buttons to 3 here for clear presentation purpose
-        dispatcher.utter_button_message(
-            "Here is a list of {} {}s near you".format(len(buttons[:3]),
-                                                       button_name),
-            buttons[:3], button_type="vertical")
-        # todo: note: button options are not working BUG in rasa_core
+        if len(buttons) == 1:
+            message = "Here is a {} near you:".format(button_name)
+        else:
+            if button_name == "home health agency":
+                button_name = "home health agencie"
+            message = "Here are {} {}s near you:".format(len(buttons),
+                                                         button_name)
+
+        dispatcher.utter_button_message(message, buttons,
+                                        button_type="vertical")
 
         return []
 
 
 class FindHealthCareAddress(Action):
-    '''This action class retrieves the address of the users
-    healthcare facility choice to display it to the user.'''
+    """This action class retrieves the address of the user's
+    healthcare facility choice to display it to the user."""
 
     def name(self) -> Text:
         """Unique identifier of the action"""
@@ -190,7 +193,7 @@ class FindHealthCareAddress(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict]:
 
-        facility_type = tracker.get_slot('facility_type')
+        facility_type = tracker.get_slot("facility_type")
         healthcare_id = tracker.get_slot("facility_id")
         full_path = _create_path(ENDPOINTS["base"], facility_type,
                                  ENDPOINTS[facility_type]["id_query"],
@@ -199,17 +202,20 @@ class FindHealthCareAddress(Action):
         if results:
             selected = results[0]
             if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-                address = "{}, {}, {}".format(selected["address"].title(),
-                                              selected["zip_code"].title(),
-                                              selected["city"].title())
+                address = "{}, {}, {} {}".format(selected["address"].title(),
+                                                 selected["city"].title(),
+                                                 selected["state"].upper(),
+                                                 selected["zip_code"].title())
             elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-                address = "{}, {}, {}".format(selected["provider_address"].title(),
-                                              selected["provider_zip_code"].title(),
-                                              selected["provider_city"].title())
+                address = "{}, {}, {} {}".format(selected["provider_address"].title(),
+                                                 selected["provider_city"].title(),
+                                                 selected["provider_state"].upper(),
+                                                 selected["provider_zip_code"].title())
             else:
-                address = "{}, {}, {}".format(selected["address"].title(),
-                                              selected["zip"].title(),
-                                              selected["city"].title())
+                address = "{}, {}, {} {}".format(selected["address"].title(),
+                                                 selected["city"].title(),
+                                                 selected["state"].upper(),
+                                                 selected["zip"].title())
 
             return [SlotSet("facility_address", address)]
         else:
@@ -238,24 +244,20 @@ class FacilityForm(FormAction):
         return ["facility_type", "location"]
 
     def slot_mappings(self) -> Dict[Text, Any]:
-        return {
-            "facility_type": self.from_entity(entity="facility_type",
-                                              intent=["inform",
-                                                      "search_provider"]),
-            "location": self.from_entity(entity="location",
-                                         intent=["inform",
-                                                 "search_provider"])}
+        return {"facility_type": self.from_entity(entity="facility_type",
+                                                  intent=["inform",
+                                                          "search_provider"]),
+                "location": self.from_entity(entity="location",
+                                             intent=["inform",
+                                                     "search_provider"])}
 
     def submit(self,
                dispatcher: CollectingDispatcher,
                tracker: Tracker,
                domain: Dict[Text, Any]
                ) -> List[Dict]:
+        """Define what the form has to do after all required slots are filled"""
 
-        """Define what the form has to do
-            after all required slots are filled"""
-
-        # utter submit template
         dispatcher.utter_template('utter_submit', tracker)
         return [FollowupAction('find_facilities')]
 
@@ -277,11 +279,9 @@ class ActionChitchat(Action):
 
         # retrieve the correct chitchat utterance dependent on the intent
         if intent in ['ask_builder', 'ask_weather', 'ask_howdoing',
-                      'ask_whatspossible', 'ask_whatisrasa', 'ask_isbot',
                       'ask_howold', 'ask_languagesbot', 'ask_restaurant',
                       'ask_time', 'ask_wherefrom', 'ask_whoami',
-                      'handleinsult', 'nicetomeeyou', 'telljoke',
-                      'ask_whatismyname', 'howwereyoubuilt', 'ask_whoisit']:
+                      'handleinsult', 'telljoke', 'ask_whatismyname']:
             dispatcher.utter_template('utter_' + intent, tracker)
 
         return []

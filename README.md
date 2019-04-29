@@ -26,7 +26,7 @@ otherwise move to the next step directly.
 
 **Step 2**: Install requirements:
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 **Step 3**: Install the spaCy English language model by running:
@@ -161,15 +161,15 @@ Run `make help` to see an overview of all make commands available.
 
 `train-nlu` - Train the NLU model.
 
-`train-core` - Train the core model.
+`train-core` - Train the Core model.
 
 `interactive` - Run the Medicare Locator interactive learning mode.
 
-`cmdline` - Run the Medicare Locator Bot.
+`cmdline` - Run the bot on the command line.
 
-`action-server` - Starts the action server.
+`action-server` - Start the action server.
 
-`telegram` - Set up webhook for Telegram.
+`telegram` - Run the bot in the Telegram channel.
 
 ## :gift: License
 Licensed under the GNU General Public License v3. Copyright 2019 Rasa Technologies
