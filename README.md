@@ -128,7 +128,7 @@ Detailed information about this can also be found in the [Rasa Docs](https://ras
 
 ## More about the Medicare Locator demo bot
 There are some custom actions that require connections to external services,
-specifically `FindHospital` and `FindHealthCareAddress`. These two actions 
+specifically `FacilityForm` and `FindHealthCareAddress`. These two actions
 connect to Medicare APIs. These APIs do not require tokens or any form of authentication.
 
 For more information about Medicare APIs please visit [data.medicare.gov](https://data.medicare.gov/)

@@ -12,7 +12,6 @@
     - action_chitchat
     - facility_form
     - form{"name": null}
-    - find_facilities
 * inform{"facility_id": "050407"}
     - find_healthcare_address
     - utter_address
@@ -34,7 +33,6 @@
 * affirm
     - facility_form
     - form{"name": null}
-    - find_facilities
 * inform{"facility_id": "050407"}
     - find_healthcare_address
     - utter_address
@@ -69,7 +67,6 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
-    - find_facilities
 * inform{"facility_id": "050407"}
     - find_healthcare_address
     - utter_address
@@ -81,10 +78,8 @@
     - facility_form
     - form{"name": "facility_form"}
     - form{"name": null}
-    - find_facilities
 * ask_weather OR ask_builder OR ask_howdoing OR ask_languagesbot OR ask_howold OR ask_restaurant OR ask_time OR ask_wherefrom OR ask_whoami OR handleinsult OR telljoke OR ask_whatismyname
     - action_chitchat
-    - find_facilities
 * inform{"facility_id": "050407"}
     - find_healthcare_address
     - utter_address

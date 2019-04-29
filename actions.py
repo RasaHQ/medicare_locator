@@ -59,35 +59,6 @@ FACILITY_TYPES = {
 }
 
 
-class FindFacilityTypes(Action):
-    """This action class allows to display buttons for each facility type
-    for the user to chose from to fill the facility_type entity slot."""
-
-    def name(self) -> Text:
-        """Unique identifier of the action"""
-
-        return "find_facility_types"
-
-    def run(self,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List:
-
-        buttons = []
-        for t in FACILITY_TYPES:
-            facility_type = FACILITY_TYPES[t]
-            payload = "/inform{\"facility_type\": \"" + facility_type.get(
-                "resource") + "\"}"
-
-            buttons.append(
-                {"title": "{}".format(facility_type.get("name").title()),
-                 "payload": payload})
-
-        dispatcher.utter_button_template("utter_greet", buttons, tracker,
-                                         button_type="vertical")
-        return []
-
-
 def _create_path(base: Text, resource: Text,
                  query: Text, values: Text) -> Text:
     """Creates a path to find provider using the endpoints."""
@@ -122,60 +93,32 @@ def _resolve_name(facility_types, resource) ->Text:
     return ""
 
 
-class FindFacilities(Action):
-    """This action class retrieves a list of all facilities matching
-    the supplied search criteria and displays buttons of random search
-    results to the user to pick from."""
+class FindFacilityTypes(Action):
+    """This action class allows to display buttons for each facility type
+    for the user to chose from to fill the facility_type entity slot."""
 
     def name(self) -> Text:
         """Unique identifier of the action"""
 
-        return "find_facilities"
+        return "find_facility_types"
 
     def run(self,
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List:
 
-        location = tracker.get_slot('location')
-        facility_type = tracker.get_slot('facility_type')
-
-        results = _find_facilities(location, facility_type)
-        button_name = _resolve_name(FACILITY_TYPES, facility_type)
-        if len(results) == 0:
-            dispatcher.utter_message(
-                "Sorry, we could not find a {} in {}.".format(button_name,
-                                                              location))
-            return []
-
         buttons = []
-        # limit number of results to 3 for clear presentation purposes
-        for r in results[:3]:
-            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-                facility_id = r.get("provider_id")
-                name = r["hospital_name"]
-            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-                facility_id = r["federal_provider_number"]
-                name = r["provider_name"]
-            else:
-                facility_id = r["provider_number"]
-                name = r["provider_name"]
+        for t in FACILITY_TYPES:
+            facility_type = FACILITY_TYPES[t]
+            payload = "/inform{\"facility_type\": \"" + facility_type.get(
+                "resource") + "\"}"
 
-            payload = "/inform{\"facility_id\":\"" + facility_id + "\"}"
             buttons.append(
-                {"title": "{}".format(name.title()), "payload": payload})
+                {"title": "{}".format(facility_type.get("name").title()),
+                 "payload": payload})
 
-        if len(buttons) == 1:
-            message = "Here is a {} near you:".format(button_name)
-        else:
-            if button_name == "home health agency":
-                button_name = "home health agencie"
-            message = "Here are {} {}s near you:".format(len(buttons),
-                                                         button_name)
-
-        dispatcher.utter_button_message(message, buttons,
-                                        button_type="vertical")
-
+        dispatcher.utter_button_template("utter_greet", buttons, tracker,
+                                         button_type="vertical")
         return []
 
 
@@ -256,10 +199,48 @@ class FacilityForm(FormAction):
                tracker: Tracker,
                domain: Dict[Text, Any]
                ) -> List[Dict]:
-        """Define what the form has to do after all required slots are filled"""
+        """Once required slots are filled, print buttons for found facilities"""
 
-        dispatcher.utter_template('utter_submit', tracker)
-        return [FollowupAction('find_facilities')]
+        location = tracker.get_slot('location')
+        facility_type = tracker.get_slot('facility_type')
+
+        results = _find_facilities(location, facility_type)
+        button_name = _resolve_name(FACILITY_TYPES, facility_type)
+        if len(results) == 0:
+            dispatcher.utter_message(
+                "Sorry, we could not find a {} in {}.".format(button_name,
+                                                              location.title()))
+            return []
+
+        buttons = []
+        # limit number of results to 3 for clear presentation purposes
+        for r in results[:3]:
+            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
+                facility_id = r.get("provider_id")
+                name = r["hospital_name"]
+            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
+                facility_id = r["federal_provider_number"]
+                name = r["provider_name"]
+            else:
+                facility_id = r["provider_number"]
+                name = r["provider_name"]
+
+            payload = "/inform{\"facility_id\":\"" + facility_id + "\"}"
+            buttons.append(
+                {"title": "{}".format(name.title()), "payload": payload})
+
+        if len(buttons) == 1:
+            message = "Here is a {} near you:".format(button_name)
+        else:
+            if button_name == "home health agency":
+                button_name = "home health agencie"
+            message = "Here are {} {}s near you:".format(len(buttons),
+                                                         button_name)
+
+        dispatcher.utter_button_message(message, buttons,
+                                        button_type="vertical")
+
+        return []
 
 
 class ActionChitchat(Action):
