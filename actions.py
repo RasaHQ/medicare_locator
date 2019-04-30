@@ -117,8 +117,8 @@ class FindFacilityTypes(Action):
                 {"title": "{}".format(facility_type.get("name").title()),
                  "payload": payload})
 
-        dispatcher.utter_button_template("utter_greet", buttons, tracker,
-                                         button_type="vertical")
+        # TODO: update rasa core version for configurable `button_type`
+        dispatcher.utter_button_template("utter_greet", buttons, tracker)
         return []
 
 
@@ -237,8 +237,8 @@ class FacilityForm(FormAction):
             message = "Here are {} {}s near you:".format(len(buttons),
                                                          button_name)
 
-        dispatcher.utter_button_message(message, buttons,
-                                        button_type="vertical")
+        # TODO: update rasa core version for configurable `button_type`
+        dispatcher.utter_button_message(message, buttons)
 
         return []
 

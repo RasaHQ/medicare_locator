@@ -81,6 +81,9 @@ templates:
   - text: "Please provide your city name or zip code."
   - text: "Please enter your zip code or city name to find local providers."
 
+  utter_ask_facility_type:
+  - text: "Choose one of the following to search for: hospital, nursing home, or home health agency."
+
   utter_address:
   - text: "The address is {facility_address}."
 

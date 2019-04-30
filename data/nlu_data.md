@@ -20,7 +20,7 @@
 - do you have something else
 - no this does not work for me
 
-## intent:bye
+## intent:goodbye
 - Bye
 - Bye!
 - Goodbye
