@@ -20,8 +20,9 @@
 - do you have something else
 - no this does not work for me
 
-## intent:bye
+## intent:goodbye
 - Bye
+- Bye!
 - Goodbye
 - See you later
 - Bye bot
@@ -165,13 +166,13 @@
 - my zip code is [30277](location) and i need a [nursing home](facility_type)
 - my zip code is [86602](location) and i need a [hospital](facility_type)
 - my zip code is [47516](location) and i need a [home health agency](facility_type)
-- i need a [nursing home](facility_type) at [77474](location) 
+- i need a [nursing home](facility_type) at [77474](location)
 - i need a [hospital](facility_type) at [77474](location)
 - i need a [home health agency](facility_type) at [77474](location)
-- i am in [Amarillo](location) and i need a [nursing home](facility_type) 
+- i am in [Amarillo](location) and i need a [nursing home](facility_type)
 - i am in [New York](location) and i need a [hospital](facility_type)
 - i am in [Las Vegas](location) and i need a [home healt agency](facility_type)
-- i need a [nursing home](facility_type) in [Katy](location) 
+- i need a [nursing home](facility_type) in [Katy](location)
 - i need a [hospital](facility_type) in [Waco](location)
 - i need a [home health agency](facility_type) in [Clarksville](location)
 - show me [nursing home](facility_type) in [Knoxville](location)
@@ -205,10 +206,10 @@
 - Good morning i am in [Chicago](location) i need a [nursing  home](facility_type:b27b-2uc7)
 - Good morning i am in [Santa Cruz](location) i need a [hospital](facility_type:rbry-mqwu)
 - Good morning i am in [Boston](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- Hello again i need a [nursing home](facility_type) in [Katy](location) 
+- Hello again i need a [nursing home](facility_type) in [Katy](location)
 - Hello again i need a [hospital](facility_type) in [Waco](location)
 - Hello again i need a [home health agency](facility_type) in [Clarksville](location)
-- Good morning i need a [nursing home](facility_type) in [Katy](location) 
+- Good morning i need a [nursing home](facility_type) in [Katy](location)
 - Good morning i need a [hospital](facility_type) in [Waco](location)
 - Good morning i need a [home health agency](facility_type) in [Clarksville](location)
 - Can you tell me a [nursing home](facility_type) in [Oklahoma City](location) ?
@@ -269,18 +270,18 @@
 - What's going on?
 - what's good
 - What's new?
-- What's up man 
-- What's up 
+- What's up man
+- What's up
 - how are you?
 - Do you have a great day?
 - how are you doing today my sweet friend
 - how are you doing?
 - how are u
-- How are you? 
+- How are you?
 - nah, I'm good - how are you doing?
 - how are yuo
 - How are you
-- how are you 
+- how are you
 - how you doing
 - are you ok
 - How are you today?
@@ -367,7 +368,7 @@
 - what's the weather today
 - what is the wather
 - what is the weather
-- Weather? 
+- Weather?
 - What's the weather like where I am right now?
 - what is the weatehr
 - temperature?
@@ -383,7 +384,7 @@
 - weatger
 - What's the weather like over there?
 - Is it raining
-- what is the temperature 
+- what is the temperature
 - How is weather today
 - What is the weather in newyork?
 - the weather today
@@ -441,8 +442,8 @@
 - who created you?
 - tell me more about you
 - who created you
-- who invent you 
-- who developed 
+- who invent you
+- who developed
 - who developed you
 - who made u
 - you are made by who?
@@ -453,7 +454,7 @@
 - who is your boss
 - who built you
 - who is your parent?
-- who are your parents 
+- who are your parents
 - who your author are?
 - who are your author?
 - you are working for which company?
@@ -636,13 +637,13 @@
 - Fuck you
 - fuck you machine learning bot
 - Fuck u
-- fuck you 
+- fuck you
 - what fuck
 - fucking stupid
 - you are fucking stupid guy！
 - go fuck yourself
 - Fuck off
-- Fuck off 
+- Fuck off
 - fuck rasa
 - fuck you!
 - Fuck Off
@@ -979,55 +980,6 @@
 - What is my full name?
 - What do people call me?
 - What exactly is my name?
-
-##intent:nicetomeeyou
-- Good to meet you!
-- Glad to meet you!
-- Pleased to meet you!
-- Glad we've met.
-- It's nice to finally meet you.
-- Great to meet you!
-- Pleased to make your acquaintance!
-- Nice to have met you.
-- I am glad I met you.
-- I am glad he introduced us.
-- It's great to make your acquaintance!
-- It's a pleasure to meet you!
-- I'm pleased to meet you!
-- It's great to get to know you!
-- I'm glad to meet you!
-- It's wonderful to meet you!
-- I'm thrilled to meet you!
-- I'm glad to have met you!
-- I'm happy that we have met!
-- It's a pleasure to make your acquaintance!
-- Glad to meet you
-- It’s great connecting with you.
-- Pleased to meet you.
-- Lovely to meet you.
-- Delighted to make your acquaintance.
-- It’s a pleasure to meet you
-- It was nice to have met you
-- Great seeing you
-- Great interacting with you
-- I had a great meeting with you
-- Hi, nice to meet you!
-- Great to meet you.
-- Glad to finally meet you!
-- Hi, glad to meet you.
-- Glad to make your acquaintance.
-- Good to see you!
-- Glad to meet you.
-- Happy to get to see you.
-- See you around. It was a pleasure meeting you.
-- It was a pleasure to have your company.
-- Thank you for this meeting. It was great to see you.
-- Feels great to see you!
-- I'm so happy that I could meet you.
-- It's good that I could meet you. It was a pleasure.
-- It is indeed a pleasure to be able to meet you.
-- nice to meet you
-
 
 ## synonym:rbry-mqwu
 - hospital

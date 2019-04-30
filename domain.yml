@@ -15,13 +15,13 @@ intents:
 - ask_wherefrom
 - ask_whoami
 - handleinsult
-- nicetomeeyou
 - telljoke
 - ask_whatismyname
 - ask_languagesbot
 
 entities:
 - facility_type
+- facility_id
 - location
 
 slots:
@@ -42,9 +42,8 @@ actions:
 - utter_noworries
 - utter_greet
 - utter_goodbye
-- utter_aks_location
+- utter_ask_location
 - utter_ask_facility_type
-- find_facilities
 - find_facility_types
 - find_healthcare_address
 - utter_address
@@ -58,7 +57,6 @@ actions:
 - utter_ask_wherefrom
 - utter_ask_whoami
 - utter_handleinsult
-- utter_nicetomeeyou
 - utter_telljoke
 - utter_ask_whatismyname
 - utter_ask_languagesbot
@@ -79,11 +77,11 @@ templates:
   - text: "You are welcome!"
 
   utter_ask_facility_type:
-  - text: "Choose one of the following Hospital, Nursing home or Home Health Agency."
+  - text: "Choose one of the following to search for: hospital, nursing home, or home health agency."
 
   utter_ask_location:
   - text: "Please provide your city name."
-  - text: "What is you current city?"
+  - text: "What is your current city?"
   - text: "Please provide your city name or zip code."
   - text: "Please enter your zip code or city name to find local providers."
 
@@ -112,11 +110,6 @@ templates:
   - text: "I hope you are being yourself."
   utter_handleinsult:
   - text: "That’s not very nice 😢"
-  utter_nicetomeeyou:
-  - text: "Thank you. It is a pleasure to meet you as well!"
-  - text: "It is nice to meet you too!"
-  - text: "Pleased to meet you too!"
-  - text: "Likewise!"
   utter_telljoke:
   - text: "Why are eggs not very much into jokes? - Because they could crack up."
   - text: "Do you know a tree’s favorite drink? - Root beer!"

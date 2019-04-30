@@ -26,7 +26,7 @@ otherwise move to the next step directly.
 
 **Step 2**: Install requirements:
 ```
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 **Step 3**: Install the spaCy English language model by running:
@@ -128,7 +128,7 @@ Detailed information about this can also be found in the [Rasa Docs](https://ras
 
 ## More about the Medicare Locator demo bot
 There are some custom actions that require connections to external services,
-specifically `FindHospital` and `FindHealthCareAddress`. These two actions 
+specifically `FacilityForm` and `FindHealthCareAddress`. These two actions
 connect to Medicare APIs. These APIs do not require tokens or any form of authentication.
 
 For more information about Medicare APIs please visit [data.medicare.gov](https://data.medicare.gov/)
@@ -161,15 +161,15 @@ Run `make help` to see an overview of all make commands available.
 
 `train-nlu` - Train the NLU model.
 
-`train-core` - Train the core model.
+`train-core` - Train the Core model.
 
 `interactive` - Run the Medicare Locator interactive learning mode.
 
-`cmdline` - Run the Medicare Locator Bot.
+`cmdline` - Run the bot on the command line.
 
-`action-server` - Starts the action server.
+`action-server` - Start the action server.
 
-`telegram` - Set up webhook for Telegram.
+`telegram` - Run the bot in the Telegram channel.
 
 ## :gift: License
 Licensed under the GNU General Public License v3. Copyright 2019 Rasa Technologies
