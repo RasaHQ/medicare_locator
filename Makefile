@@ -30,22 +30,22 @@ clean:
 	rm -rf docs/_build
 
 train-nlu:
-	python3  -m rasa_nlu.train -c nlu_config.yml --data data/nlu_data.md -o models --fixed_model_name nlu --project current --verbose
+	python3  -m rasa train nlu -c nlu_config.yml --nlu data/nlu_data.md --out models --fixed-model-name nlu --verbose
 
 train-core:
-	python3 -m rasa_core.train -d domain.yml -s data/core -o models/current/dialogue -c core_config.yml
+	python3 -m rasa train core -d domain.yml -s data/core --out models/current/dialogue -c core_config.yml
 
 interactive:
 	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml --debug
 
 cmdline:
-	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
+	python3 -m rasa shell
 
 action-server:
-	python3 -m rasa_core_sdk.endpoint --actions actions
+	python3 -m rasa run actions
 
 run-cmdline:
-	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --debug --endpoints endpoints.yml
+	python3 -m rasa shell
 
 telegram:
 	python3 -m rasa_core.run -d models/current/dialogue -u models/current/nlu --port 5005 --credentials credentials.yml --endpoints endpoints.yml
