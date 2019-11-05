@@ -30,13 +30,13 @@ clean:
 	rm -rf docs/_build
 
 train-nlu:
-	python3  -m rasa train nlu -c nlu_config.yml --nlu data/nlu_data.md --out models --fixed-model-name nlu --verbose
+	python3  -m rasa train nlu -c config.yml --nlu data/nlu_data.md --out models --fixed-model-name nlu --verbose
 
 train-core:
-	python3 -m rasa train core -d domain.yml -s data/core --out models/current/dialogue -c core_config.yml
+	python3 -m rasa train core -d domain.yml -s data/core --out models/current/dialogue -c config.yml
 
 interactive:
-	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c core_config.yml -u models/current/nlu --endpoints endpoints.yml --debug
+	python3 -m rasa_core.train interactive --core models/current/dialogue -d domain.yml -c config.yml -u models/current/nlu --endpoints endpoints.yml --debug
 
 cmdline:
 	python3 -m rasa shell
