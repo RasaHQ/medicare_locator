@@ -5,6 +5,7 @@ policies:
   - name: MemoizationPolicy
     max_history: 6
   - name: FormPolicy
+  - name: MappingPolicy
 
 language: "en"
 
