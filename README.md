@@ -2,12 +2,12 @@
 
 ## 🏥 Introduction
 
-This is an open source starter pack for developers, to show how to automate full conversations in healthcare.
+This is an open source starter pack for developers to show how to automate full conversations in healthcare sector.
 
 It supports the following user goals:
 
-- Searching for a hospital, nursing home or home health agency in a US city
-- Handling basic chitchat
+- Searching for a hospital, nursing home or home health agency in a US city.
+- Handling basic chitchat.
 
 ## 💾 How to install and setup Medicare Locator
 
@@ -16,7 +16,7 @@ It supports the following user goals:
 git clone https://github.com/RasaHQ/medicare_locator.git
 cd medicare_locator
 ```
-The Medicare Locator uses Python 3.5 and 3.6 and has not been tested with other versions.
+The Medicare Locator uses **Python 3.5 and 3.6** and has not been tested with other versions.
 Use the requirements.txt file to install the appropriate dependencies
 via pip. If you do not have pip installed yet first do:
 ```
