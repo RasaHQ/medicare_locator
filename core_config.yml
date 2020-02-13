@@ -1,7 +1,0 @@
-policies:
-  - name: KerasPolicy
-    epochs: 50
-    max_history: 6
-  - name: MemoizationPolicy
-    max_history: 6
-  - name: FormPolicy

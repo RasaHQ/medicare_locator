@@ -1,0 +1,19 @@
+policies:
+  - name: KerasPolicy
+    epochs: 50
+    max_history: 6
+  - name: MemoizationPolicy
+    max_history: 6
+  - name: FormPolicy
+  - name: MappingPolicy
+
+language: "en"
+
+pipeline:
+- name: "SpacyNLP"
+- name: "SpacyTokenizer"
+- name: "RegexFeaturizer"
+- name: "SpacyFeaturizer"
+- name: "CRFEntityExtractor"
+- name: "EntitySynonymMapper"
+- name: "SklearnIntentClassifier"
