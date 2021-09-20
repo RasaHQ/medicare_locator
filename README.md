@@ -59,9 +59,9 @@ make action-server
 ```
 make cmdline
 ```
-After the bot has loaded you can start chatting to it. If you start by saying `Hi` for example,
-the bot will reply by asking you what you are looking for and show you a number of options in form of buttons.
-Since those buttons do not show when testing the bot in the command line, you can imitate a button click by copy
+After the bot has loaded, you can start chatting to it. If you start by saying `Hi` for example,
+the bot will reply by asking you what you are looking for and show a number of options in form of buttons.
+Since those buttons do not show up when testing the bot in the command line, you can imitate a button click by copy
 and pasting the intent of the button of your choice as your input.
 
 An example conversation in the command line could look something like this:
@@ -79,7 +79,7 @@ Your input ->  Seattle
 ```
 
 Try out different conversations and see what the current state of the bot can do!
-After playing around a bit you can try to modify and extend the bot by adding custom actions and intents for example.
+After playing around a bit you can try to modify and extend the bot by adding custom actions and intents also.
 Find help for this in the [Rasa Docs](https://rasa.com/docs/).
 
 A helpful option to extend training data and get to know your bot is interactive learning,
@@ -93,14 +93,14 @@ make interactive
 ## 📱 Use Telegram as Chat platform
 In order to chat to the Medicare Locator through Telegram you can do the following:
 
-**Step 1**: First if you don't already use Telegram, download it and set it up with your phone.
-Once you are registered with Telegram you start by setting up a Telegram bot.
+**Step 1**: First if you don't use Telegram, download it and set it up with your phone.
+Once you are registered with Telegram you can start by setting up a Telegram bot.
 
-**Step 2**: To setup your own bot go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
+**Step 2**: To setup your own bot, Go to the [Telegram BotFather](https://web.telegram.org/#/im?p=@BotFather),
 enter `/newbot` and follow the instructions.
 You should get your `access_token`, and the username you set will be your `verify`. Save this information as you will need it later.
 
-**Step 3**: Now you will need to connect to Telegram via a webhook. To create a local webhook from your machine you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
+**Step 3**: Now you will need to connect to Telegram via a webhook. To create a local webhook from your machine, you can use [Ngrok](https://ngrok.com/). Follow the instructions on their site to
 set it up on your computer. Move `ngrok` to your working directory and in a new terminal run:
 ```
 ./ngrok http 5005
@@ -133,7 +133,7 @@ connect to Medicare APIs. These APIs do not require tokens or any form of authen
 
 For more information about Medicare APIs please visit [data.medicare.gov](https://data.medicare.gov/)
 
-If you would like to run Medicare Locator on your website, follow the instructions
+If you would like to run Medicare Locator on your website, Follow the instructions
 [here](https://github.com/mrbot-ai/rasa-webchat) to place the chat widget on
 your website.
 
